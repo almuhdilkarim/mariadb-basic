@@ -1,8 +1,8 @@
 ---
 date:  ""
 draft: false
-title: "Module Formater"
-terms: [ "formater" ]
+title: "Mariadb Dasar"
+terms: [ "database" ]
 thumb:
     image: "cover.jpg"
     anima: ""

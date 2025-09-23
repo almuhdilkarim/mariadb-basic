@@ -2,7 +2,7 @@
 date:  ""
 draft: false
 title: "Mariadb Dasar"
-terms: [ "formater" ]
+terms: [ "database" ]
 thumb:
     image: "cover.jpg"
     anima: ""

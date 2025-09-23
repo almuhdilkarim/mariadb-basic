@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Perpustakaan Digital"
+title: "Mencari Data"
 weight: 5
 parted:
     name: ""

@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Perpustakaan Digital"
+title: "Tabel Virtual"
 weight: 11
 parted:
     name: ""

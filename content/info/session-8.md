@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Perpustakaan Digital"
+title: "Ringkasan Data"
 weight: 8
 parted:
     name: ""

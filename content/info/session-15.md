@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Perpustakaan Digital"
+title: "Otomatisasi"
 weight: 15
 parted:
     name: ""

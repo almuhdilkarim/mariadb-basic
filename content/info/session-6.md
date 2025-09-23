@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Perpustakaan Digital"
+title: "Hubungan Antar Tabel"
 weight: 6
 parted:
     name: ""

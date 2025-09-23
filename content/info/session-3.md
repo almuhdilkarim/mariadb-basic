@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Session 3"
+title: "Struktur Database"
 weight: 3
 parted:
     name: ""

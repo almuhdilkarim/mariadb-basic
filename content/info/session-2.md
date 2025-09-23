@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Gallery Digital"
+title: "Pengantar"
 weight: 2
 parted:
     name: ""

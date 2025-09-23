@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Museum Digital"
+title: "Persiapan"
 weight: 1
 parted:
     name: ""

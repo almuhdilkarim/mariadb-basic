@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Arsip Digital"
+title: "Mengisi dan Mengelola Data"
 weight: 4
 parted:
     name: ""

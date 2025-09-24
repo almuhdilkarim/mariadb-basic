@@ -29,10 +29,6 @@ description: "Modul ini menjelaskan LEFT JOIN untuk menampilkan semua data dari 
 ---
 
 
-# Modul 27 Pertemuan 6: LEFT JOIN
-
----
-
 ## 1. Pendahuluan
 
 LEFT JOIN adalah salah satu variasi JOIN dalam SQL yang memungkinkan kita menampilkan semua baris dari tabel sebelah kiri (left table) meskipun tidak ada pasangan data yang cocok di tabel sebelah kanan (right table). Konsep ini sangat penting untuk menampilkan data secara lebih lengkap, terutama ketika kita ingin memastikan bahwa semua entitas utama tetap terlihat walaupun tidak memiliki relasi. Dalam konteks perpustakaan, LEFT JOIN berguna untuk menampilkan semua anggota, termasuk yang belum pernah meminjam buku. Dengan cara ini, pustakawan tidak hanya mengetahui siapa yang aktif meminjam, tetapi juga siapa yang belum pernah melakukan transaksi.

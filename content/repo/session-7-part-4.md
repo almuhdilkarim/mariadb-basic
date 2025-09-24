@@ -29,32 +29,6 @@ description: "Peserta mempraktikkan query gabungan menggunakan INNER JOIN dan LE
 ---
 
 
-## 1. Pendahuluan
-
-Query SQL yang menampilkan daftar peminjaman buku per anggota merupakan salah satu kebutuhan paling mendasar dalam sistem perpustakaan. Laporan ini memungkinkan pustakawan untuk mengetahui siapa saja yang sedang meminjam buku, judul buku yang dipinjam, serta tanggal peminjaman. Dengan adanya laporan ini, proses administrasi peminjaman menjadi lebih terstruktur dan transparan. Tanpa query semacam ini, pustakawan harus membuka tabel `anggota`, `peminjaman`, dan `buku` secara terpisah, lalu mencocokkan data secara manual, yang jelas sangat tidak efisien.
-
-Selain mendukung efisiensi, query peminjaman per anggota juga berfungsi sebagai dasar analisis perilaku pengguna. Dengan laporan ini, pustakawan dapat menilai anggota yang paling aktif, frekuensi peminjaman, dan pola minat terhadap jenis buku tertentu. Data ini bisa menjadi acuan dalam pengambilan keputusan, seperti menambah koleksi buku populer atau merancang program penghargaan bagi anggota yang rajin membaca. Dengan kata lain, query ini tidak hanya mendukung operasional, tetapi juga strategi pengembangan perpustakaan.
-
-Penerapan query peminjaman per anggota sangat erat kaitannya dengan konsep JOIN dalam SQL. Biasanya, query ini menggunakan INNER JOIN atau LEFT JOIN untuk menggabungkan tabel `anggota`, `peminjaman`, dan `buku`. INNER JOIN digunakan ketika hanya anggota yang benar-benar meminjam buku yang ingin ditampilkan, sedangkan LEFT JOIN digunakan ketika semua anggota, termasuk yang belum meminjam, perlu dimunculkan. Pemahaman tentang perbedaan ini menjadi kunci dalam membangun laporan yang sesuai kebutuhan.
-
-Selain itu, query ini memiliki peran penting dalam menjaga akuntabilitas sistem. Laporan peminjaman per anggota dapat menjadi bukti resmi jika terjadi sengketa terkait buku yang dipinjam. Misalnya, jika ada anggota yang mengaku tidak pernah meminjam, pustakawan dapat menunjukkan data yang tercatat dalam database. Dengan demikian, laporan ini mendukung tata kelola perpustakaan yang lebih tertib dan profesional.
-
-Akhirnya, modul ini tidak hanya akan membimbing pembaca dalam menulis query SQL yang menampilkan peminjaman per anggota, tetapi juga membahas kesalahan umum yang sering terjadi dan praktik terbaik yang sebaiknya diterapkan. Dengan latihan ini, peserta diharapkan mampu membuat query yang tidak hanya benar secara sintaks, tetapi juga bermanfaat secara praktis dalam manajemen perpustakaan.
-
----
-
-Baik, kita masuk ke **Modul 29: Praktik Query Peminjaman Buku per Anggota**.
-Sesuai kaidah modul *praktik*, struktur yang saya gunakan:
-
-1. **Pendahuluan** (5 paragraf × ≥5 kalimat).
-2. **Langkah-Langkah Praktik** (5 paragraf × ≥5 kalimat + SQL snippet).
-3. **Kesalahan Umum** (5 subpoint; masing-masing = snippet SQL salah + 2 paragraf × ≥5 kalimat).
-4. **Best Practice** (5 subpoint; masing-masing = snippet SQL benar + 2 paragraf × ≥5 kalimat).
-5. **Studi Kasus** (5 paragraf × ≥5 kalimat + snippet SQL).
-6. **Kesimpulan** (1 paragraf × ≥5 kalimat).
-7. **Referensi** (baru, tidak mengulang modul sebelumnya).
-
----
 
 ## 1. Pendahuluan
 

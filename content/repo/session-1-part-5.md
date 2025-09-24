@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "database relasional modern menurut Silberschatz et al., Database System Concepts."
+title: ""
 short: ""
 thumb:
     image: "cover.jpg"

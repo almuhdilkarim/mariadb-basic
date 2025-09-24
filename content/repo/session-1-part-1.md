@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Konsep Dasar Basis Data"
+title: "persiapan"
 short: "Konsep"
 thumb:
     image: "cover.jpg"

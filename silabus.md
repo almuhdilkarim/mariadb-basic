@@ -10,7 +10,7 @@ Dataset utama yang digunakan: *Sistem Perpustakaan Digital* (`buku`, `anggota`, 
 2. Mengapa kita butuh database.  
 3. DBMS vs file biasa.  
 4. Pengenalan MariaDB dan sejarah singkatnya.  
-5. Instalasi MariaDB pertama kali.  
+5. Potensi Penggunaan Database   
 
 ## Pertemuan 2 — Struktur Database
 6. Konsep database, tabel, baris, kolom.  

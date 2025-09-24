@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Pengenalan MariaDB: sejarah, keterkaitan dengan MySQL, dan posisi dalam ekosistem open-source"
+title: "persiapan"
 short: "study literatur"
 thumb:
     image: "cover.jpg"

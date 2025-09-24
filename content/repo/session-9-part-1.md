@@ -25,4 +25,5 @@ metadata:
     thumb: "cover.jpg"
     group: []
     author: ["Al Muhdil Karim"]
-description: "Pelajari mengapa duplikasi dat
+description: "Pelajari mengapa duplikasi dat"
+---

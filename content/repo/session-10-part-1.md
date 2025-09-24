@@ -25,4 +25,5 @@ metadata:
     thumb: "cover.jpg"
     group: []
     author: ["Al Muhdil Karim"]
-description: "Modul ini mengenalkan index
+description: "Modul ini mengenalkan index"
+---

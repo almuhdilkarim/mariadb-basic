@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Evolusi database relasional (E.F. Codd dan relational model)."
+title: "persiapan"
 short: "Jenis"
 thumb:
     image: "cover.jpg"

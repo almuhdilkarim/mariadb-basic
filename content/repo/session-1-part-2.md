@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Perbedaan file system dengan database"
+title: "persiapan"
 short: "Fungsi dan Manfaat"
 thumb:
     image: "cover.jpg"

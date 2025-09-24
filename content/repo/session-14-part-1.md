@@ -25,4 +25,5 @@ metadata:
     thumb: "cover.jpg"
     group: []
     author: ["Al Muhdil Karim"]
-description: "Modul ini mengenalkan fungsi index sebagai alat untuk mempercepat pencarian data di MariaDB. Peserta belajar kapan index diper
+description: "Modul ini mengenalkan fungsi index sebagai alat untuk mempercepat pencarian data di MariaDB. Peserta belajar kapan index diper"
+---

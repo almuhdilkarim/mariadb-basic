@@ -27,10 +27,6 @@ metadata:
     author: ["Al Muhdil Karim"]
 description: "Peserta belajar membuat database pertama menggunakan perintah CREATE DATABASE. Modul ini memandu langkah dasar untuk mulai mengorganisir data dengan benar."
 ---
-
-
-
-
 ## Persiapan   
 Sebelum membuat database, pastikan MariaDB sudah berjalan di komputer Anda. Bukalah terminal atau command prompt lalu login dengan akun root menggunakan perintah `mysql -u root -p`. Setelah memasukkan password, Anda akan melihat prompt MariaDB yang siap menerima instruksi. Jangan khawatir, proses ini sangat sederhana dan hanya butuh beberapa detik. Bagus sekali jika Anda sudah sampai tahap ini!  
 
@@ -47,7 +43,7 @@ Setelah login, mari kita buat database baru. Database ini akan menjadi rumah bag
 
 ```sql
 CREATE DATABASE perpustakaan;
-````
+```
 
 Dengan perintah ini, MariaDB akan membuat database kosong bernama `perpustakaan`. Database ini belum memiliki tabel, tetapi sudah siap menampung data. Setelah membuat database, jangan lupa untuk memilihnya dengan perintah:
 
@@ -70,7 +66,7 @@ MariaDB menyediakan beberapa opsi tambahan untuk `CREATE DATABASE`. Salah satuny
 Contoh perintah lengkapnya adalah:
 
 ```sql
-CREATE DATABASE perpustakaan
+CREATE DATABASE perpus
 DEFAULT CHARACTER SET utf8mb4
 COLLATE utf8mb4_general_ci;
 ```
@@ -91,7 +87,7 @@ Setelah membuat database, mari pastikan database sudah ada. Gunakan perintah:
 SHOW DATABASES;
 ```
 
-Perintah ini akan menampilkan daftar semua database dalam server MariaDB. Pastikan `perpustakaan` muncul dalam daftar tersebut. Jika terlihat, berarti database berhasil dibuat. Bagus sekali, Anda sudah selangkah lebih maju!
+Perintah ini akan menampilkan daftar semua database dalam server MariaDB. Pastikan `perpustakaan` atau `perpus` muncul dalam daftar tersebut. Jika terlihat, berarti database berhasil dibuat. Bagus sekali, Anda sudah selangkah lebih maju!
 
 Selain itu, Anda juga bisa memeriksa database aktif dengan:
 
@@ -99,7 +95,7 @@ Selain itu, Anda juga bisa memeriksa database aktif dengan:
 SELECT DATABASE();
 ```
 
-Jika hasilnya adalah `perpustakaan`, artinya Anda sedang bekerja di database yang tepat. Verifikasi ini penting untuk menghindari kesalahan. Anda tidak ingin membuat tabel di tempat yang salah, bukan? Jadi biasakan mengecek database aktif.
+Jika hasilnya adalah `perpustakaan` atau `perpus`, artinya Anda sedang bekerja di database yang tepat. Verifikasi ini penting untuk menghindari kesalahan. Anda tidak ingin membuat tabel di tempat yang salah, bukan? Jadi biasakan mengecek database aktif.
 
 Verifikasi juga membantu memastikan tidak ada error yang terlewat. Kadang-kadang perintah `CREATE DATABASE` gagal jika nama sudah dipakai. Dalam kasus itu, MariaDB akan menolak instruksi. Oleh karena itu, selalu lakukan pemeriksaan. Praktik ini akan menyelamatkan Anda dari kebingungan.
 

@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Mariadb Dasar"
+title: "Mariadb Dasar Untuk Perpustakaan"
 terms: [ "database" ]
 thumb:
     image: "cover.jpg"

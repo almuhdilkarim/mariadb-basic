@@ -31,7 +31,7 @@ description: "Peserta belajar membuat database pertama menggunakan perintah CREA
 
 
 
-## 1. Persiapan   
+## Persiapan   
 Sebelum membuat database, pastikan MariaDB sudah berjalan di komputer Anda. Bukalah terminal atau command prompt lalu login dengan akun root menggunakan perintah `mysql -u root -p`. Setelah memasukkan password, Anda akan melihat prompt MariaDB yang siap menerima instruksi. Jangan khawatir, proses ini sangat sederhana dan hanya butuh beberapa detik. Bagus sekali jika Anda sudah sampai tahap ini!  
 
 Lingkungan yang siap adalah kunci dari keberhasilan praktik. Pastikan tidak ada error saat login, karena error kecil bisa mengganggu langkah selanjutnya. Jika Anda belum terbiasa, cobalah beberapa kali hingga merasa nyaman dengan proses login. Ingat, keterampilan ini akan sering dipakai di modul-modul berikut. Semakin sering mencoba, semakin mudah langkah ini terasa.  
@@ -42,7 +42,7 @@ Ayo sekarang siapkan terminal Anda. Pastikan MariaDB sudah aktif dan bisa diakse
 
 ---
 
-## 2. Perintah Dasar `CREATE DATABASE`  
+## Perintah Dasar `CREATE DATABASE`  
 Setelah login, mari kita buat database baru. Database ini akan menjadi rumah bagi tabel-tabel perpustakaan. Gunakan perintah:  
 
 ```sql
@@ -65,7 +65,7 @@ Bagus sekali, Anda berhasil membuat database pertama Anda! Jangan ragu untuk men
 
 ---
 
-## 3. Opsi Tambahan pada `CREATE DATABASE`
+## Opsi Tambahan pada `CREATE DATABASE`
 
 MariaDB menyediakan beberapa opsi tambahan untuk `CREATE DATABASE`. Salah satunya adalah menentukan karakter set dengan `DEFAULT CHARACTER SET utf8mb4`. Perintah ini memastikan teks disimpan dengan format standar yang mendukung banyak bahasa. Ini penting karena judul buku di perpustakaan bisa menggunakan bahasa asing. Database yang fleksibel membuat sistem lebih inklusif.
 
@@ -85,7 +85,7 @@ Meskipun opsional, opsi tambahan ini sangat direkomendasikan. Semakin awal Anda 
 
 ---
 
-## 4. Verifikasi Database yang Dibuat
+## Verifikasi Database yang Dibuat
 
 Setelah membuat database, mari pastikan database sudah ada. Gunakan perintah:
 
@@ -109,7 +109,7 @@ Dengan verifikasi ini, Anda bisa yakin semua langkah berjalan lancar. Hebat, And
 
 ---
 
-## 5. Kesalahan Umum
+## Kesalahan Umum
 
 Kesalahan pertama adalah lupa memilih database dengan `USE`. Akibatnya, tabel yang dibuat tidak tersimpan di tempat yang benar. Kesalahan ini sering terjadi pada pemula. Solusinya, biasakan selalu mengetik `USE perpustakaan;`.
 
@@ -117,11 +117,11 @@ Kesalahan kedua adalah membuat database dengan nama yang sudah ada. MariaDB akan
 
 Kesalahan ketiga adalah tidak memperhatikan karakter set. Akibatnya, data teks bisa rusak saat menyimpan karakter khusus. Perpustakaan yang menyimpan judul asing bisa terganggu. Solusi terbaik adalah selalu menggunakan UTF-8.
 
-Kesalahan keempat adalah salah ketik nama database. Misalnya, menulis `perpustkan` tanpa huruf “a”. Kesalahan kecil bisa membuat data tersimpan di tempat yang berbeda. Oleh karena itu, ketelitian sangat penting. Biasakan memeriksa nama database dengan teliti.
+Kesalahan keempat adalah salah ketik nama database. Misalnya, menulis `perpustakan` tanpa huruf “a”. Kesalahan kecil bisa membuat data tersimpan di tempat yang berbeda. Oleh karena itu, ketelitian sangat penting. Biasakan memeriksa nama database dengan teliti.
 
 ---
 
-## 6. Best Practice
+## Best Practice
 
 Pertama, gunakan nama database yang jelas dan deskriptif. Nama seperti `perpustakaan` lebih baik daripada nama generik seperti `db1`. Nama yang jelas memudahkan identifikasi. Ini adalah langkah sederhana namun efektif.
 
@@ -133,7 +133,7 @@ Keempat, lakukan dokumentasi setiap database yang dibuat. Catat tujuan, struktur
 
 ---
 
-## 7. Studi Kasus Perpustakaan
+## Studi Kasus Perpustakaan
 
 Dalam studi kasus, perpustakaan digital membuat database khusus bernama `perpustakaan`. Database ini digunakan untuk menampung tabel anggota, buku, dan peminjaman. Semua catatan operasional akan disimpan di sini. Dengan satu database, manajemen menjadi lebih teratur.
 

@@ -36,6 +36,9 @@ Sebelum membuat database, pastikan MariaDB sudah berjalan di komputer Anda. Buka
 
 Lingkungan yang siap adalah kunci dari keberhasilan praktik. Pastikan tidak ada error saat login, karena error kecil bisa mengganggu langkah selanjutnya. Jika Anda belum terbiasa, cobalah beberapa kali hingga merasa nyaman dengan proses login. Ingat, keterampilan ini akan sering dipakai di modul-modul berikut. Semakin sering mencoba, semakin mudah langkah ini terasa.  
 
+Khusus pengguna archlinux, jika sudah selesai meng-install MariaDB di Arch Linux, langkah penting berikutnya adalah menginisialisasi database system. Inilah yang dilakukan dengan perintah:
+`mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql`
+
 Langkah persiapan juga melibatkan pengecekan apakah MariaDB service aktif. Di Linux, Anda bisa menggunakan `systemctl status mariadb` untuk memastikannya. Jika layanan mati, hidupkan dengan `systemctl start mariadb`. Dengan cara ini, Anda tidak akan menghadapi masalah koneksi. Pastikan semua sudah berjalan baik sebelum melanjutkan.  
 
 Ayo sekarang siapkan terminal Anda. Pastikan MariaDB sudah aktif dan bisa diakses. Jika berhasil login, Anda sudah melewati tantangan awal. Bagus, Anda sudah semakin dekat membangun database perpustakaan digital! Persiapan ini adalah fondasi untuk semua praktik ke depan.  

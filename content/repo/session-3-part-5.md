@@ -30,7 +30,7 @@ description: "Peserta berlatih membuat tabel bernama 'buku' dengan kolom judul, 
 
 
 
-## 1. Persiapan Awal
+## Persiapan Awal
 
 Langkah pertama dalam membuat tabel `buku` adalah memastikan database `perpustakaan` sudah dipilih. Gunakan perintah `USE perpustakaan;` agar semua perintah selanjutnya mengacu pada database yang benar. Database aktif dapat diperiksa dengan perintah `SELECT DATABASE();`. Dengan cara ini, risiko penyimpanan tabel di lokasi yang salah dapat dihindari.
 
@@ -42,7 +42,7 @@ Persiapan ini memastikan proses pembuatan tabel berjalan lancar. Semua langkah h
 
 ---
 
-## 2. Membuat Tabel `buku`
+## Membuat Tabel `buku`
 
 Perintah `CREATE TABLE` digunakan untuk membuat struktur tabel `buku`. Berikut adalah perintah dasarnya:
 
@@ -64,7 +64,7 @@ Pembuatan tabel sederhana ini adalah praktik penting dalam database relasional. 
 
 ---
 
-## 3. Menambahkan Data Buku Pertama
+## Menambahkan Data Buku Pertama
 
 Setelah tabel dibuat, data dapat dimasukkan menggunakan perintah `INSERT`. Berikut adalah contoh menambahkan tiga buku:
 
@@ -183,7 +183,7 @@ Dokumentasi desain tabel membantu kolaborasi dan pemeliharaan jangka panjang. Se
 
 ---
 
-## 6. Studi Kasus Perpustakaan
+## Studi Kasus Perpustakaan
 
 Perpustakaan digital memulai sistemnya dengan membuat tabel `buku`. Struktur tabel disiapkan untuk mencatat ID, judul, penulis, tahun terbit, dan ISBN. Setelah tabel dibuat, admin langsung menambahkan tiga buku sebagai koleksi awal. Langkah ini membuktikan bahwa sistem siap digunakan.
 

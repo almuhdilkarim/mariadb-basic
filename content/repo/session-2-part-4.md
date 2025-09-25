@@ -28,9 +28,8 @@ metadata:
 description: "Pelajari perbedaan mendasar antara penyimpanan berbasis file dengan sistem manajemen basis data. Modul ini membahas kelebihan DBMS seperti integritas, pencarian cepat, dan keamanan data dibanding file biasa."
 ---
 
-# Modul 3 Pertemuan 1: DBMS vs File Biasa  
 
-## 1. Konsep File Biasa  
+## Konsep File Biasa  
 File biasa adalah metode penyimpanan data tradisional menggunakan sistem file di komputer (Connolly & Begg, 2015). Data disimpan dalam bentuk teks atau spreadsheet tanpa aturan relasional yang ketat. Dalam perpustakaan, file biasa bisa berupa daftar anggota dalam dokumen Excel. Sistem ini mudah dibuat tetapi tidak efisien ketika data semakin banyak. Kekurangannya akan terlihat saat organisasi berkembang.  
 
 Menurut Elmasri & Navathe (2016), file biasa tidak memiliki struktur kompleks seperti tabel dan relasi. Semua informasi disimpan dalam bentuk datar sehingga rawan redundansi. Misalnya, alamat anggota ditulis berulang kali pada setiap catatan peminjaman. Hal ini mengakibatkan pemborosan ruang dan potensi kesalahan. File biasa menjadi sulit dipelihara dalam jangka panjang.  
@@ -43,7 +42,7 @@ Dengan memahami konsep file biasa, peserta dapat membandingkan dengan DBMS. File
 
 ---
 
-## 2. Konsep Database Management System (DBMS)  
+## Konsep Database Management System (DBMS)  
 Database Management System (DBMS) adalah perangkat lunak yang dirancang untuk mengelola data secara sistematis (Elmasri & Navathe, 2016). DBMS memungkinkan penyimpanan, pengolahan, dan pengaksesan data dengan lebih efisien. Dalam perpustakaan, DBMS digunakan untuk mencatat anggota, koleksi buku, dan transaksi peminjaman. Semua data terintegrasi dalam satu sistem yang terstruktur. DBMS menjadi solusi atas kelemahan file biasa.  
 
 Menurut Connolly & Begg (2015), DBMS menyediakan mekanisme untuk menjaga integritas data. Misalnya, primary key memastikan bahwa setiap anggota memiliki ID unik. Foreign key menghubungkan data peminjaman dengan anggota dan koleksi buku. Mekanisme ini membuat data lebih konsisten dan terpercaya. DBMS memberikan jaminan kualitas yang tidak dimiliki file biasa.  
@@ -56,7 +55,7 @@ Dengan memahami konsep DBMS, peserta dapat melihat perbedaan fundamental dengan 
 
 ---
 
-## 3. Perbedaan Struktural File vs DBMS  
+## Perbedaan Struktural File vs DBMS  
 File biasa menyimpan data dalam bentuk datar tanpa relasi (Connolly & Begg, 2015). Sebaliknya, DBMS menyimpan data dalam tabel dengan relasi antar entitas. Dalam perpustakaan, file biasa menyimpan data peminjaman dan anggota secara terpisah tanpa keterkaitan. DBMS menghubungkan kedua data melalui foreign key. Perbedaan struktural ini memengaruhi efisiensi pengelolaan data.  
 
 Menurut Elmasri & Navathe (2016), struktur DBMS lebih fleksibel. Perubahan atribut dapat dilakukan tanpa mengganggu keseluruhan sistem. Dalam file biasa, menambah kolom baru seringkali memerlukan modifikasi besar. Hal ini membuat file biasa kurang adaptif. DBMS memungkinkan evolusi sistem lebih mudah.  
@@ -69,7 +68,7 @@ Dengan memahami perbedaan struktural, peserta dapat menilai keunggulan DBMS. Fil
 
 ---
 
-## 4. Perbedaan Operasional File vs DBMS  
+## Perbedaan Operasional File vs DBMS  
 Operasi pada file biasa terbatas pada pembacaan, penulisan, dan pengeditan (Connolly & Begg, 2015). DBMS menyediakan operasi lebih canggih melalui SQL. Dengan SQL, pengguna dapat melakukan pencarian kompleks, agregasi, dan analisis. Dalam perpustakaan, query SQL dapat menampilkan buku terpopuler. File biasa tidak mendukung operasi setingkat ini.  
 
 Menurut Elmasri & Navathe (2016), DBMS memiliki transaction management. Fitur ini memastikan bahwa operasi dilakukan secara atomik, konsisten, terisolasi, dan tahan lama (ACID). File biasa tidak memiliki konsep transaksi. Dalam perpustakaan, peminjaman yang gagal tercatat akan langsung terlihat. DBMS mencegah inkonsistensi ini.  
@@ -82,7 +81,7 @@ Perbedaan operasional menunjukkan mengapa DBMS lebih unggul. File biasa sederhan
 
 ---
 
-## 5. Efisiensi Penyimpanan  
+## Efisiensi Penyimpanan  
 File biasa menyimpan data secara redundan sehingga tidak efisien (Connolly & Begg, 2015). Dalam perpustakaan, alamat anggota ditulis berulang kali dalam catatan peminjaman. DBMS menggunakan normalisasi untuk mengurangi redundansi. Data hanya disimpan sekali lalu direferensikan melalui relasi. Hal ini membuat penyimpanan lebih hemat.  
 
 Menurut Elmasri & Navathe (2016), efisiensi penyimpanan berdampak pada kecepatan akses. File dengan redundansi besar membutuhkan waktu lebih lama untuk diproses. DBMS mengurangi beban ini dengan struktur terorganisasi. Dalam perpustakaan, laporan peminjaman dapat dihasilkan lebih cepat. Efisiensi menjadi keunggulan utama DBMS.  
@@ -95,7 +94,7 @@ Efisiensi penyimpanan menegaskan keunggulan DBMS. File biasa cepat menjadi boros
 
 ---
 
-## 6. Keamanan dan Pemeliharaan  
+## Keamanan dan Pemeliharaan  
 Keamanan file biasa sangat rendah karena tidak ada kontrol akses (Connolly & Begg, 2015). Setiap orang yang memiliki file dapat mengubah isinya. DBMS menyediakan kontrol akses berbasis peran. Dalam perpustakaan, admin memiliki hak berbeda dengan anggota. Hal ini meningkatkan keamanan data.  
 
 Menurut Elmasri & Navathe (2016), DBMS mendukung audit trail. Setiap perubahan data dapat dilacak. File biasa tidak mendukung fitur ini. Dalam perpustakaan, jejak perubahan membantu memastikan akuntabilitas. Audit trail meningkatkan kepercayaan pada sistem.  
@@ -108,7 +107,7 @@ Keamanan dan pemeliharaan menjadi keunggulan nyata DBMS. File biasa tidak mampu 
 
 ---
 
-## 7. Studi Kasus Perpustakaan  
+## Studi Kasus Perpustakaan  
 Bayangkan perpustakaan kecil yang awalnya menggunakan file Excel untuk mencatat peminjaman. Data sering ganda dan sulit dicari. Pengelola kesulitan menghasilkan laporan bulanan. Setelah beralih ke DBMS, semua catatan terintegrasi. Proses pencarian dan pelaporan menjadi instan.  
 
 Menurut Connolly & Begg (2015), DBMS membantu organisasi beradaptasi dengan pertumbuhan. Perpustakaan dengan ribuan anggota tetap dapat dikelola efisien. Sistem file biasa tidak sanggup menghadapi skala besar. DBMS menjadi solusi jangka panjang. Hal ini membuktikan keunggulan nyata DBMS.  

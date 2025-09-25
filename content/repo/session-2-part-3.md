@@ -28,9 +28,8 @@ metadata:
 description: "Kenali alasan mengapa database dibutuhkan untuk mengelola data dalam jumlah besar. Modul ini menjelaskan manfaat database seperti keandalan, keamanan, multi-user, dan konsistensi informasi."
 ---
 
-# Modul 2 Pertemuan 1: Mengapa Kita Butuh Database?  
 
-## 1. Keterbatasan Penyimpanan Manual  
+## Keterbatasan Penyimpanan Manual  
 Penyimpanan manual menggunakan buku catatan atau kartu indeks sering menimbulkan masalah keakuratan data (Connolly & Begg, 2015). Dalam perpustakaan tradisional, catatan peminjaman ditulis tangan sehingga mudah hilang atau rusak. Kesalahan pencatatan menyebabkan buku dianggap hilang meskipun masih dipinjam. Sistem manual juga membuat proses pencarian data menjadi lambat dan tidak efisien. Hal ini menunjukkan kebutuhan akan solusi penyimpanan yang lebih modern.  
 
 Menurut Elmasri & Navathe (2016), metode manual sulit mendukung kebutuhan organisasi besar. Jumlah data yang terus bertambah menimbulkan risiko tumpang tindih dan duplikasi. Pada perpustakaan dengan ribuan koleksi, sistem manual menjadi sangat tidak efektif. Setiap pencarian memerlukan waktu lama dan rentan kesalahan. Kondisi ini memperlihatkan keterbatasan nyata sistem konvensional.  
@@ -43,7 +42,7 @@ Keterbatasan penyimpanan manual menjadi motivasi utama untuk mengadopsi database
 
 ---
 
-## 2. Pentingnya Akses Cepat ke Data  
+## Pentingnya Akses Cepat ke Data  
 Akses cepat ke data menjadi kebutuhan utama di era digital (Turban et al., 2017). Sistem manual membutuhkan waktu lama untuk mencari informasi. Misalnya, petugas perpustakaan harus membuka banyak buku catatan untuk menemukan riwayat peminjaman. Proses ini tidak efisien dan membuat pengguna menunggu terlalu lama. Database hadir untuk menyelesaikan hambatan tersebut.  
 
 Menurut Connolly & Begg (2015), kecepatan akses data menentukan kualitas layanan. Dalam perpustakaan, anggota berharap bisa segera mengetahui ketersediaan buku. Database memungkinkan pencarian hanya dengan memasukkan judul atau nama penulis. Hasil ditampilkan dalam hitungan detik. Hal ini meningkatkan kepuasan pengguna secara signifikan.  
@@ -56,7 +55,7 @@ Akses cepat adalah salah satu keunggulan database dibanding penyimpanan manual. 
 
 ---
 
-## 3. Konsistensi dan Integritas Data  
+## Konsistensi dan Integritas Data  
 Konsistensi dan integritas adalah dua aspek penting dalam pengelolaan data (Elmasri & Navathe, 2016). Konsistensi berarti data selalu sesuai dengan aturan yang telah ditentukan. Misalnya, format tanggal harus sama pada setiap catatan. Integritas memastikan bahwa hubungan antar data tetap terjaga dengan benar. Kedua aspek ini sulit diwujudkan dalam sistem manual.  
 
 Menurut Silberschatz et al. (2020), database memiliki mekanisme untuk menjaga integritas. Salah satunya adalah primary key yang memastikan setiap entitas unik. Dalam perpustakaan, ID anggota mencegah duplikasi data pengguna. Foreign key memastikan bahwa data peminjaman selalu terkait dengan data buku dan anggota. Mekanisme ini menjaga konsistensi yang tidak mungkin dilakukan manual.  
@@ -69,7 +68,7 @@ Dengan konsistensi dan integritas, database menjadi fondasi terpercaya untuk ope
 
 ---
 
-## 4. Keamanan Data  
+## Keamanan Data  
 Keamanan data menjadi aspek vital dalam pengelolaan database (Laudon & Laudon, 2018). Sistem manual sulit membatasi siapa saja yang bisa mengakses data. Catatan fisik dapat dibaca atau diubah tanpa izin. Database menyediakan mekanisme otentikasi dan otorisasi. Hal ini membuat akses data lebih terkendali.  
 
 Menurut Connolly & Begg (2015), otorisasi menentukan hak akses setiap pengguna. Dalam perpustakaan, admin memiliki akses penuh sementara anggota hanya bisa melihat data koleksi. Database memungkinkan pengaturan hak akses ini secara detail. Tanpa database, pembatasan akses hampir mustahil dilakukan. Inilah keunggulan besar dalam hal keamanan.  
@@ -82,7 +81,7 @@ Keamanan menjadi alasan penting mengapa database dibutuhkan. Sistem manual tidak
 
 ---
 
-## 5. Efisiensi dan Penghematan Sumber Daya  
+## Efisiensi dan Penghematan Sumber Daya  
 Database mendukung efisiensi dengan mengurangi duplikasi dan mempercepat proses (Turban et al., 2017). Sistem manual cenderung menghasilkan catatan ganda. Misalnya, anggota yang sama bisa tercatat dengan nama berbeda. Database menggunakan primary key untuk menghindari masalah ini. Efisiensi dicapai dengan mengelola data secara terpusat.  
 
 Menurut Connolly & Begg (2015), penghematan waktu adalah salah satu manfaat utama database. Pencarian, penyimpanan, dan pemrosesan data lebih cepat. Dalam perpustakaan, pencatatan peminjaman hanya memerlukan beberapa klik. Hal ini jauh lebih efisien dibanding menulis manual. Efisiensi waktu berdampak langsung pada kualitas layanan.  
@@ -95,7 +94,7 @@ Efisiensi dan penghematan membuat database menjadi investasi yang berharga. Perp
 
 ---
 
-## 6. Skalabilitas dan Adaptabilitas  
+## Skalabilitas dan Adaptabilitas  
 Skalabilitas berarti kemampuan sistem menangani pertumbuhan data (Elmasri & Navathe, 2016). Sistem manual tidak dapat mengimbangi pertambahan data yang masif. Dalam perpustakaan, jumlah koleksi dan anggota terus bertambah. Database dapat menyesuaikan dengan pertumbuhan ini. Skalabilitas menjadikan database solusi jangka panjang.  
 
 Menurut Connolly & Begg (2015), adaptabilitas adalah kemampuan menyesuaikan dengan kebutuhan baru. Database dapat diperluas dengan menambah tabel atau atribut. Misalnya, perpustakaan dapat menambahkan kolom untuk e-book. Sistem manual sulit beradaptasi dengan cepat. Adaptabilitas membuat database relevan meskipun kebutuhan berubah.  
@@ -108,7 +107,7 @@ Dengan skalabilitas, database tidak hanya relevan untuk saat ini tetapi juga mas
 
 ---
 
-## 7. Dampak Database pada Perpustakaan  
+## Dampak Database pada Perpustakaan  
 Database membawa perubahan besar dalam manajemen perpustakaan (Connolly & Begg, 2015). Pencatatan manual digantikan dengan sistem digital. Anggota dapat mencari buku dengan mudah melalui katalog online. Peminjaman dan pengembalian dicatat otomatis dalam database. Transformasi ini meningkatkan kualitas layanan.  
 
 Menurut Elmasri & Navathe (2016), database memungkinkan analisis data untuk pengambilan keputusan. Perpustakaan dapat mengetahui buku paling populer dan kategori yang jarang dipinjam. Informasi ini mendukung kebijakan pengadaan koleksi. Tanpa database, analisis ini memerlukan waktu lama. Database menjadikannya lebih cepat dan akurat.  

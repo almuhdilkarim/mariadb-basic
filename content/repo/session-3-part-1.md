@@ -28,9 +28,7 @@ metadata:
 description: "Modul ini mengenalkan perbedaan antara database dan tabel, dengan menjelaskan hubungan kolom dan baris. Peserta memahami bagaimana tabel digunakan untuk menyimpan data terstruktur."
 ---
 
-# Modul 6 Pertemuan 2: Konsep Database, Tabel, Baris, dan Kolom  
-
-## 1. Definisi Database  
+## Definisi Database  
 Database adalah kumpulan data yang terorganisasi dan dikelola secara sistematis. Berbeda dengan file biasa, database memiliki struktur yang memungkinkan data dapat diakses, diperbarui, dan dianalisis dengan lebih mudah. Dalam konteks perpustakaan, database menyimpan data anggota, koleksi buku, serta transaksi peminjaman. Semua informasi ini saling terhubung sehingga menciptakan sistem yang terpadu. Tanpa database, pengelolaan data berskala besar akan sulit dilakukan.  
 
 Keberadaan database membantu organisasi menyimpan informasi dengan cara yang lebih aman dan konsisten. Misalnya, setiap anggota perpustakaan hanya dicatat sekali dalam tabel khusus anggota. Catatan tersebut kemudian bisa dihubungkan dengan tabel peminjaman. Relasi ini membuat database lebih unggul dibanding penyimpanan manual. Dengan cara ini, database mencegah duplikasi yang merugikan.  
@@ -41,7 +39,7 @@ Selain itu, database mendukung pertumbuhan data dalam jumlah besar. Jumlah anggo
 
 ---
 
-## 2. Pengertian Tabel  
+## Pengertian Tabel  
 Tabel adalah struktur dasar dalam database relasional. Data disimpan dalam bentuk baris dan kolom dengan aturan tertentu. Setiap tabel biasanya merepresentasikan satu entitas dunia nyata. Misalnya, tabel anggota merepresentasikan semua pengguna perpustakaan. Tabel memberikan kerangka teratur untuk pengelolaan data.  
 
 Dalam tabel, setiap kolom menyimpan atribut tertentu. Contohnya, kolom “nama” menyimpan nama anggota, sedangkan kolom “alamat” menyimpan alamat anggota. Struktur ini memudahkan pengorganisasian informasi. Dengan pemisahan atribut, data menjadi lebih mudah dianalisis. Hal ini berbeda dengan catatan manual yang bercampur aduk.  
@@ -52,7 +50,7 @@ Tabel juga memungkinkan adanya relasi antar entitas. Tabel peminjaman, misalnya,
 
 ---
 
-## 3. Baris sebagai Record Data  
+## Baris sebagai Record Data  
 Baris dalam tabel disebut record, yaitu kumpulan informasi tentang satu entitas. Dalam tabel anggota, satu baris berisi nama, alamat, dan nomor telepon seorang anggota. Baris ini unik karena memiliki ID khusus. ID tersebut membedakan satu anggota dari yang lain. Setiap baris adalah representasi digital dari entitas nyata.  
 
 Baris memberikan granularitas data yang sangat penting. Misalnya, perpustakaan dapat menelusuri riwayat peminjaman seorang anggota berdasarkan baris transaksi. Tanpa baris, data akan bercampur dan sulit dianalisis. Baris memastikan informasi tetap terstruktur. Hal ini membuat database lebih berguna dalam praktik sehari-hari.  
@@ -63,7 +61,7 @@ Baris juga memungkinkan analisis yang lebih detail. Perpustakaan bisa menghitung
 
 ---
 
-## 4. Kolom sebagai Atribut Data  
+## Kolom sebagai Atribut Data  
 Kolom dalam tabel menyimpan atribut spesifik dari entitas. Misalnya, kolom “nama” menyimpan nama anggota, sementara kolom “alamat” menyimpan alamat anggota. Setiap kolom memiliki tipe data tertentu yang sesuai dengan informasi yang disimpan. Hal ini menjaga konsistensi dan keakuratan data. Kolom adalah penjelas detail dari entitas.  
 
 Kolom membantu dalam pemisahan informasi yang berbeda. Dengan pemisahan, data lebih mudah dianalisis dan diproses. Misalnya, perpustakaan dapat dengan cepat membuat daftar semua nomor telepon anggota dari kolom khusus tersebut. Hal ini tidak mungkin dilakukan jika semua informasi bercampur. Kolom memberikan struktur pada informasi.  
@@ -74,7 +72,7 @@ Selain itu, kolom mempermudah pengembangan laporan. Perpustakaan bisa menampilka
 
 ---
 
-## 5. Relasi Antar Tabel  
+## Relasi Antar Tabel  
 Relasi antar tabel adalah keunggulan utama database relasional. Relasi memungkinkan data dari tabel berbeda saling terhubung. Misalnya, tabel peminjaman menghubungkan tabel anggota dengan tabel buku. Dengan cara ini, sistem dapat mengetahui siapa meminjam buku tertentu. Relasi memberikan gambaran utuh tentang data.  
 
 Relasi biasanya diwujudkan melalui penggunaan foreign key. Foreign key adalah kolom dalam suatu tabel yang merujuk ke primary key tabel lain. Misalnya, `id_anggota` dalam tabel peminjaman merujuk ke tabel anggota. Relasi ini memastikan integritas antar data. Tanpa relasi, data akan terisolasi dan sulit digabungkan.  
@@ -85,7 +83,7 @@ Selain itu, relasi meningkatkan efisiensi pengelolaan data. Informasi anggota ha
 
 ---
 
-## 6. Peran Primary Key  
+## Peran Primary Key  
 Primary key adalah pengenal unik untuk setiap baris dalam tabel. Tanpa primary key, data bisa duplikat dan sulit dibedakan. Misalnya, dua anggota dengan nama sama dapat dibedakan melalui ID unik. Primary key menjamin keunikan dan konsistensi data. Database modern selalu membutuhkan primary key.  
 
 Primary key biasanya berupa angka yang bertambah otomatis. Dalam tabel anggota, kolom `id_anggota` menjadi primary key. Sistem akan otomatis menambahkan nilai baru setiap kali ada anggota baru. Hal ini mencegah duplikasi yang tidak diinginkan. Primary key adalah fondasi integritas data.  
@@ -96,7 +94,7 @@ Primary key juga mempermudah proses pencarian data. Sistem dapat langsung mencar
 
 ---
 
-## 7. Kolaborasi Database, Tabel, Baris, dan Kolom  
+## Kolaborasi Database, Tabel, Baris, dan Kolom  
 Database, tabel, baris, dan kolom adalah komponen yang saling melengkapi. Database menjadi wadah utama, tabel sebagai struktur, baris sebagai entitas, dan kolom sebagai atribut. Semua elemen ini bekerja sama untuk menyusun sistem informasi. Tanpa salah satunya, database tidak dapat berfungsi optimal. Konsep ini mencerminkan integrasi.  
 
 Dalam perpustakaan, database menyimpan semua data penting. Tabel anggota, buku, dan peminjaman menjadi tulang punggung sistem. Baris menyimpan catatan detail, sementara kolom menjelaskan atribut tertentu. Kombinasi ini menghasilkan sistem digital yang lengkap. Setiap elemen memiliki perannya sendiri.  

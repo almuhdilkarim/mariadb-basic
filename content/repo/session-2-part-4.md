@@ -28,7 +28,6 @@ metadata:
 description: "Pelajari perbedaan mendasar antara penyimpanan berbasis file dengan sistem manajemen basis data. Modul ini membahas kelebihan DBMS seperti integritas, pencarian cepat, dan keamanan data dibanding file biasa."
 ---
 
-# Modul 3 Pertemuan 1: DBMS vs File Biasa  
 
 ## 1. Konsep File Biasa  
 File biasa adalah metode penyimpanan data tradisional menggunakan sistem file di komputer (Connolly & Begg, 2015). Data disimpan dalam bentuk teks atau spreadsheet tanpa aturan relasional yang ketat. Dalam perpustakaan, file biasa bisa berupa daftar anggota dalam dokumen Excel. Sistem ini mudah dibuat tetapi tidak efisien ketika data semakin banyak. Kekurangannya akan terlihat saat organisasi berkembang.  

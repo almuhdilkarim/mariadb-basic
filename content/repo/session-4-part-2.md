@@ -28,7 +28,6 @@ metadata:
 description: "Pelajari perintah SELECT * untuk melihat semua isi tabel. Modul ini menekankan pentingnya menampilkan data sebagai cara memverifikasi hasil INSERT."
 ---
 
-# Modul 12 Pertemuan 3: Menampilkan Isi Tabel dengan `SELECT *`
 
 ## 1. Persiapan untuk Menampilkan Data
 

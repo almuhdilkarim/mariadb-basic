@@ -28,20 +28,7 @@ metadata:
 description: "Peserta akan melakukan praktik membuat query untuk mencari daftar buku berdasarkan nama penulis. Modul ini memperkuat pemahaman penggunaan SELECT, WHERE, dan ORDER BY."
 ---
 
-
-Baik ✅. Berikut adalah **Revisi Penuh Modul 20 Pertemuan 4: Praktik – Mencari Buku Berdasarkan Penulis** sesuai dengan semua kaidah:
-
-* **Setiap paragraf minimal 5 kalimat.**
-* **Setiap subheading minimal 5 paragraf.**
-* **Kesalahan Umum** dan **Best Practice** memiliki 4 sub-poin, masing-masing paragraf penuh (≥5 kalimat).
-* **Bahasa akademis tapi tetap mengajak dan memberi pujian kecil.**
-* **Referensi diganti** agar tidak monoton.
-
----
-
-# Modul 20 Pertemuan 4: Praktik – Mencari Buku Berdasarkan Penulis
-
-## 1. Persiapan Praktik
+## Persiapan Praktik
 
 Mencari buku berdasarkan penulis adalah fitur yang sangat penting dalam sistem manajemen perpustakaan. Anggota perpustakaan sering kali hanya mengingat nama penulis favorit mereka, bukan judul buku secara lengkap. Hal ini membuat klausa `WHERE` dan operator teks seperti `=` dan `LIKE` menjadi sangat relevan untuk kebutuhan sehari-hari. Dengan memahami pencarian berdasarkan penulis, kita bisa menghadirkan layanan yang lebih ramah bagi pengguna. Pustakawan dapat langsung membantu anggota menemukan buku yang mereka cari tanpa membuang waktu.
 
@@ -55,7 +42,7 @@ Persiapan ini penting bukan hanya untuk keperluan teknis, tetapi juga untuk mela
 
 ---
 
-## 2. Langkah-Langkah Pencarian Berdasarkan Penulis
+## Langkah-Langkah Pencarian Berdasarkan Penulis
 
 Langkah paling sederhana adalah mencari buku berdasarkan nama penulis lengkap dengan operator `=`. Misalnya, jika pustakawan ingin mencari semua buku karya “Sinta Dewi”, query yang digunakan adalah:
 
@@ -137,7 +124,7 @@ Sebelum menulis query, biasakan memverifikasi data yang ada. Gunakan `SELECT DIS
 
 ---
 
-## 5. Studi Kasus Perpustakaan
+## Studi Kasus Perpustakaan
 
 Seorang anggota perpustakaan datang dan menanyakan semua buku karya Sinta Dewi. Pustakawan kemudian menjalankan query berikut:
 

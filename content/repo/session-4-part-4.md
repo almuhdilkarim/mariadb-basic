@@ -28,9 +28,7 @@ metadata:
 description: "Pelajari cara menghapus data dari tabel menggunakan perintah DELETE. Modul ini membantu memahami bagaimana menjaga kebersihan data dengan menghapus entri yang tidak diperlukan."
 ---
 
-# Modul 14 Pertemuan 3: Menghapus Data dengan `DELETE`
-
-## 1. Persiapan Sebelum Menghapus Data
+## Persiapan Sebelum Menghapus Data
 
 Menghapus data adalah salah satu operasi yang paling berisiko dalam manajemen basis data. Berbeda dengan `INSERT` atau `UPDATE` yang menambahkan atau memperbarui nilai, `DELETE` menghapus baris data secara permanen dari tabel. Jika dijalankan tanpa persiapan, perintah ini dapat menyebabkan kehilangan informasi penting yang tidak bisa dipulihkan. Oleh karena itu, persiapan sebelum menjalankan `DELETE` adalah langkah yang mutlak diperlukan.
 
@@ -44,7 +42,7 @@ Langkah terakhir dalam persiapan adalah membuat cadangan data. Praktik membuat c
 
 ---
 
-## 2. Perintah Dasar `DELETE`
+## Perintah Dasar `DELETE`
 
 Perintah `DELETE` digunakan untuk menghapus satu atau lebih baris dari tabel. Sintaks umumnya adalah:
 
@@ -72,7 +70,7 @@ Dalam praktik profesional, `DELETE` jarang digunakan tanpa pertimbangan. Biasany
 
 ---
 
-## 3. Menghapus Beberapa Baris Sekaligus
+## Menghapus Beberapa Baris Sekaligus
 
 Perintah `DELETE` memungkinkan pengguna menghapus banyak baris sekaligus dengan menggunakan kondisi tertentu. Misalnya, jika perpustakaan ingin menghapus semua buku yang tidak memiliki ISBN (kosong), maka query yang digunakan adalah:
 

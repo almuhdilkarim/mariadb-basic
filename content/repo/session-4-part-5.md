@@ -28,9 +28,7 @@ metadata:
 description: "Peserta akan melakukan latihan langsung menambahkan beberapa data buku ke dalam tabel. Modul ini memperkuat pemahaman INSERT, UPDATE, dan DELETE dengan skenario nyata."
 ---
 
-# Modul 15 Pertemuan 3: Praktik – Isi Data Contoh ke Tabel `buku`
-
-## 1. Persiapan Praktik
+## Persiapan Praktik
 
 Pada modul ini, kita akan berlatih mengisi tabel `buku` dengan data contoh. Praktik ini akan membantu memahami bagaimana `INSERT` digunakan dalam situasi nyata. Anda akan menambahkan beberapa buku sekaligus sehingga tabel `buku` benar-benar memiliki isi yang bisa ditampilkan dan diolah. Dengan begitu, Anda akan melihat hubungan antara teori yang sudah dipelajari dan implementasi praktis. Tujuan dari praktik ini adalah melatih keterampilan dasar yang penting untuk kelanjutan modul-modul berikutnya.
 
@@ -44,7 +42,7 @@ Terakhir, pastikan Anda sudah siap mencoba perintah SQL secara langsung. Jangan 
 
 ---
 
-## 2. Langkah-Langkah Mengisi Data
+## Langkah-Langkah Mengisi Data
 
 Langkah pertama adalah menggunakan perintah `INSERT` untuk menambahkan data ke tabel `buku`. Gunakan sintaks yang sudah dipelajari sebelumnya. Sebagai latihan, mari kita tambahkan tiga buku sekaligus menggunakan multi-row insert. Perintah ini akan sangat membantu jika koleksi yang ditambahkan cukup banyak.
 
@@ -150,7 +148,7 @@ SELECT * FROM buku WHERE judul = 'Data Mining';
 
 ---
 
-## 5. Studi Kasus Perpustakaan
+## Studi Kasus Perpustakaan
 
 Perpustakaan ingin menambahkan koleksi terbaru dalam kategori teknologi. Admin memasukkan lima judul baru sekaligus agar koleksi lebih lengkap.
 

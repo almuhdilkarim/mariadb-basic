@@ -28,22 +28,6 @@ metadata:
 description: "Pelajari INNER JOIN untuk menggabungkan data dari dua tabel yang saling berhubungan. Modul ini memberi contoh bagaimana menampilkan data anggota dengan buku yang dipinjam."
 ---
 
-Baik, saya akan melengkapi modul konseptual INNER JOIN sesuai kaidah dan outline yang Anda minta. Struktur akan mengikuti:
-
-1. **Pendahuluan**
-2. **Definisi INNER JOIN**
-3. **Karakteristik INNER JOIN**
-4. **Kegunaan dalam Sistem Perpustakaan**
-5. **Contoh Penggunaan INNER JOIN** (sudah Anda buat, saya masukkan dalam alur)
-6. **Keterbatasan INNER JOIN** (sudah Anda buat, saya masukkan dalam alur)
-7. **Kesimpulan**
-
-* Referensi berbeda dengan modul sebelumnya.
-
----
-
-# Modul Konseptual – INNER JOIN
-
 ## 1. Pendahuluan
 
 INNER JOIN merupakan salah satu konsep penting dalam SQL yang banyak digunakan pada pengelolaan database relasional. Dalam kehidupan nyata, terutama pada sistem perpustakaan, data seringkali tersebar dalam beberapa tabel. Misalnya, data anggota, buku, dan peminjaman disimpan secara terpisah agar lebih rapi dan efisien. Namun, untuk membuat laporan yang bermakna, pustakawan perlu menggabungkan data tersebut. INNER JOIN hadir sebagai solusi yang memungkinkan integrasi antar tabel dengan cara yang terstruktur.

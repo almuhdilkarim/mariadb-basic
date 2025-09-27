@@ -28,10 +28,6 @@ metadata:
 description: "Peserta mempelajari isolation level seperti READ COMMITTED, REPEATABLE READ, dan SERIALIZABLE. Modul ini menunjukkan bagaimana tingkat isolasi memengaruhi integritas transaksi."
 ---
 
-### Pertemuan 10 — Submodul 3
-
-### Membuat View Kompleks
-
 ---
 
 #### Pendahuluan
@@ -119,12 +115,6 @@ GROUP BY YEAR(p.tanggal_pinjam), MONTH(p.tanggal_pinjam);
 ```
 
 Dengan view ini, pustakawan bisa langsung menampilkan ringkasan bulanan perpustakaan. Kerja luar biasa, kamu sudah bisa membuat view kompleks yang sangat berguna!
-
----
-
-### Pertemuan 10 — Submodul 3
-
-### Membuat View Kompleks
 
 ---
 

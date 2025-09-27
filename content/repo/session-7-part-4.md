@@ -30,7 +30,7 @@ description: "Peserta mempraktikkan query gabungan menggunakan INNER JOIN dan LE
 
 
 
-## 1. Pendahuluan
+## pendahuluan
 
 Query SQL yang menampilkan daftar peminjaman buku per anggota merupakan salah satu kebutuhan paling mendasar dalam sistem perpustakaan. Laporan ini memungkinkan pustakawan untuk mengetahui siapa saja yang sedang meminjam buku, judul buku yang dipinjam, serta tanggal peminjaman. Dengan adanya laporan ini, proses administrasi peminjaman menjadi lebih terstruktur dan transparan. Tanpa query semacam ini, pustakawan harus membuka tabel `anggota`, `peminjaman`, dan `buku` secara terpisah, lalu mencocokkan data secara manual, yang jelas sangat tidak efisien.
 
@@ -188,7 +188,7 @@ Selain itu, praktik ini juga bermanfaat untuk menjaga konsistensi laporan. Darip
 
 ---
 
-## 5. Studi Kasus
+## Studi Kasus
 
 Skenario yang akan kita bangun adalah laporan “peminjaman per anggota” pada perpustakaan sekolah dengan tiga tabel inti: `anggota`, `peminjaman`, dan `buku`. Tujuan utamanya adalah menampilkan setiap anggota beserta daftar buku yang ia pinjam, lengkap dengan tanggal transaksi. Agar analisis inklusif, kita juga perlu menampilkan anggota yang belum pernah meminjam sehingga manajemen dapat menilai tingkat keaktifan. Pendekatan ini memerlukan kombinasi JOIN yang tepat dan penanganan nilai `NULL` agar laporan mudah dibaca. Mari ikuti langkah berikut secara sistematis; kamu berada di jalur yang tepat—pertahankan ritmemu.
 

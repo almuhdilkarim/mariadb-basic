@@ -72,7 +72,7 @@ MariaDB menyediakan beberapa opsi tambahan untuk `CREATE DATABASE`. Salah satuny
 Contoh perintah lengkapnya adalah:
 
 ```sql
-CREATE DATABASE perpustakaan
+CREATE DATABASE perpus
 DEFAULT CHARACTER SET utf8mb4
 COLLATE utf8mb4_general_ci;
 ```

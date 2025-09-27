@@ -51,7 +51,7 @@ CREATE TABLE anggota (
     alamat VARCHAR(150),
     no_telepon VARCHAR(20)
 );
-````
+```
 
 Dengan perintah ini, sistem membuat tabel kosong bernama `anggota`. Tabel sudah siap menampung data baru. Struktur ini akan menjadi kerangka utama dalam manajemen keanggotaan.
 

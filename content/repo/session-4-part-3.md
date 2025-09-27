@@ -28,7 +28,6 @@ metadata:
 description: "Modul ini mengajarkan penggunaan perintah UPDATE untuk mengubah isi data pada tabel. Peserta akan berlatih memperbarui informasi buku dengan kondisi tertentu."
 ---
 
-## Persiapan Sebelum Mengubah Data
 
 Sebelum menggunakan perintah `UPDATE`, penting untuk memahami data yang akan diubah. Tabel `buku` pada database `perpustakaan` sudah berisi koleksi dari modul sebelumnya, sehingga perintah `UPDATE` dapat digunakan untuk memperbaiki kesalahan atau memperbarui informasi. Namun, perubahan yang dilakukan bersifat permanen, artinya nilai lama akan langsung tergantikan oleh nilai baru. Tanpa persiapan yang tepat, ada kemungkinan data yang salah ikut terubah. Oleh sebab itu, tahap persiapan tidak boleh dilewatkan.
 

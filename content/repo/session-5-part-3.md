@@ -28,7 +28,6 @@ metadata:
 description: "Pelajari operator perbandingan seperti =, >, <, dan LIKE. Modul ini memperkenalkan cara menyaring data dengan logika sederhana dalam query SQL."
 ---
 
-## Persiapan Praktik
 
 Operator perbandingan adalah salah satu fitur inti dari SQL yang membuat klausa `WHERE` semakin kuat dan berguna. Tanpa operator ini, penyaringan data hanya terbatas pada kecocokan sederhana. Dengan operator seperti `=`, `>`, `<`, dan `LIKE`, pengguna dapat menyeleksi data secara lebih presisi sesuai dengan kebutuhan analisis. Contohnya, pustakawan bisa mencari buku dengan tahun terbit tertentu atau buku dengan judul yang mengandung kata kunci tertentu. Hal ini memperlihatkan bahwa operator perbandingan bukan hanya fungsi teknis, tetapi juga alat praktis untuk mendukung pengambilan keputusan.
 

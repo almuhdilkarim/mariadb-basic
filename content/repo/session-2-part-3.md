@@ -28,6 +28,7 @@ metadata:
 description: "Kenali alasan mengapa database dibutuhkan untuk mengelola data dalam jumlah besar. Modul ini menjelaskan manfaat database seperti keandalan, keamanan, multi-user, dan konsistensi informasi."
 ---
 
+
 ## Keterbatasan Penyimpanan Manual  
 Penyimpanan manual menggunakan buku catatan atau kartu indeks sering menimbulkan masalah keakuratan data (Connolly & Begg, 2015). Dalam perpustakaan tradisional, catatan peminjaman ditulis tangan sehingga mudah hilang atau rusak. Kesalahan pencatatan menyebabkan buku dianggap hilang meskipun masih dipinjam. Sistem manual juga membuat proses pencarian data menjadi lambat dan tidak efisien. Hal ini menunjukkan kebutuhan akan solusi penyimpanan yang lebih modern.  
 

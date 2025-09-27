@@ -28,7 +28,6 @@ metadata:
 description: "Pelajari cara memilih kolom tertentu dengan perintah SELECT. Modul ini membantu pengguna menampilkan hanya informasi yang relevan dari tabel."
 ---
 
-## Persiapan Praktik
 
 Menampilkan kolom tertentu dari sebuah tabel adalah langkah penting untuk memahami bagaimana data bisa diolah dengan lebih efektif. Pada tahap ini, kita akan berlatih menggunakan tabel `buku` dalam database `perpustakaan` yang sudah kita buat sebelumnya. Perintah `SELECT *` memang bisa menampilkan semua kolom, tetapi sering kali hal itu tidak efisien dan menampilkan terlalu banyak informasi yang tidak relevan. Oleh karena itu, kita perlu memahami bagaimana menampilkan hanya kolom tertentu sesuai kebutuhan. Konsep ini akan menjadi bekal penting dalam analisis data yang lebih kompleks di masa depan.
 

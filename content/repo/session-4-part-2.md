@@ -28,7 +28,6 @@ metadata:
 description: "Pelajari perintah SELECT * untuk melihat semua isi tabel. Modul ini menekankan pentingnya menampilkan data sebagai cara memverifikasi hasil INSERT."
 ---
 
-## Persiapan untuk Menampilkan Data
 
 Sebelum menampilkan data dari sebuah tabel, hal pertama yang perlu dipastikan adalah database aktif yang digunakan sudah benar. Dalam studi kasus perpustakaan, semua data disimpan di dalam database bernama `perpustakaan`. Untuk memastikan hal ini, perintah `SELECT DATABASE();` digunakan. Jika hasil yang muncul bukan `perpustakaan`, maka jalankan perintah `USE perpustakaan;` agar query berikutnya mengarah ke database yang benar. Persiapan ini penting untuk mencegah kesalahan pengambilan data dari database lain.
 

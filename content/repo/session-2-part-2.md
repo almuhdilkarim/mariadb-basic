@@ -28,7 +28,6 @@ description: "Pelajari definisi data, perbedaan data dan informasi, serta contoh
 ---
 
 
-## Definisi Data  
 Data adalah representasi fakta, angka, atau simbol yang disimpan dalam bentuk tertentu sehingga dapat diproses menjadi informasi (Silberschatz, Korth, & Sudarshan, 2020). Dalam konteks sistem informasi, data menjadi pondasi yang memungkinkan organisasi melakukan pencatatan dan analisis. Perpustakaan, misalnya, menyimpan data berupa judul buku, nama penulis, atau tahun terbit yang nantinya digunakan untuk kebutuhan pencarian koleksi. Tanpa data yang terdefinisi, aktivitas peminjaman maupun pengelolaan koleksi akan sulit dilaksanakan. Oleh karena itu, pemahaman dasar mengenai data penting sebelum membahas konsep basis data.  
 
 Data juga dapat dipahami sebagai sumber daya organisasi yang memiliki nilai strategis (Laudon & Laudon, 2018). Sama seperti aset fisik, data harus dikelola agar dapat dimanfaatkan secara optimal. Perpustakaan modern memanfaatkan data untuk mengetahui pola minat pembaca dan tren peminjaman. Dari sini, pengelola dapat menentukan koleksi mana yang perlu diperbarui. Dengan demikian, data bukan hanya catatan, tetapi juga aset yang mendukung pengambilan keputusan.  

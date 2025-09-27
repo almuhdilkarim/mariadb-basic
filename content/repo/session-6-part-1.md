@@ -28,7 +28,6 @@ metadata:
 description: "Modul ini mengajarkan cara membuat tabel anggota dengan kolom nama, alamat, dan ID. Peserta memahami bagaimana mendesain tabel untuk data anggota perpustakaan."
 ---
 
-## Persiapan Praktik
 
 Pembuatan tabel `anggota` merupakan langkah penting dalam membangun sistem database perpustakaan. Jika sebelumnya kita hanya memiliki tabel `buku`, maka kini kita menambahkan tabel yang menyimpan data pengguna atau anggota perpustakaan. Dengan tabel ini, pustakawan dapat mencatat identitas setiap orang yang terdaftar, sehingga layanan seperti peminjaman dan pengembalian buku dapat tercatat secara formal. Keberadaan tabel `anggota` memastikan bahwa sistem tidak hanya mengelola koleksi buku, tetapi juga individu yang berinteraksi dengan koleksi tersebut.
 

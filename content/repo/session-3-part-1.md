@@ -28,6 +28,7 @@ metadata:
 description: "Modul ini mengenalkan perbedaan antara database dan tabel, dengan menjelaskan hubungan kolom dan baris. Peserta memahami bagaimana tabel digunakan untuk menyimpan data terstruktur."
 ---
 
+
 ## Definisi Database  
 Database adalah kumpulan data yang terorganisasi dan dikelola secara sistematis. Berbeda dengan file biasa, database memiliki struktur yang memungkinkan data dapat diakses, diperbarui, dan dianalisis dengan lebih mudah. Dalam konteks perpustakaan, database menyimpan data anggota, koleksi buku, serta transaksi peminjaman. Semua informasi ini saling terhubung sehingga menciptakan sistem yang terpadu. Tanpa database, pengelolaan data berskala besar akan sulit dilakukan.  
 

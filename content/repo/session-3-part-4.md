@@ -258,6 +258,7 @@ FROM peminjaman p
 JOIN anggota a ON p.id_anggota = a.id_anggota
 JOIN buku b ON p.id_buku = b.id_buku;
 ```
+note: syntax diatas tidak running
 
 Dengan snippet ini, sistem perpustakaan sudah memiliki tiga tabel dasar yang saling terhubung. Data anggota, koleksi, dan peminjaman tersimpan dengan rapi. Query terakhir memperlihatkan laporan yang menggabungkan semua informasi. Inilah kekuatan database relasional yang nyata.
 

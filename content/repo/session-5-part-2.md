@@ -28,7 +28,6 @@ metadata:
 description: "Modul ini mengajarkan penggunaan klausa WHERE untuk menyaring data. Peserta akan berlatih membuat kondisi sederhana untuk menemukan data yang sesuai."
 ---
 
-## Persiapan Praktik
 
 Klausa `WHERE` dalam SQL adalah salah satu fitur terpenting yang memungkinkan pengguna untuk menyaring data berdasarkan kondisi tertentu. Jika perintah `SELECT` digunakan tanpa kondisi, maka semua data dalam tabel akan ditampilkan. Namun, dalam praktik nyata, pengguna hampir selalu membutuhkan informasi yang lebih spesifik. Misalnya, seorang pustakawan ingin mengetahui buku yang terbit pada tahun tertentu atau yang ditulis oleh penulis tertentu. Tanpa filter, informasi ini akan sulit ditemukan di antara ratusan bahkan ribuan baris data.
 

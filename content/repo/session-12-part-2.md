@@ -28,9 +28,6 @@ metadata:
 description: "Pelajari bagaimana memberikan hak akses SELECT agar user hanya bisa membaca data. Modul ini memperkenalkan konsep otorisasi sederhana pada MariaDB."
 ---
 
-
-## Pertemuan 11 – Keamanan Sederhana (Praktikal, Modul 2)
-
 ### Pendahuluan
 
 Keamanan database tidak hanya berhenti pada pemberian hak akses, tetapi juga mencakup bagaimana izin tersebut dapat dicabut kembali ketika sudah tidak relevan. Dalam sistem perpustakaan, terkadang ada anggota atau petugas yang sudah tidak aktif, sehingga hak akses mereka harus dicabut untuk mencegah penyalahgunaan. MariaDB menyediakan perintah `REVOKE` yang berfungsi membatalkan izin tertentu dari user. Dengan demikian, administrator memiliki kendali penuh terhadap siapa saja yang dapat mengakses data. Hal ini memastikan bahwa database selalu dalam kondisi aman dan terkontrol.

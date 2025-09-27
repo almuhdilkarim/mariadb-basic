@@ -29,7 +29,7 @@ description: "Modul ini menjelaskan konsep primary key sebagai pengenal unik set
 ---
 
 
-## 1. Pendahuluan
+## Pendahuluan
 
 Primary key adalah elemen paling mendasar dalam desain tabel relasional karena memberikan identitas unik untuk setiap baris data. Tanpa primary key, risiko duplikasi data meningkat, dan sistem tidak dapat menjamin integritas informasi. Dalam database perpustakaan, primary key dipakai untuk membedakan anggota, buku, atau transaksi peminjaman, meskipun beberapa di antaranya mungkin memiliki nama yang sama. Dengan adanya primary key, setiap entitas dapat diidentifikasi dengan jelas. Hal ini membuat pengelolaan data menjadi lebih aman dan akurat.
 
@@ -43,7 +43,7 @@ Pemahaman tentang primary key membuat peserta kursus lebih siap membangun databa
 
 ---
 
-## 2. Syarat Primary Key
+## Syarat Primary Key
 
 Syarat pertama primary key adalah harus **unik**. Keunikan berarti setiap baris memiliki nilai berbeda pada kolom primary key. Jika ada dua baris dengan nilai yang sama, sistem tidak dapat membedakan entitas tersebut. Misalnya, jika dua anggota memiliki `id_anggota = 1`, sistem tidak tahu siapa yang sebenarnya melakukan peminjaman. Dengan memastikan keunikan, database mampu menjaga konsistensi dan kejelasan data.
 
@@ -57,7 +57,7 @@ Syarat kelima adalah **mendukung relasi antar tabel**. Primary key harus dapat d
 
 ---
 
-## 3. Kesalahan Umum
+## Kesalahan Umum
 
 ### 3.1 Tidak Menentukan Primary Key
 
@@ -295,7 +295,7 @@ Dengan demikian, composite key adalah praktik terbaik yang sebaiknya diterapkan 
 
 ---
 
-## 5. Studi Kasus Perpustakaan
+## Studi Kasus Perpustakaan
 
 Perpustakaan sekolah ingin memastikan setiap anggota memiliki identitas unik agar sistem dapat berfungsi dengan baik. Mereka merancang tabel `anggota` dengan kolom `id_anggota` sebagai primary key. Kolom ini dipilih karena stabil, tidak berubah, dan mudah dihubungkan dengan tabel lain. Untuk membuatnya lebih efisien, kolom tersebut diberi atribut `AUTO_INCREMENT`. Dengan desain ini, setiap anggota baru secara otomatis mendapat ID yang berbeda, tanpa perlu diisi manual.
 

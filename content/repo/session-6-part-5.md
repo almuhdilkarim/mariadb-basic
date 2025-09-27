@@ -28,11 +28,6 @@ metadata:
 description: "Peserta mempraktikkan relasi antara tabel anggota dan peminjaman. Modul ini menguatkan pemahaman primary key dan foreign key melalui contoh nyata dalam sistem perpustakaan."
 ---
 
-Baik, berikut adalah **Modul 25 Pertemuan 5: Praktik – Hubungkan `anggota` dan `peminjaman`** dalam versi gabungan penuh sesuai kaidah yang telah kita tetapkan:
-
----
-
-# Modul 25 Pertemuan 5: Praktik – Hubungkan `anggota` dan `peminjaman`
 
 ## 1. Pendahuluan
 

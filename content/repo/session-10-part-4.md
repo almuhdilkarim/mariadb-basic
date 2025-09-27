@@ -103,16 +103,11 @@ GROUP BY id_anggota;
 ```
 
 Laporan ini memberikan gambaran lengkap aktivitas anggota dalam bulan tersebut. Kerja luar biasa, kamu sudah bisa membuat laporan multifungsi!
-
-### Pertemuan 9 — Submodul 4
-
-### Praktik: Laporan Pinjaman Bulan Tertentu
-
 ---
 
 #### Kesalahan Umum
 
-##### 1) Hanya Memakai `MONTH()` tanpa Membatasi Tahun
+##### 1. Hanya Memakai `MONTH()` tanpa Membatasi Tahun
 
 Contoh salah:
 
@@ -129,7 +124,7 @@ Penggunaan filter bulan saja juga memengaruhi validitas metrik turunan seperti t
 
 ---
 
-##### 2) Menggunakan Fungsi di Kolom Terindeks pada `WHERE` (Tidak SARGable)
+##### 2. Menggunakan Fungsi di Kolom Terindeks pada `WHERE` (Tidak SARGable)
 
 Contoh salah (meski hasilnya benar, performanya buruk):
 
@@ -147,7 +142,7 @@ Masalah ini sering tidak disadari karena hasil fungsional terlihat benar di ling
 
 ---
 
-##### 3) Membandingkan Tanggal Menggunakan String yang Tidak Standar
+##### 3. Membandingkan Tanggal Menggunakan String yang Tidak Standar
 
 Contoh salah:
 
@@ -164,7 +159,7 @@ Kesalahan ini juga menyulitkan pemeliharaan karena perubahan format menuntut per
 
 ---
 
-##### 4) Duplikasi Hitungan karena `JOIN` yang Memperbanyak Baris
+##### 4. Duplikasi Hitungan karena `JOIN` yang Memperbanyak Baris
 
 Contoh salah:
 
@@ -183,7 +178,7 @@ Masalah ini juga mengaburkan analisis per judul atau per anggota karena bobot me
 
 ---
 
-##### 5) Salah Memilih Fungsi Waktu: `NOW()` vs rentang tanggal (zona waktu)
+##### 5. Salah Memilih Fungsi Waktu: `NOW()` vs rentang tanggal (zona waktu)
 
 Contoh salah:
 
@@ -202,7 +197,7 @@ Bila diperlukan pencatatan lokal, simpan offset atau gunakan kolom tersendiri ha
 
 #### Best Practice
 
-##### 1) Gunakan Predikat Rentang yang Sargable (memakai indeks)
+##### 1. Gunakan Predikat Rentang yang Sargable (memakai indeks)
 
 Contoh benar:
 
@@ -220,7 +215,7 @@ Selain kinerja, pola rentang memudahkan pengujian tepi (edge cases) seperti tran
 
 ---
 
-##### 2) Amankan Granularitas Hitungan saat `JOIN`
+##### 2. Amankan Granularitas Hitungan saat `JOIN`
 
 Contoh benar:
 
@@ -241,7 +236,7 @@ Desain ini fleksibel untuk ditambah metrik lain tanpa mengubah definisi dasar. K
 
 ---
 
-##### 3) Parametrikan Periode agar Reusable
+##### 3. Parametrikan Periode agar Reusable
 
 Contoh benar (gaya generik, parameter dari aplikasi/CLI):
 
@@ -260,7 +255,7 @@ Dengan pola ini, perpustakaan dapat menjadwalkan laporan otomatis untuk berbagai
 
 ---
 
-##### 4) Sediakan Indeks/Generated Column untuk Agregasi Periodik (opsional)
+##### 4. Sediakan Indeks/Generated Column untuk Agregasi Periodik (opsional)
 
 Contoh benar (MySQL/MariaDB):
 
@@ -284,7 +279,7 @@ Strategi ini kompatibel dengan arsitektur partisi bila Anda membutuhkannya di ma
 
 ---
 
-##### 5) Kelola Zona Waktu dan Tipe Tanggal Secara Konsisten
+##### 5. Kelola Zona Waktu dan Tipe Tanggal Secara Konsisten
 
 Contoh benar:
 

@@ -32,7 +32,7 @@ description: "Pelajari empat prinsip utama ACID: Atomicity, Consistency, Isolati
 
 ---
 
-#### 1. Pengantar Konsep View
+#### Pengantar Konsep View
 
 View dalam SQL adalah objek database yang berbentuk tabel virtual dan didefinisikan berdasarkan query tertentu. Meskipun tampak seperti tabel biasa, view sebenarnya tidak menyimpan data secara fisik, melainkan menampilkan hasil query yang tersimpan. Dalam sistem perpustakaan, view sangat bermanfaat untuk menyajikan data yang kompleks dengan cara sederhana. Misalnya, pustakawan dapat membuat view khusus yang hanya menampilkan daftar pinjaman aktif, tanpa harus menulis query panjang berulang kali. Dengan demikian, view membantu menyederhanakan akses data dan meningkatkan efisiensi kerja【Elmasri & Navathe, 2016】.
 
@@ -46,7 +46,7 @@ Secara keseluruhan, view adalah salah satu fitur penting dalam SQL yang memaduka
 
 ---
 
-#### 2. Definisi Teknis View
+#### Definisi Teknis View
 
 Secara teknis, view adalah hasil query SELECT yang disimpan dalam database dengan nama tertentu. View dapat dipanggil seperti tabel biasa, tetapi sebenarnya sistem hanya mengeksekusi query yang mendefinisikan view tersebut. Sebagai contoh, view dapat dibuat untuk menampilkan gabungan antara tabel `peminjaman` dan `anggota`. Dengan cara ini, pustakawan cukup memanggil view tanpa perlu menulis query join berulang kali. View menyederhanakan kompleksitas query SQL yang panjang【Elmasri & Navathe, 2016】.
 
@@ -71,7 +71,7 @@ Dari sisi performa, view bisa membantu mengurangi waktu penulisan query, tetapi 
 
 ---
 
-#### 3. Fungsi View dalam Konteks Perpustakaan
+#### Fungsi View dalam Konteks Perpustakaan
 
 View memiliki banyak fungsi praktis yang relevan dengan sistem perpustakaan. Pertama, view dapat digunakan untuk membuat laporan standar, seperti daftar keterlambatan bulanan. Dengan view, pustakawan cukup memanggil laporan tanpa menulis ulang query panjang. Hal ini sangat membantu terutama bagi pustakawan yang tidak terbiasa dengan SQL. Dengan demikian, view meningkatkan aksesibilitas data【Elmasri & Navathe, 2016】.
 
@@ -85,7 +85,7 @@ Kelima, view dapat digunakan untuk mengurangi kompleksitas query bagi pengguna n
 
 ---
 
-#### 4. Kelebihan Penggunaan View
+#### Kelebihan Penggunaan View
 
 View memiliki banyak kelebihan yang membuatnya sangat berguna dalam sistem perpustakaan. Pertama, view mempermudah pengguna yang kurang familiar dengan SQL. Pustakawan cukup memanggil view untuk mendapatkan laporan standar, tanpa harus memahami query join yang rumit. Hal ini meningkatkan aksesibilitas data bagi seluruh staf. Dengan begitu, view berperan sebagai antarmuka sederhana ke dalam database【Elmasri & Navathe, 2016】.
 
@@ -99,7 +99,7 @@ Kelebihan terakhir adalah efisiensi kerja. View mengurangi kebutuhan untuk menul
 
 ---
 
-#### 5. Kekurangan dan Batasan View
+#### kekurangan dan Batasan View
 
 Meskipun memiliki banyak kelebihan, view juga memiliki sejumlah kekurangan yang perlu diperhatikan. Pertama, view tidak selalu meningkatkan performa. Karena view hanyalah query tersimpan, performa tetap tergantung pada kompleksitas query asli. Jika query terlalu berat, view juga akan berjalan lambat. Oleh karena itu, pustakawan tidak boleh menganggap view sebagai solusi otomatis untuk masalah performa【Elmasri & Navathe, 2016】.
 
@@ -113,7 +113,7 @@ Kekurangan terakhir adalah keterbatasan dalam skenario analisis kompleks. Bebera
 
 ---
 
-#### 6. Contoh Implementasi View di Perpustakaan
+#### Contoh Implementasi View di Perpustakaan
 
 Mari kita lihat beberapa contoh implementasi view dalam sistem perpustakaan. Pertama, view untuk menampilkan daftar pinjaman aktif:
 
@@ -182,7 +182,7 @@ Dengan view ini, pustakawan dapat segera mengetahui koleksi yang paling diminati
 
 ---
 
-#### 7. Tantangan dan Solusi dalam Penggunaan View
+#### Tantangan dan Solusi dalam Penggunaan View
 
 Tantangan pertama adalah masalah performa. View yang kompleks dapat memperlambat query karena basisnya tetap mengeksekusi query asli. Solusinya adalah menggunakan *indexed view* atau materialized view jika DBMS mendukungnya. Dengan cara ini, hasil view disimpan sementara untuk mempercepat akses. Praktik ini sangat berguna untuk laporan rutin【Elmasri & Navathe, 2016】.
 

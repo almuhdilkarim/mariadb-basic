@@ -32,6 +32,7 @@ description: "Peserta mempraktikkan query menggunakan COUNT dan GROUP BY untuk m
 
 ---
 
+
 #### Pendahuluan
 
 Laporan jumlah pinjaman per anggota merupakan salah satu analisis paling penting dalam sistem perpustakaan. Dengan laporan ini, pustakawan dapat mengetahui seberapa aktif setiap anggota dalam meminjam buku. Informasi ini dapat digunakan untuk berbagai tujuan, seperti membuat program penghargaan anggota aktif atau mengevaluasi layanan perpustakaan. Analisis berbasis data ini jauh lebih akurat dibandingkan dengan perkiraan manual. Literatur menyebutkan bahwa pelaporan berbasis data membantu meningkatkan layanan perpustakaan secara berkelanjutan【Rowley & Hartley, 2017】.

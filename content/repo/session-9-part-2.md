@@ -28,11 +28,6 @@ metadata:
 description: "Modul ini mengenalkan konsep normalisasi sebagai metode merapikan struktur tabel. Peserta belajar mengurangi redundansi data untuk efisiensi dan konsistensi."
 ---
 
-
-### Pertemuan 8 — Submodul 2
-
-**Normalisasi: Pengantar Konsep**
-
 ---
 
 #### Pendahuluan

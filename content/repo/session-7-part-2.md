@@ -28,12 +28,7 @@ metadata:
 description: "Modul ini menjelaskan LEFT JOIN untuk menampilkan semua data dari tabel utama meski tidak memiliki pasangan di tabel lain. Cocok untuk laporan data yang tidak lengkap."
 ---
 
-
-# Modul 27 Pertemuan 6: LEFT JOIN
-
----
-
-## 1. Pendahuluan
+## Pendahuluan
 
 LEFT JOIN adalah salah satu variasi JOIN dalam SQL yang memungkinkan kita menampilkan semua baris dari tabel sebelah kiri (left table) meskipun tidak ada pasangan data yang cocok di tabel sebelah kanan (right table). Konsep ini sangat penting untuk menampilkan data secara lebih lengkap, terutama ketika kita ingin memastikan bahwa semua entitas utama tetap terlihat walaupun tidak memiliki relasi. Dalam konteks perpustakaan, LEFT JOIN berguna untuk menampilkan semua anggota, termasuk yang belum pernah meminjam buku. Dengan cara ini, pustakawan tidak hanya mengetahui siapa yang aktif meminjam, tetapi juga siapa yang belum pernah melakukan transaksi.
 
@@ -47,7 +42,7 @@ Akhirnya, memahami LEFT JOIN menjadi keterampilan yang wajib bagi calon administ
 
 ---
 
-## 2. Definisi LEFT JOIN
+## Definisi LEFT JOIN
 
 LEFT JOIN adalah instruksi SQL yang digunakan untuk menggabungkan dua tabel dengan cara menampilkan semua baris dari tabel kiri, dan hanya baris yang cocok dari tabel kanan. Jika tidak ada pasangan data di tabel kanan, sistem akan mengisi kolom tersebut dengan nilai `NULL`. Sintaks dasar LEFT JOIN adalah:
 
@@ -68,7 +63,7 @@ Secara umum, definisi LEFT JOIN tidak hanya terbatas pada aspek teknis, tetapi j
 
 ---
 
-## 3. Karakteristik LEFT JOIN
+## Karakteristik LEFT JOIN
 
 Karakteristik pertama LEFT JOIN adalah sifatnya yang inklusif terhadap tabel kiri. Semua baris dari tabel kiri akan ditampilkan dalam hasil query, baik memiliki pasangan data di tabel kanan maupun tidak. Hal ini menjadikan LEFT JOIN pilihan tepat ketika kita ingin melihat semua entitas utama tanpa terkecuali. Dalam kasus perpustakaan, setiap anggota akan muncul di laporan meskipun tidak ada catatan peminjaman yang terkait.
 
@@ -82,7 +77,7 @@ Karakteristik kelima adalah keterbatasan performa pada database besar. Karena ha
 
 ---
 
-## 4. Kegunaan LEFT JOIN dalam Sistem Perpustakaan
+## Kegunaan LEFT JOIN dalam Sistem Perpustakaan
 
 LEFT JOIN memiliki banyak kegunaan praktis dalam pengelolaan data perpustakaan. Salah satu kegunaan utamanya adalah untuk menampilkan daftar lengkap anggota beserta status peminjamannya. Dengan query LEFT JOIN, pustakawan dapat melihat siapa saja yang pernah meminjam dan siapa yang belum. Informasi ini sangat berguna untuk evaluasi keaktifan anggota.
 
@@ -96,7 +91,7 @@ Terakhir, LEFT JOIN mendukung transparansi dalam laporan manajerial. Dengan mena
 
 ---
 
-## 5. Contoh Penggunaan LEFT JOIN
+## Contoh Penggunaan LEFT JOIN
 
 Contoh dasar penggunaan LEFT JOIN adalah menampilkan semua anggota beserta informasi peminjamannya. Query berikut memperlihatkan bagaimana LEFT JOIN bekerja:
 

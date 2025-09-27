@@ -28,8 +28,6 @@ metadata:
 description: "Pelajari cara menghapus data dari tabel menggunakan perintah DELETE. Modul ini membantu memahami bagaimana menjaga kebersihan data dengan menghapus entri yang tidak diperlukan."
 ---
 
-# Modul 14 Pertemuan 3: Menghapus Data dengan `DELETE`
-
 ## 1. Persiapan Sebelum Menghapus Data
 
 Menghapus data adalah salah satu operasi yang paling berisiko dalam manajemen basis data. Berbeda dengan `INSERT` atau `UPDATE` yang menambahkan atau memperbarui nilai, `DELETE` menghapus baris data secara permanen dari tabel. Jika dijalankan tanpa persiapan, perintah ini dapat menyebabkan kehilangan informasi penting yang tidak bisa dipulihkan. Oleh karena itu, persiapan sebelum menjalankan `DELETE` adalah langkah yang mutlak diperlukan.

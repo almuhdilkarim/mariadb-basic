@@ -28,6 +28,9 @@ metadata:
 description: "Pelajari INNER JOIN untuk menggabungkan data dari dua tabel yang saling berhubungan. Modul ini memberi contoh bagaimana menampilkan data anggota dengan buku yang dipinjam."
 ---
 
+
+note : tidak ada penjelasan, langsung contoh
+
 ## 5. Contoh Penggunaan INNER JOIN
 
 Contoh paling sederhana penggunaan INNER JOIN dalam sistem perpustakaan adalah menggabungkan tabel `anggota` dengan tabel `peminjaman` untuk menampilkan nama anggota dan buku yang dipinjam. Query ini membantu pustakawan mengetahui siapa saja yang sedang meminjam buku pada waktu tertentu. Hasilnya akan menampilkan hanya anggota yang memiliki catatan peminjaman, sehingga tidak ada data kosong yang ikut muncul. Hal ini menunjukkan sifat selektif INNER JOIN dalam memastikan laporan tetap relevan. Tanpa INNER JOIN, pustakawan harus memeriksa dua tabel secara manual yang tentu tidak efisien.

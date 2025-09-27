@@ -196,4 +196,4 @@ Modul ini membahas cara menambahkan data ke dalam tabel menggunakan perintah `IN
 * Elmasri, R., & Navathe, S. B. (2016). *Fundamentals of Database Systems*. Pearson.
 * Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). *Database System Concepts*. McGraw-Hill.
 
-Apakah modul ini sudah sesuai kaidah (semua paragraf minimal 5 kalimat), atau mau saya buat **versi lebih panjang untuk setiap subheading** agar lebih konsisten dengan modul konseptual sebelumnya?
+

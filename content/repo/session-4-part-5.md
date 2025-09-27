@@ -28,8 +28,6 @@ metadata:
 description: "Peserta akan melakukan latihan langsung menambahkan beberapa data buku ke dalam tabel. Modul ini memperkuat pemahaman INSERT, UPDATE, dan DELETE dengan skenario nyata."
 ---
 
-# Modul 15 Pertemuan 3: Praktik – Isi Data Contoh ke Tabel `buku`
-
 ## 1. Persiapan Praktik
 
 Pada modul ini, kita akan berlatih mengisi tabel `buku` dengan data contoh. Praktik ini akan membantu memahami bagaimana `INSERT` digunakan dalam situasi nyata. Anda akan menambahkan beberapa buku sekaligus sehingga tabel `buku` benar-benar memiliki isi yang bisa ditampilkan dan diolah. Dengan begitu, Anda akan melihat hubungan antara teori yang sudah dipelajari dan implementasi praktis. Tujuan dari praktik ini adalah melatih keterampilan dasar yang penting untuk kelanjutan modul-modul berikutnya.

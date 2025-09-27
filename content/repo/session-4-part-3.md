@@ -28,20 +28,6 @@ metadata:
 description: "Modul ini mengajarkan penggunaan perintah UPDATE untuk mengubah isi data pada tabel. Peserta akan berlatih memperbarui informasi buku dengan kondisi tertentu."
 ---
 
-Baik, saya akan **revisi penuh Modul 13 Pertemuan 3: Mengubah Data dengan `UPDATE`**.
-Semua bagian akan saya perpanjang sehingga:
-
-* **Setiap paragraf minimal 5 kalimat**.
-* **Setiap subheading minimal 5 paragraf**, sehingga lebih konsisten dengan kaidah.
-* Bagian **Kesalahan Umum** dan **Best Practice** akan diperluas: setiap poin penjelasan berbentuk paragraf penuh (5 kalimat), lalu dilengkapi contoh kode SQL.
-* **Studi kasus, kesimpulan, dan referensi** tetap dipertahankan.
-
-Ini modul hasil revisi panjang:
-
----
-
-# Modul 13 Pertemuan 3: Mengubah Data dengan `UPDATE`
-
 ## 1. Persiapan Sebelum Mengubah Data
 
 Sebelum menggunakan perintah `UPDATE`, penting untuk memahami data yang akan diubah. Tabel `buku` pada database `perpustakaan` sudah berisi koleksi dari modul sebelumnya, sehingga perintah `UPDATE` dapat digunakan untuk memperbaiki kesalahan atau memperbarui informasi. Namun, perubahan yang dilakukan bersifat permanen, artinya nilai lama akan langsung tergantikan oleh nilai baru. Tanpa persiapan yang tepat, ada kemungkinan data yang salah ikut terubah. Oleh sebab itu, tahap persiapan tidak boleh dilewatkan.

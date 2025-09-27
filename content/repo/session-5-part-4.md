@@ -28,18 +28,6 @@ metadata:
 description: "Modul ini mengajarkan cara mengurutkan hasil query dengan ORDER BY. Peserta belajar menampilkan data berdasarkan urutan abjad atau angka sesuai kebutuhan."
 ---
 
-Baik ✅. Berikut saya tuliskan **Revisi Penuh Modul 19 Pertemuan 4: Mengurutkan Data dengan `ORDER BY`** sesuai kaidah yang benar-benar konsisten:
-
-* **Setiap subheading minimal 5 paragraf.**
-* **Setiap paragraf minimal 5 kalimat.**
-* **Kesalahan Umum** dan **Best Practice** memiliki 4 sub-poin, masing-masing berupa paragraf penuh (≥5 kalimat).
-* Narasi akademis, sistematis, terhubung, dengan **studi kasus perpustakaan**.
-* Ada **kesimpulan dan referensi** di akhir.
-
----
-
-# Modul 19 Pertemuan 4: Mengurutkan Data dengan `ORDER BY`
-
 ## 1. Persiapan Praktik
 
 Mengurutkan data adalah kebutuhan mendasar dalam pengolahan informasi. Tanpa pengurutan, hasil query SQL hanya akan menampilkan data sesuai urutan fisik di tabel, yang tidak selalu sesuai dengan kebutuhan analisis atau laporan. SQL menyediakan klausa `ORDER BY` untuk memberikan kontrol penuh atas urutan hasil. Dengan klausa ini, pengguna dapat menampilkan data berdasarkan urutan abjad, kronologis, atau bahkan berdasarkan kriteria khusus yang ditentukan. Dalam konteks perpustakaan, kemampuan ini penting karena pustakawan sering kali membutuhkan daftar buku dalam urutan tertentu agar lebih mudah dipahami oleh anggota.

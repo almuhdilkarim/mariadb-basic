@@ -38,12 +38,7 @@ Oke 👍. Mari saya revisi ulang **Submodul Praktikal 1: Fungsi COUNT** dengan m
 * Konteks studi kasus **perpustakaan**.
 * Sertakan **contoh query SQL** yang relevan.
 * Gunakan **sitasi ilmiah** dari buku/jurnal terpercaya.
-
 ---
-
-# Pertemuan 7 — Ringkasan Data
-
-## Submodul Praktikal 1: Menggunakan Fungsi COUNT untuk Menghitung Data
 
 ### 1. Tujuan Praktik
 

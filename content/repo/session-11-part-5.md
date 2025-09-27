@@ -29,9 +29,6 @@ description: "Peserta mempraktikkan transaksi peminjaman buku menggunakan perint
 ---
 
 
-
-### Pertemuan 10 — Submodul 5
-
 ### Latihan Mandiri View (Laporan Perpustakaan)
 
 ---

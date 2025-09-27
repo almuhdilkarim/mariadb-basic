@@ -28,20 +28,6 @@ metadata:
 description: "Peserta berlatih membuat tabel peminjaman yang menyimpan informasi tanggal pinjam dan kembali. Modul ini menekankan pentingnya tabel relasional dalam menghubungkan data."
 ---
 
-Dipahami ✅. Mulai dari modul ini dan seterusnya, saya akan **selalu menambahkan snippet kode (SQL command) pada setiap sub-poin Kesalahan Umum dan Best Practice**, agar konsisten dengan kaidah:
-
-* **Setiap paragraf minimal 5 kalimat.**
-* **Setiap subheading minimal 5 paragraf.**
-* **Kesalahan Umum** → 4 sub-poin, masing-masing ≥5 kalimat **+ contoh kode salah/kurang tepat**.
-* **Best Practice** → 4 sub-poin, masing-masing ≥5 kalimat **+ contoh kode benar/rekomendasi**.
-* **Studi kasus berbasis perpustakaan.**
-* **Kesimpulan & referensi wajib.**
-
-Berikut adalah **Revisi Penuh Final Modul 21: Membuat Tabel `anggota`** yang sudah saya lengkapi dengan **snippet kode di Kesalahan Umum dan Best Practice**.
-
----
-
-# Modul 21 Pertemuan 5: Membuat Tabel `anggota`
 
 ## 1. Persiapan Praktik
 

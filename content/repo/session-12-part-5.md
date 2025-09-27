@@ -29,8 +29,6 @@ description: "Peserta mempraktikkan pembuatan role admin dan anggota dengan hak 
 ---
 
 
-## Sub Modul 5 – Praktik: Role `admin` dan `anggota`
-
 ### Pendahuluan
 
 Penggunaan **role** dalam MariaDB merupakan langkah penting untuk menyederhanakan pengelolaan hak akses. Daripada memberi izin ke setiap user secara manual, kita dapat membuat role dengan kumpulan hak tertentu, lalu menugaskannya ke banyak user. Dalam konteks perpustakaan, kita bisa membuat role `admin` dengan hak penuh dan role `anggota` dengan hak terbatas. Dengan pendekatan ini, pengelolaan keamanan menjadi lebih efisien dan konsisten.

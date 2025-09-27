@@ -29,7 +29,6 @@ description: "Pelajari perbedaan mendasar antara penyimpanan berbasis file denga
 ---
 
 
-## Konsep File Biasa  
 File biasa adalah metode penyimpanan data tradisional menggunakan sistem file di komputer (Connolly & Begg, 2015). Data disimpan dalam bentuk teks atau spreadsheet tanpa aturan relasional yang ketat. Dalam perpustakaan, file biasa bisa berupa daftar anggota dalam dokumen Excel. Sistem ini mudah dibuat tetapi tidak efisien ketika data semakin banyak. Kekurangannya akan terlihat saat organisasi berkembang.  
 
 Menurut Elmasri & Navathe (2016), file biasa tidak memiliki struktur kompleks seperti tabel dan relasi. Semua informasi disimpan dalam bentuk datar sehingga rawan redundansi. Misalnya, alamat anggota ditulis berulang kali pada setiap catatan peminjaman. Hal ini mengakibatkan pemborosan ruang dan potensi kesalahan. File biasa menjadi sulit dipelihara dalam jangka panjang.  

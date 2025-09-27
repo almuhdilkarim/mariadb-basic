@@ -28,7 +28,7 @@ metadata:
 description: "Pelajari foreign key sebagai kunci penghubung antar tabel. Modul ini membantu memahami bagaimana relasi antar data dibangun untuk menjaga konsistensi informasi."
 ---
 
-## 1. Pendahuluan
+## Pendahuluan
 
 Foreign key adalah konsep penting dalam sistem manajemen basis data relasional yang berfungsi untuk menghubungkan dua tabel atau lebih secara formal. Jika primary key memberikan identitas unik pada sebuah tabel, maka foreign key berperan sebagai penghubung yang mengaitkan tabel satu dengan tabel lainnya. Dalam praktik perpustakaan, foreign key memastikan bahwa transaksi peminjaman buku hanya dapat dilakukan oleh anggota yang valid dan terhadap buku yang memang tercatat dalam koleksi. Tanpa foreign key, integritas relasi antar data akan rapuh dan berisiko menimbulkan inkonsistensi.
 
@@ -40,7 +40,7 @@ Selain menjaga konsistensi, foreign key juga memudahkan dalam pembuatan laporan 
 
 Dengan memahami konsep foreign key, peserta kursus dapat merancang database yang lebih terstruktur dan terjamin integritasnya. Modul ini akan menjelaskan syarat-syarat foreign key, kesalahan umum yang sering terjadi dalam penerapannya, praktik terbaik untuk menjaga konsistensi data, serta studi kasus dalam sistem perpustakaan. Tujuannya adalah agar peserta tidak hanya mengenal foreign key secara teoretis, tetapi juga dapat menggunakannya secara efektif dalam praktik nyata.
 
-## 2. Syarat Foreign Key
+## Syarat Foreign Key
 
 Syarat pertama foreign key adalah kolom yang dijadikan referensi harus merujuk ke primary key atau setidaknya ke kolom dengan constraint unik di tabel lain. Aturan ini menjamin bahwa nilai yang dirujuk selalu unik dan valid. Sebagai contoh, `id_anggota` dalam tabel `peminjaman` harus mengacu pada `id_anggota` yang merupakan primary key di tabel `anggota`. Dengan cara ini, setiap peminjaman pasti terkait dengan satu anggota yang sah, sehingga data tidak pernah menggantung tanpa referensi yang jelas.
 
@@ -286,7 +286,7 @@ Dengan menggunakan foreign key hanya pada atribut yang relevan, sistem database 
 ---
 
 
-## 5. Studi Kasus Perpustakaan
+## Studi Kasus Perpustakaan
 
 Perpustakaan sekolah ingin memastikan bahwa setiap transaksi peminjaman buku hanya dapat dilakukan oleh anggota yang sah. Untuk itu, mereka membuat tabel `anggota` dengan `id_anggota` sebagai primary key dan tabel `peminjaman` dengan foreign key `id_anggota`. Relasi ini menjamin bahwa setiap baris pada tabel `peminjaman` selalu merujuk ke anggota yang ada di tabel `anggota`. Dengan demikian, tidak ada transaksi yang tercatat tanpa identitas peminjam yang jelas.
 

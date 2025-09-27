@@ -28,7 +28,6 @@ metadata:
 description: "Pelajari cara memilih kolom tertentu dengan perintah SELECT. Modul ini membantu pengguna menampilkan hanya informasi yang relevan dari tabel."
 ---
 
-## 1. Persiapan Praktik
 
 Menampilkan kolom tertentu dari sebuah tabel adalah langkah penting untuk memahami bagaimana data bisa diolah dengan lebih efektif. Pada tahap ini, kita akan berlatih menggunakan tabel `buku` dalam database `perpustakaan` yang sudah kita buat sebelumnya. Perintah `SELECT *` memang bisa menampilkan semua kolom, tetapi sering kali hal itu tidak efisien dan menampilkan terlalu banyak informasi yang tidak relevan. Oleh karena itu, kita perlu memahami bagaimana menampilkan hanya kolom tertentu sesuai kebutuhan. Konsep ini akan menjadi bekal penting dalam analisis data yang lebih kompleks di masa depan.
 
@@ -42,7 +41,7 @@ Terakhir, buatlah pertanyaan sederhana sebelum menulis query. Contoh pertanyaan 
 
 ---
 
-## 2. Perintah Dasar Menampilkan Kolom Tertentu
+## Perintah Dasar Menampilkan Kolom Tertentu
 
 Perintah dasar untuk menampilkan kolom tertentu sangat sederhana, tetapi memiliki kegunaan yang luas. Sintaksnya adalah `SELECT kolom1, kolom2 FROM nama_tabel;`. Dengan menuliskan kolom secara eksplisit, sistem hanya akan menampilkan data dari kolom tersebut. Misalnya, jika kita ingin menampilkan `judul` dan `penulis` dari tabel `buku`, maka query-nya adalah `SELECT judul, penulis FROM buku;`. Perintah ini akan menghasilkan daftar ringkas yang langsung menjawab pertanyaan tentang siapa penulis dari setiap buku.
 

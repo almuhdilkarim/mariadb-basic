@@ -30,7 +30,7 @@ description: "Modul ini mengajarkan cara membuat tabel menggunakan CREATE TABLE 
 
  
 
-## 1. Persiapan Database  
+## Persiapan Database  
 Sebelum membuat tabel, langkah awal adalah memastikan database yang benar sudah dipilih. Gunakan perintah `USE perpustakaan;` agar semua tabel baru tersimpan di dalam database perpustakaan. Jika langkah ini dilewatkan, tabel bisa saja tersimpan di database default. Hal ini dapat menimbulkan kebingungan saat mengelola struktur data. Oleh karena itu, persiapan kecil ini penting untuk menjaga keteraturan.  
 
 Perintah `SELECT DATABASE();` dapat digunakan untuk memeriksa database aktif. Jika hasilnya adalah `perpustakaan`, maka semua instruksi berikut sudah aman dieksekusi. Kebiasaan sederhana ini membantu menghindari kesalahan penempatan tabel. Database yang konsisten juga memudahkan pelaporan. Persiapan yang rapi akan membuat praktik lebih lancar.  
@@ -41,7 +41,7 @@ Persiapan ini sekaligus mengingatkan bahwa setiap langkah kecil memiliki dampak 
 
 ---
 
-## 2. Perintah Dasar `CREATE TABLE`  
+## Perintah Dasar `CREATE TABLE`  
 Perintah `CREATE TABLE` digunakan untuk membuat struktur penyimpanan data. Struktur tabel terdiri dari kolom yang merepresentasikan atribut dan baris untuk entitas. Contoh sederhana adalah pembuatan tabel anggota:  
 
 ```sql
@@ -63,7 +63,7 @@ Instruksi ini menunjukkan betapa sederhana sekaligus pentingnya langkah pertama.
 
 ---
 
-## 3. Membuat Tabel Anggota
+## Membuat Tabel Anggota
 
 Tabel anggota berfungsi menyimpan data identitas pengguna perpustakaan. Kolom yang digunakan mencakup ID, nama, alamat, dan nomor telepon. ID anggota adalah primary key yang menjamin keunikan data. Dengan struktur ini, setiap anggota dapat dikenali secara pasti. Tidak ada kebingungan meski nama bisa sama.
 
@@ -75,7 +75,7 @@ Tabel anggota menjadi dasar untuk relasi dengan tabel lain. Tabel peminjaman mis
 
 ---
 
-## 4. Membuat Tabel Buku
+## Membuat Tabel Buku
 
 Tabel buku dirancang untuk menyimpan informasi koleksi perpustakaan. Kolom yang dipakai mencakup ID, judul, penulis, tahun terbit, dan ISBN. ID buku menjadi primary key agar setiap koleksi unik. ISBN diberi constraint UNIQUE untuk mencegah duplikasi. Struktur ini menjaga keakuratan data.
 

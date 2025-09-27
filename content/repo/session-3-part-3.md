@@ -27,10 +27,14 @@ metadata:
     author: ["Al Muhdil Karim"]
 description: "Peserta belajar membuat database pertama menggunakan perintah CREATE DATABASE. Modul ini memandu langkah dasar untuk mulai mengorganisir data dengan benar."
 ---
+
 ## Persiapan   
 Sebelum membuat database, pastikan MariaDB sudah berjalan di komputer Anda. Bukalah terminal atau command prompt lalu login dengan akun root menggunakan perintah `mysql -u root -p`. Setelah memasukkan password, Anda akan melihat prompt MariaDB yang siap menerima instruksi. Jangan khawatir, proses ini sangat sederhana dan hanya butuh beberapa detik. Bagus sekali jika Anda sudah sampai tahap ini!  
 
 Lingkungan yang siap adalah kunci dari keberhasilan praktik. Pastikan tidak ada error saat login, karena error kecil bisa mengganggu langkah selanjutnya. Jika Anda belum terbiasa, cobalah beberapa kali hingga merasa nyaman dengan proses login. Ingat, keterampilan ini akan sering dipakai di modul-modul berikut. Semakin sering mencoba, semakin mudah langkah ini terasa.  
+
+Khusus pengguna archlinux, jika sudah selesai meng-install MariaDB di Arch Linux, langkah penting berikutnya adalah menginisialisasi database system. Inilah yang dilakukan dengan perintah:
+`mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql`
 
 Langkah persiapan juga melibatkan pengecekan apakah MariaDB service aktif. Di Linux, Anda bisa menggunakan `systemctl status mariadb` untuk memastikannya. Jika layanan mati, hidupkan dengan `systemctl start mariadb`. Dengan cara ini, Anda tidak akan menghadapi masalah koneksi. Pastikan semua sudah berjalan baik sebelum melanjutkan.  
 
@@ -111,7 +115,7 @@ Kesalahan kedua adalah membuat database dengan nama yang sudah ada. MariaDB akan
 
 Kesalahan ketiga adalah tidak memperhatikan karakter set. Akibatnya, data teks bisa rusak saat menyimpan karakter khusus. Perpustakaan yang menyimpan judul asing bisa terganggu. Solusi terbaik adalah selalu menggunakan UTF-8.
 
-Kesalahan keempat adalah salah ketik nama database. Misalnya, menulis `perpustkan` tanpa huruf “a”. Kesalahan kecil bisa membuat data tersimpan di tempat yang berbeda. Oleh karena itu, ketelitian sangat penting. Biasakan memeriksa nama database dengan teliti.
+Kesalahan keempat adalah salah ketik nama database. Misalnya, menulis `perpustakan` tanpa huruf “a”. Kesalahan kecil bisa membuat data tersimpan di tempat yang berbeda. Oleh karena itu, ketelitian sangat penting. Biasakan memeriksa nama database dengan teliti.
 
 ---
 

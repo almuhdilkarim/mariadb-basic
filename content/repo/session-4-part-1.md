@@ -29,7 +29,7 @@ description: "Modul ini mengajarkan penggunaan perintah INSERT untuk menambahkan
 ---
 
 
-## 1. Persiapan Tabel
+## Persiapan Tabel
 
 Sebelum menambahkan data, pengguna harus memastikan bahwa tabel tujuan sudah ada dan siap digunakan. Pada studi kasus perpustakaan, tabel `buku` telah dibuat sebelumnya dengan kolom `id_buku`, `judul`, `penulis`, `tahun_terbit`, dan `isbn`. Setiap kolom memiliki tipe data dan constraint yang mengatur validitas input. Tanpa persiapan ini, perintah `INSERT` bisa gagal atau menghasilkan data yang salah. Oleh karena itu, pemahaman struktur tabel adalah fondasi utama sebelum praktik dimulai.
 
@@ -43,7 +43,7 @@ Langkah-langkah persiapan ini membentuk kebiasaan kerja yang disiplin. Setiap de
 
 ---
 
-## 2. Perintah Dasar `INSERT`
+## Perintah Dasar `INSERT`
 
 Perintah `INSERT` digunakan untuk menambahkan baris data baru ke dalam tabel. Sintaks dasarnya adalah `INSERT INTO nama_tabel (kolom1, kolom2, ...) VALUES (nilai1, nilai2, ...);`. Dengan sintaks ini, setiap nilai dipetakan langsung ke kolom yang sesuai. Pengguna tidak perlu menuliskan kolom dengan AUTO\_INCREMENT seperti `id_buku`, karena MariaDB akan mengisinya otomatis. Hal ini memastikan setiap baris memiliki identitas unik.
 
@@ -62,7 +62,7 @@ Instruksi `INSERT` yang sederhana ini menjadi pintu masuk utama untuk semua data
 
 ---
 
-## 3. Menambahkan Beberapa Data Sekaligus
+## Menambahkan Beberapa Data Sekaligus
 
 Selain menambahkan satu baris data, MariaDB mendukung input banyak baris dalam satu query. Teknik ini disebut multi-row insert. Formatnya adalah menuliskan beberapa set nilai yang dipisahkan koma dalam satu perintah `INSERT`. Dengan cara ini, pengguna bisa menghemat waktu sekaligus sumber daya sistem. Hal ini sangat bermanfaat untuk mengisi data awal yang banyak.
 

@@ -62,7 +62,7 @@ Menurut Silberschatz et al. (2020), database memiliki mekanisme untuk menjaga in
 
 Laudon & Laudon (2018) menegaskan bahwa integritas data mendukung kepercayaan pengguna. Jika data tidak konsisten, laporan menjadi tidak dapat dipercaya. Perpustakaan yang tidak menjaga integritas akan kesulitan membuat keputusan tepat. Misalnya, data peminjaman yang tumpang tindih membuat laporan stok buku tidak akurat. Integritas memastikan semua informasi relevan dan benar.  
 
-Connolly & Begg (2015) menyebutkan bahwa sistem manual rawan kehilangan integritas karena keterbatasan manusia. Kesalahan penulisan atau lupa mencatat transaksi menyebabkan inkonsistensi. Database mengurangi masalah ini dengan validasi otomatis. Misalnya, sistem tidak akan menerima input tanpa ID anggota yang valid. Validasi seperti ini menjaga kualitas data.  
+Connolly & Begg (2015) menyebutkan bahwa sistem manual rawan kehilangan integritas karena keterbatasan sumber daya manusia. Kesalahan penulisan atau lupa mencatat transaksi menyebabkan inkonsistensi. Database mengurangi masalah ini dengan validasi otomatis. Misalnya, sistem tidak akan menerima input tanpa ID anggota yang valid. Validasi seperti ini menjaga kualitas data.  
 
 Dengan konsistensi dan integritas, database menjadi fondasi terpercaya untuk operasional. Dalam perpustakaan, hal ini berarti catatan peminjaman, pengembalian, dan inventaris selalu akurat. Modul ini menunjukkan mengapa database lebih unggul dibanding sistem manual. Peserta kini memahami bagaimana database menjaga kualitas data. Hal ini akan semakin jelas ketika membahas aspek keamanan.  
 

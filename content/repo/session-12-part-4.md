@@ -28,9 +28,6 @@ metadata:
 description: "Modul ini membimbing peserta mencoba login menggunakan akun admin dan anggota. Peserta memahami bagaimana hak akses membatasi perintah yang dapat dijalankan."
 ---
 
-
-## Sub Modul 4 – Simulasi Login dengan User Berbeda
-
 ### Pendahuluan
 
 Simulasi login merupakan langkah penting untuk memastikan konfigurasi hak akses berjalan sesuai rancangan. Dalam sistem perpustakaan, kita biasanya memiliki beberapa jenis pengguna, seperti admin dengan hak penuh dan anggota dengan hak terbatas. Dengan melakukan simulasi login, kita bisa menguji apakah setiap user benar-benar mendapatkan hak sesuai perannya. Praktik ini membantu mendeteksi kesalahan konfigurasi sebelum sistem digunakan secara luas.

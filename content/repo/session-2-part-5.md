@@ -29,7 +29,6 @@ description: "Kenali MariaDB sebagai sistem manajemen basis data relasional open
 ---
 
 
-## Sejarah MariaDB  
 MariaDB lahir sebagai turunan dari MySQL setelah akuisisi MySQL oleh Oracle (Widenius, 2013). Banyak pengembang khawatir akan masa depan MySQL sebagai perangkat lunak open-source. Oleh karena itu, Monty Widenius, salah satu pencipta MySQL, memimpin pengembangan MariaDB. Nama MariaDB diambil dari nama anaknya, Maria. Sejak itu, MariaDB berkembang pesat sebagai alternatif populer.  
 
 Menurut Elmasri & Navathe (2016), MariaDB mempertahankan kompatibilitas penuh dengan MySQL. Hal ini memudahkan organisasi untuk bermigrasi tanpa banyak perubahan. Perpustakaan yang sebelumnya menggunakan MySQL dapat beralih ke MariaDB dengan mudah. Kompatibilitas ini menjadi keunggulan strategis MariaDB. Keberlanjutan open-source tetap terjaga.  

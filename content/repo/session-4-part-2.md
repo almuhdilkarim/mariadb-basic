@@ -29,8 +29,6 @@ description: "Pelajari perintah SELECT * untuk melihat semua isi tabel. Modul in
 ---
 
 
-## 1. Persiapan untuk Menampilkan Data
-
 Sebelum menampilkan data dari sebuah tabel, hal pertama yang perlu dipastikan adalah database aktif yang digunakan sudah benar. Dalam studi kasus perpustakaan, semua data disimpan di dalam database bernama `perpustakaan`. Untuk memastikan hal ini, perintah `SELECT DATABASE();` digunakan. Jika hasil yang muncul bukan `perpustakaan`, maka jalankan perintah `USE perpustakaan;` agar query berikutnya mengarah ke database yang benar. Persiapan ini penting untuk mencegah kesalahan pengambilan data dari database lain.
 
 Selain memastikan database aktif, pengguna juga harus mengetahui tabel mana yang ingin ditampilkan. Dalam modul ini, tabel yang akan digunakan adalah `buku`, yang berisi data koleksi perpustakaan. Struktur tabel dapat diperiksa dengan perintah `DESCRIBE buku;` untuk melihat kolom yang tersedia. Kolom-kolom tersebut meliputi `id_buku`, `judul`, `penulis`, `tahun_terbit`, dan `isbn`. Dengan memahami struktur tabel, pengguna dapat menafsirkan hasil query dengan lebih baik.
@@ -43,7 +41,7 @@ Tahap persiapan ini memberikan pemahaman konteks tentang apa yang akan ditampilk
 
 ---
 
-## 2. Perintah Dasar `SELECT *`
+## Perintah Dasar `SELECT *`
 
 Perintah `SELECT` adalah instruksi utama untuk menampilkan data dalam SQL. Bentuk paling sederhana dari perintah ini adalah `SELECT * FROM nama_tabel;`. Tanda bintang (\*) berarti semua kolom akan ditampilkan. Dalam konteks tabel `buku`, query `SELECT * FROM buku;` akan menampilkan semua kolom dan semua baris data yang ada. Hasilnya berupa tabel dengan kolom sesuai definisi tabel `buku`.
 
@@ -63,7 +61,7 @@ Dengan menguasai perintah dasar ini, peserta akan memahami cara membaca isi tabe
 
 ---
 
-## 3. Menampilkan Data dengan Format yang Lebih Rapi
+## Menampilkan Data dengan Format yang Lebih Rapi
 
 Setelah memahami perintah dasar, peserta dapat mulai mencoba menampilkan data dengan cara yang lebih rapi. Perintah `SELECT *` menampilkan semua kolom sekaligus, namun sering kali pengguna hanya membutuhkan sebagian kolom saja. Misalnya, pustakawan mungkin hanya ingin menampilkan `judul` dan `penulis`. Untuk itu, sintaksnya adalah `SELECT judul, penulis FROM buku;`. Query ini lebih efisien karena hanya menampilkan informasi yang relevan.
 
@@ -163,7 +161,7 @@ SELECT * FROM buku LIMIT 5;
 
 ---
 
-## 6. Studi Kasus Perpustakaan
+## Studi Kasus Perpustakaan
 
 Seorang admin perpustakaan ingin menampilkan daftar seluruh koleksi buku yang sudah dicatat. Dengan menggunakan perintah `SELECT *`, ia dapat melihat semua data. Kemudian, untuk membuat laporan ringkas, admin hanya menampilkan kolom `judul` dan `penulis`. Hasil ini kemudian dicetak sebagai katalog sederhana untuk anggota.
 

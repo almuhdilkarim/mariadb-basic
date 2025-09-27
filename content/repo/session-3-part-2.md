@@ -28,7 +28,6 @@ metadata:
 description: "Pelajari tipe data dasar di MariaDB seperti angka, teks, dan tanggal. Modul ini memberi pemahaman tentang pemilihan tipe data yang tepat untuk kebutuhan penyimpanan."
 ---
 
- 
 
 ## Definisi Tipe Data  
 Tipe data adalah aturan yang menentukan bentuk dan sifat data yang disimpan dalam kolom tabel. Dengan tipe data, sistem database dapat membedakan antara angka, teks, tanggal, atau format lain. Dalam MariaDB, pemilihan tipe data sangat penting untuk menjaga keakuratan dan konsistensi. Misalnya, kolom nomor telepon harus disimpan dalam teks, bukan angka. Tipe data membantu sistem mengenali batasan setiap informasi.  

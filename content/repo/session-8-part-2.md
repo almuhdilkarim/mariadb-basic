@@ -28,10 +28,6 @@ metadata:
 description: "Modul ini membahas fungsi agregasi SUM, AVG, MIN, dan MAX untuk menganalisis data numerik. Peserta belajar menghitung rata-rata nilai atau total transaksi."
 ---
 
-### Pertemuan 7 — Submodul 2: Fungsi SUM, AVG, MIN, dan MAX
-
----
-
 #### Pendahuluan
 
 Fungsi agregasi dalam SQL adalah alat yang sangat penting untuk menganalisis data secara numerik dalam basis data perpustakaan. Dengan fungsi ini, pustakawan dapat memperoleh ringkasan informasi, seperti total stok buku, rata-rata jumlah eksemplar, serta nilai terbesar dan terkecil dari koleksi. Analisis ini sangat membantu dalam menyusun strategi pengadaan dan distribusi buku agar lebih seimbang. Selain itu, penggunaan fungsi agregasi juga mendukung penyusunan laporan yang rapi dan mudah dipahami oleh manajemen. Menurut penelitian, agregasi data memegang peranan utama dalam proses analisis database modern【Kroenke & Auer, 2014】.

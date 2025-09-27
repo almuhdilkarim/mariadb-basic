@@ -28,6 +28,12 @@ metadata:
 description: "Pelajari index unik untuk memastikan keunikan data dan index gabungan untuk kolom lebih dari satu. Modul ini membantu mendesain index sesuai kebutuhan query."
 ---
 
+### Pertemuan 9 — Submodul 2
+
+### Fungsi Tanggal (NOW, YEAR, MONTH) dalam SQL untuk Sistem Perpustakaan
+
+
+
 
 #### 1. Pengantar Fungsi Tanggal dalam SQL
 
@@ -85,11 +91,8 @@ Fungsi `YEAR` juga bermanfaat untuk penelitian akademis tentang kebiasaan membac
 Namun, `YEAR` juga memiliki keterbatasan jika digunakan tanpa konteks. Misalnya, hanya melihat data tahunan tanpa memperhatikan distribusi bulanan bisa menyesatkan. Pustakawan harus mengombinasikan `YEAR` dengan fungsi lain agar analisis lebih mendalam. Dengan pendekatan ini, laporan perpustakaan menjadi lebih komprehensif. Hal ini menegaskan pentingnya memahami fungsi string secara terpadu【Kroenke & Auer, 2015】.
 
 
-### Pertemuan 9 — Submodul 2
 
-### Fungsi Tanggal (NOW, YEAR, MONTH) dalam SQL untuk Sistem Perpustakaan
 
----
 
 #### 4. Fungsi MONTH dalam SQL
 

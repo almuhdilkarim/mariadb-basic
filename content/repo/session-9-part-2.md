@@ -29,7 +29,7 @@ description: "Modul ini mengenalkan konsep normalisasi sebagai metode merapikan 
 ---
 
 
-### Pertemuan 8 — Submodul 2
+
 
 **Normalisasi: Pengantar Konsep**
 

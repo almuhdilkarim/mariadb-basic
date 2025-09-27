@@ -30,7 +30,7 @@ description: "Peserta mempraktikkan query gabungan menggunakan INNER JOIN dan LE
 
 
 
-## pendahuluan
+## 1. pendahuluan
 
 Query SQL yang menampilkan daftar peminjaman buku per anggota merupakan salah satu kebutuhan paling mendasar dalam sistem perpustakaan. Laporan ini memungkinkan pustakawan untuk mengetahui siapa saja yang sedang meminjam buku, judul buku yang dipinjam, serta tanggal peminjaman. Dengan adanya laporan ini, proses administrasi peminjaman menjadi lebih terstruktur dan transparan. Tanpa query semacam ini, pustakawan harus membuka tabel `anggota`, `peminjaman`, dan `buku` secara terpisah, lalu mencocokkan data secara manual, yang jelas sangat tidak efisien.
 
@@ -44,9 +44,68 @@ Akhirnya, modul ini tidak hanya akan membimbing pembaca dalam menulis query SQL 
 
 ---
 
-## 2. Kesalahan Umum
+## 2. Langkah-Langkah Praktik
 
-### 2.1 Tidak Menentukan Relasi JOIN dengan Benar
+Langkah pertama adalah memastikan data dasar sudah tersedia dan siap digunakan untuk latihan. Kita perlu memverifikasi tabel `anggota`, `buku`, dan `peminjaman` dengan query sederhana agar tidak ada kesalahan input. Pemeriksaan ini penting supaya kita tahu relasi yang akan dijalankan nanti benar-benar ada di dalam database. Dengan begitu, hasil praktik lebih akurat dan tidak menimbulkan error yang membingungkan. Mari kita coba jalankan query berikut—kerja bagus jika hasilnya sesuai harapan.
+
+```sql
+SELECT * FROM anggota;
+```
+
+```sql
+SELECT * FROM buku;
+```
+
+```sql
+SELECT * FROM peminjaman;
+```
+
+Langkah kedua adalah menyusun laporan sederhana yang menampilkan anggota dan transaksi peminjaman mereka. Kita gunakan `INNER JOIN` terlebih dahulu agar hanya anggota yang benar-benar melakukan peminjaman yang muncul dalam laporan. Hasil query ini berupa daftar nama anggota, judul buku, dan tanggal pinjam yang saling terhubung. Penyusunan seperti ini adalah fondasi untuk laporan yang lebih kompleks. Sekarang jalankan query berikut, langkahmu sudah tepat.
+
+```sql
+SELECT a.nama, b.judul, p.tanggal_pinjam
+FROM anggota a
+INNER JOIN peminjaman p ON a.id_anggota = p.id_anggota
+INNER JOIN buku b ON p.id_buku = b.id_buku;
+```
+
+Langkah ketiga adalah memperbaiki struktur laporan agar lebih ramah dibaca dengan menambahkan pengurutan. Kita bisa menggunakan `ORDER BY` untuk mengurutkan nama anggota secara alfabet dan tanggal pinjam dari yang terbaru. Dengan tambahan sederhana ini, laporan tidak hanya akurat tetapi juga lebih rapi dan praktis. Kerapian laporan memudahkan pustakawan saat menelusuri data peminjaman. Mari kita coba jalankan query berikut—kerja bagus jika urutannya sudah sesuai.
+
+```sql
+SELECT a.nama, b.judul, p.tanggal_pinjam
+FROM anggota a
+INNER JOIN peminjaman p ON a.id_anggota = p.id_anggota
+INNER JOIN buku b ON p.id_buku = b.id_buku
+ORDER BY a.nama ASC, p.tanggal_pinjam DESC;
+```
+
+Langkah keempat adalah membuat laporan lebih inklusif dengan menampilkan semua anggota, termasuk yang belum pernah meminjam. Untuk itu, kita ubah `INNER JOIN` menjadi `LEFT JOIN` dan gunakan fungsi `COALESCE` agar nilai `NULL` diganti dengan keterangan “Belum ada peminjaman.” Dengan teknik ini, anggota pasif tetap teridentifikasi sehingga pustakawan bisa menilai tingkat keaktifan. Inklusivitas data semacam ini penting bagi pengelolaan koleksi dan evaluasi layanan. Jalankan query berikut, bagus sekali jika anggota tanpa pinjaman pun ikut terlihat.
+
+```sql
+SELECT a.nama,
+       COALESCE(b.judul, 'Belum ada peminjaman') AS judul_buku,
+       p.tanggal_pinjam
+FROM anggota a
+LEFT JOIN peminjaman p ON a.id_anggota = p.id_anggota
+LEFT JOIN buku b ON p.id_buku = b.id_buku
+ORDER BY a.nama ASC, p.tanggal_pinjam DESC;
+```
+
+Langkah kelima adalah menambahkan ringkasan untuk mengetahui tingkat keaktifan tiap anggota. Kita gunakan fungsi agregasi `COUNT()` dengan `GROUP BY` agar jumlah peminjaman per anggota bisa dihitung. Dengan query ini, kita bisa melihat siapa yang paling aktif meminjam dan siapa yang jarang memanfaatkan fasilitas perpustakaan. Informasi seperti ini sangat berguna untuk program penghargaan atau strategi peningkatan partisipasi. Mari jalankan query berikut, hebat sekali jika hasilnya langsung menunjukkan peringkat aktivitas anggota.
+
+```sql
+SELECT a.nama, COUNT(p.id_peminjaman) AS jumlah_pinjaman
+FROM anggota a
+LEFT JOIN peminjaman p ON a.id_anggota = p.id_anggota
+GROUP BY a.nama
+ORDER BY jumlah_pinjaman DESC, a.nama ASC;
+```
+
+---
+
+## 3. Kesalahan Umum
+
+### 3.1 Tidak Menentukan Relasi JOIN dengan Benar
 
 ```sql
 -- Salah: kondisi ON tidak tepat
@@ -60,7 +119,7 @@ Kesalahan ini muncul ketika kolom yang digunakan dalam kondisi `ON` tidak sesuai
 
 Dampak dari kesalahan ini cukup serius karena dapat menyesatkan pustakawan dalam membuat keputusan. Jika laporan menunjukkan bahwa anggota tertentu meminjam buku yang sebenarnya tidak pernah dipinjam, maka kredibilitas sistem akan diragukan. Kesalahan ini biasanya disebabkan oleh kurangnya pemahaman terhadap relasi kunci primer dan kunci tamu. Oleh karena itu, sangat penting bagi pengguna untuk selalu memeriksa struktur tabel sebelum menulis query JOIN.
 
-### 2.2 Menggunakan WHERE Secara Tidak Tepat
+### 3.2 Menggunakan WHERE Secara Tidak Tepat
 
 ```sql
 -- Salah: WHERE menghapus baris dengan NULL
@@ -75,7 +134,7 @@ Kesalahan ini terjadi ketika kondisi `WHERE` menghapus baris yang seharusnya tet
 
 Dampak kesalahan ini adalah hilangnya informasi penting mengenai anggota pasif. Pustakawan yang ingin mengetahui siapa saja anggota yang tidak aktif tidak bisa mendapatkan data tersebut. Hal ini menunjukkan bahwa kesalahan kecil dalam penggunaan WHERE dapat mengubah makna laporan secara drastis. Untuk menghindarinya, pengguna sebaiknya menggunakan klausa `HAVING` atau fungsi lain yang lebih sesuai ketika menangani nilai `NULL`.
 
-### 2.3 Tidak Menggunakan Alias Tabel
+### 3.3 Tidak Menggunakan Alias Tabel
 
 ```sql
 -- Salah: query tanpa alias tabel
@@ -89,7 +148,7 @@ Kesalahan ini tidak memengaruhi hasil query, tetapi membuat kode menjadi panjang
 
 Ketiadaan alias juga menyulitkan pemeliharaan kode. Ketika query harus dimodifikasi atau diperluas, pengguna akan kesulitan melacak kolom yang relevan. Dalam jangka panjang, praktik ini memperlambat proses pengembangan dan meningkatkan kemungkinan bug. Oleh karena itu, meskipun hasil query mungkin benar, tidak menggunakan alias dianggap sebagai kesalahan umum dalam praktik SQL.
 
-### 2.4 Mengabaikan GROUP BY dalam Agregasi
+### 3.4 Mengabaikan GROUP BY dalam Agregasi
 
 ```sql
 -- Salah: COUNT tanpa GROUP BY
@@ -102,7 +161,7 @@ Kesalahan ini terjadi ketika fungsi agregasi seperti COUNT digunakan tanpa `GROU
 
 Dalam konteks perpustakaan, kesalahan ini berarti pustakawan tidak bisa mengetahui siapa anggota paling aktif. Informasi yang hilang ini sangat penting untuk evaluasi layanan. Kesalahan ini biasanya terjadi karena pemula terburu-buru menulis query tanpa memahami cara kerja fungsi agregasi. Oleh karena itu, menambahkan `GROUP BY a.nama` menjadi hal yang wajib dilakukan dalam kasus ini.
 
-### 2.5 Menambahkan Kolom di SELECT Tanpa JOIN yang Sesuai
+### 3.5 Menambahkan Kolom di SELECT Tanpa JOIN yang Sesuai
 
 ```sql
 -- Salah: kolom judul dipanggil tanpa JOIN tabel buku
@@ -117,9 +176,9 @@ Dampaknya adalah laporan tidak dapat dihasilkan sama sekali. Pustakawan yang mem
 
 ---
 
-## 3. Best Practice
+## 4. Best Practice
 
-### 3.1 Menentukan Relasi JOIN dengan Tepat
+### 4.1 Menentukan Relasi JOIN dengan Tepat
 
 ```sql
 SELECT a.nama, b.judul, p.tanggal_pinjam
@@ -132,7 +191,7 @@ Praktik terbaik pertama adalah selalu menentukan relasi JOIN dengan benar sesuai
 
 Menentukan relasi yang benar juga meningkatkan konsistensi data. Pustakawan dapat yakin bahwa setiap baris yang muncul dalam laporan memang sesuai dengan transaksi nyata. Dengan cara ini, query tidak hanya menghasilkan output yang benar, tetapi juga mendukung akuntabilitas sistem. Kesalahan sekecil apa pun dalam penulisan relasi bisa menyebabkan laporan yang menyesatkan.
 
-### 3.2 Menggunakan Alias Tabel untuk Keterbacaan
+### 4.2 Menggunakan Alias Tabel untuk Keterbacaan
 
 ```sql
 SELECT a.nama, b.judul, p.tanggal_pinjam
@@ -145,7 +204,7 @@ Penggunaan alias membuat query lebih ringkas dan mudah dibaca. Dalam contoh ini,
 
 Keterbacaan yang baik sangat penting dalam pengelolaan database jangka panjang. Ketika pustakawan atau pengembang lain membaca query, mereka bisa langsung memahami logikanya. Praktik ini mempercepat proses kolaborasi dan pemeliharaan sistem. Dengan demikian, alias bukan hanya soal gaya penulisan, tetapi juga bagian dari standar profesional dalam SQL.
 
-### 3.3 Menambahkan ORDER BY untuk Struktur Laporan
+### 4.3 Menambahkan ORDER BY untuk Struktur Laporan
 
 ```sql
 SELECT a.nama, b.judul, p.tanggal_pinjam
@@ -159,7 +218,7 @@ Menggunakan `ORDER BY` membuat laporan lebih terstruktur. Dalam query ini, dafta
 
 ORDER BY juga membantu dalam pembuatan laporan resmi. Ketika data disajikan dengan urutan yang jelas, pembaca tidak perlu mengatur ulang secara manual. Hal ini meningkatkan profesionalitas dan kredibilitas laporan. Dalam praktik sehari-hari, pustakawan akan lebih menghargai laporan yang sudah rapi sejak awal.
 
-### 3.4 Menggunakan Fungsi Agregasi dengan GROUP BY
+### 4.4 Menggunakan Fungsi Agregasi dengan GROUP BY
 
 ```sql
 SELECT a.nama, COUNT(p.id_peminjaman) AS jumlah_pinjaman
@@ -173,7 +232,7 @@ Praktik ini memastikan bahwa laporan tidak hanya menampilkan detail, tetapi juga
 
 Penggunaan agregasi juga penting dalam evaluasi layanan. Dengan mengetahui siapa anggota yang jarang meminjam, pustakawan bisa menyusun program untuk mendorong keaktifan. Sementara itu, anggota paling aktif bisa diberikan penghargaan sebagai bentuk apresiasi. Praktik ini memperlihatkan bahwa SQL bukan hanya alat teknis, tetapi juga sarana manajemen yang strategis.
 
-### 3.5 Menggunakan COALESCE untuk Menangani Nilai NULL
+### 4.5 Menggunakan COALESCE untuk Menangani Nilai NULL
 
 ```sql
 SELECT a.nama, COALESCE(b.judul, 'Tidak ada peminjaman') AS judul, p.tanggal_pinjam

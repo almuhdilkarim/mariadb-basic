@@ -28,6 +28,7 @@ metadata:
 description: "Pelajari mengapa duplikasi dat"
 ---
 
+
 #### Pendahuluan
 
 Dalam pengelolaan basis data perpustakaan, masalah duplikasi data sering menjadi penyebab utama inkonsistensi informasi. Duplikasi dapat terjadi ketika data anggota, buku, atau transaksi pinjaman dimasukkan berulang kali dengan format berbeda. Hal ini akan mengakibatkan laporan menjadi tidak akurat, misalnya jumlah buku terlihat lebih banyak dari yang sebenarnya. Menurut Silberschatz dkk. (2019), inkonsistensi data dapat menghambat pengambilan keputusan yang berbasis informasi. Oleh karena itu, memahami akar permasalahan duplikasi sangat penting sebelum melangkah ke tahap desain yang lebih baik.
@@ -44,16 +45,16 @@ Kesadaran akan masalah duplikasi harus ditanamkan sejak awal pada tahap perancan
 
 #### Langkah-Langkah Praktik
 
-Mari kita coba memahami duplikasi dengan membuat tabel **anggota** yang belum diberi batasan unik. Perhatikan contoh berikut:
+Mari kita coba memahami duplikasi dengan membuat tabel **pemustaka** yang belum diberi batasan unik. Perhatikan contoh berikut:
 
 ```sql
-CREATE TABLE anggota (
+CREATE TABLE pemustaka (
     id INT,
     nama VARCHAR(100),
     alamat VARCHAR(200)
 );
 
-INSERT INTO anggota (id, nama, alamat)
+INSERT INTO pemustaka (id, nama, alamat)
 VALUES (1, 'Ahmad Fauzi', 'Jl. Melati No.1'),
        (1, 'Ahmad Fauzi', 'Jl. Melati No.1');
 ```
@@ -63,7 +64,7 @@ Query di atas akan menghasilkan dua baris data dengan isi yang sama. Hal ini men
 Untuk mengatasi hal tersebut, mari kita tambahkan primary key pada kolom **id**. Dengan cara ini, sistem akan menolak data ganda berdasarkan identitas unik anggota. Contohnya:
 
 ```sql
-CREATE TABLE anggota (
+CREATE TABLE pemustaka (
     id INT PRIMARY KEY,
     nama VARCHAR(100),
     alamat VARCHAR(200)
@@ -75,7 +76,7 @@ Sekarang, coba ulangi penyisipan data duplikat. Sistem akan langsung menolak den
 Selain primary key, kita juga bisa menggunakan **UNIQUE constraint** untuk kolom yang seharusnya unik, misalnya nomor telepon anggota. Contohnya:
 
 ```sql
-ALTER TABLE anggota
+ALTER TABLE pemustaka
 ADD CONSTRAINT unique_nomor UNIQUE (nama, alamat);
 ```
 
@@ -88,7 +89,7 @@ Dengan aturan ini, kombinasi nama dan alamat tidak boleh muncul dua kali. Prakti
 ##### 1. Tidak Menggunakan Primary Key
 
 ```sql
-CREATE TABLE anggota (
+CREATE TABLE pemustaka (
     nama VARCHAR(100),
     alamat VARCHAR(200)
 );
@@ -99,7 +100,7 @@ Banyak pemula lupa mendefinisikan primary key, sehingga tabel memungkinkan data 
 ##### 2. Mengandalkan Nama sebagai Identitas
 
 ```sql
-CREATE TABLE anggota (
+CREATE TABLE pemustaka (
     nama VARCHAR(100) PRIMARY KEY,
     alamat VARCHAR(200)
 );
@@ -110,7 +111,7 @@ Menggunakan nama sebagai primary key adalah praktik yang salah, karena nama bisa
 ##### 3. Menambahkan Data Tanpa Validasi
 
 ```sql
-INSERT INTO anggota (id, nama, alamat)
+INSERT INTO pemustaka (id, nama, alamat)
 VALUES (2, 'Siti Aminah', 'Jl. Mawar No.3'),
        (2, 'Siti Aminah', 'Jl. Mawar No.3');
 ```
@@ -120,7 +121,7 @@ Data ganda masuk karena tidak ada constraint yang menghalangi. Situasi ini bisa 
 ##### 4. Tidak Menormalisasi Data
 
 ```sql
-CREATE TABLE pinjaman (
+CREATE TABLE meminjam (
     id INT PRIMARY KEY,
     nama_anggota VARCHAR(100),
     judul_buku VARCHAR(200)
@@ -132,7 +133,7 @@ Penyimpanan nama anggota langsung di tabel pinjaman menyebabkan duplikasi inform
 ##### 5. Tidak Menggunakan Index untuk Data Unik
 
 ```sql
-ALTER TABLE anggota
+ALTER TABLE pemustaka
 ADD INDEX (nama);
 ```
 
@@ -145,7 +146,7 @@ Hanya menambahkan index tidak cukup untuk mencegah duplikasi. Index mempercepat 
 ##### 1. Selalu Gunakan Primary Key
 
 ```sql
-CREATE TABLE anggota (
+CREATE TABLE pemustaka (
     id INT PRIMARY KEY,
     nama VARCHAR(100),
     alamat VARCHAR(200)
@@ -157,7 +158,7 @@ Primary key menjamin setiap anggota hanya tercatat satu kali. Menurut Silberscha
 ##### 2. Terapkan UNIQUE Constraint
 
 ```sql
-ALTER TABLE anggota
+ALTER TABLE pemustaka
 ADD CONSTRAINT unique_nomor UNIQUE (nama, alamat);
 ```
 
@@ -166,10 +167,10 @@ Constraint unik berguna untuk mencegah data anggota dengan kombinasi nama dan al
 ##### 3. Gunakan Validasi Input
 
 ```sql
-INSERT INTO anggota (id, nama, alamat)
+INSERT INTO pemustaka (id, nama, alamat)
 SELECT 3, 'Rina Kusuma', 'Jl. Kenanga No.5'
 WHERE NOT EXISTS (
-    SELECT 1 FROM anggota WHERE id = 3
+    SELECT 1 FROM pemustaka WHERE id = 3
 );
 ```
 
@@ -178,20 +179,20 @@ Teknik ini memastikan data hanya masuk jika belum ada sebelumnya. Rob dan Corone
 ##### 4. Normalisasi Tabel
 
 ```sql
-CREATE TABLE anggota (
+CREATE TABLE pemustaka (
     id INT PRIMARY KEY,
     nama VARCHAR(100)
 );
 
-CREATE TABLE pinjaman (
+CREATE TABLE pemustaka (
     id INT PRIMARY KEY,
-    id_anggota INT,
+    id_pemustaka INT,
     judul_buku VARCHAR(200),
-    FOREIGN KEY (id_anggota) REFERENCES anggota(id)
+    FOREIGN KEY (id_pemustaka) REFERENCES pemustaka(id)
 );
 ```
 
-Dengan normalisasi, data anggota hanya disimpan di tabel **anggota**, bukan di tabel pinjaman. Date (2004) menjelaskan bahwa pendekatan ini mengurangi anomali dan duplikasi. Normalisasi adalah langkah utama menuju desain database yang baik.
+Dengan normalisasi, data anggota hanya disimpan di tabel **pemustaka**, bukan di tabel pinjaman. Date (2004) menjelaskan bahwa pendekatan ini mengurangi anomali dan duplikasi. Normalisasi adalah langkah utama menuju desain database yang baik.
 
 ##### 5. Gunakan Unique Index
 
@@ -206,11 +207,11 @@ Unique index membantu mempercepat query sekaligus menjaga keunikan data. Kifer, 
 
 #### Studi Kasus
 
-Dalam sistem perpustakaan, misalkan terdapat masalah di mana anggota dengan nama yang sama sering terdaftar berulang kali. Untuk mengatasinya, kita perlu membuat **id\_anggota** sebagai primary key dan menambahkan constraint unik pada kombinasi nama dan alamat.
+Dalam sistem perpustakaan, misalkan terdapat masalah di mana anggota dengan nama yang sama sering terdaftar berulang kali. Untuk mengatasinya, kita perlu membuat **id\pemustaka** sebagai primary key dan menambahkan constraint unik pada kombinasi nama dan alamat.
 
 ```sql
-CREATE TABLE anggota (
-    id_anggota INT PRIMARY KEY,
+CREATE TABLE pemustaka (
+    id_pemustaka INT PRIMARY KEY,
     nama VARCHAR(100),
     alamat VARCHAR(200),
     CONSTRAINT unique_nama_alamat UNIQUE (nama, alamat)
@@ -220,7 +221,7 @@ CREATE TABLE anggota (
 Sekarang, mari kita coba memasukkan data:
 
 ```sql
-INSERT INTO anggota (id_anggota, nama, alamat)
+INSERT INTO pemustaka (id_pemustaka, nama, alamat)
 VALUES (1, 'Budi Santoso', 'Jl. Melati No.10'),
        (2, 'Budi Santoso', 'Jl. Melati No.10');
 ```

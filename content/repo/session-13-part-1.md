@@ -29,12 +29,6 @@ description: "Modul ini menjelaskan alasan pentingnya melakukan backup database.
 ---
 
 
-Baik, berikut saya susun **modul penuh Pertemuan 12 — Backup & Restore** sesuai kaidah modul praktikal yang sudah ditetapkan dan berdasarkan outline mainline.
-
----
-
-# Pertemuan 12 — Backup & Restore
-
 ## Pendahuluan
 
 Backup merupakan salah satu aspek penting dalam pengelolaan database karena berfungsi sebagai jaminan keamanan data terhadap kehilangan atau kerusakan. Dalam konteks sistem perpustakaan, data anggota, koleksi buku, dan catatan peminjaman adalah aset yang sangat berharga sehingga perlu dijaga keberlanjutannya. Kehilangan data akibat kesalahan teknis atau serangan dapat menimbulkan dampak operasional yang serius. Oleh karena itu, backup secara teratur menjadi praktik standar dalam administrasi database modern. Literatur menyebutkan bahwa backup adalah lapisan pertahanan terakhir ketika semua metode pencegahan gagal (Date, 2019).

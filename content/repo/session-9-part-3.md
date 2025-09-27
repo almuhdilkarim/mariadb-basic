@@ -29,6 +29,7 @@ description: "Pelajari prinsip bentuk normal pertama (1NF) yang memastikan setia
 ---
 
 
+
 #### Pendahuluan
 
 Bentuk Normal Pertama (1NF) adalah tahap dasar dalam proses normalisasi yang bertujuan memastikan setiap tabel memiliki struktur data yang rapi dan terorganisir. Menurut Ramakrishnan dan Gehrke (2003), 1NF menekankan bahwa semua nilai atribut harus bersifat atomik, yaitu tidak dapat dipecah lebih lanjut. Dalam konteks perpustakaan, hal ini berarti setiap kolom hanya menyimpan satu informasi tunggal, misalnya satu nama anggota atau satu judul buku. Jika sebuah kolom berisi daftar nilai, maka tabel tersebut belum memenuhi 1NF. Prinsip ini menjaga data agar lebih mudah diolah dan dianalisis.

@@ -29,8 +29,6 @@ description: "Modul ini mengajarkan cara mengurutkan hasil query dengan ORDER BY
 ---
 
 
-## 1. Persiapan Praktik
-
 Mengurutkan data adalah kebutuhan mendasar dalam pengolahan informasi. Tanpa pengurutan, hasil query SQL hanya akan menampilkan data sesuai urutan fisik di tabel, yang tidak selalu sesuai dengan kebutuhan analisis atau laporan. SQL menyediakan klausa `ORDER BY` untuk memberikan kontrol penuh atas urutan hasil. Dengan klausa ini, pengguna dapat menampilkan data berdasarkan urutan abjad, kronologis, atau bahkan berdasarkan kriteria khusus yang ditentukan. Dalam konteks perpustakaan, kemampuan ini penting karena pustakawan sering kali membutuhkan daftar buku dalam urutan tertentu agar lebih mudah dipahami oleh anggota.
 
 Sebelum mencoba praktik `ORDER BY`, pastikan database yang digunakan adalah `perpustakaan`. Gunakan perintah `USE perpustakaan;` untuk mengaktifkan database ini. Selanjutnya, verifikasi dengan `SELECT DATABASE();` agar yakin bahwa Anda berada di database yang tepat. Jika langkah ini dilewati, ada risiko query dijalankan pada database lain yang mungkin kosong atau memiliki tabel berbeda. Hal ini bisa menimbulkan kebingungan karena hasil query tidak sesuai dengan yang diharapkan. Maka dari itu, disiplin dalam memastikan konteks database aktif adalah langkah dasar yang harus dijaga.
@@ -43,7 +41,7 @@ Akhirnya, penting memahami tujuan praktis dari pengurutan dalam kasus nyata. Pus
 
 ---
 
-## 2. Perintah Dasar `ORDER BY`
+## Perintah Dasar `ORDER BY`
 
 Klausa `ORDER BY` ditambahkan di akhir query `SELECT`. Secara default, klausa ini mengurutkan data secara menaik (*ascending*), tetapi pengguna dapat menambahkan kata kunci `DESC` untuk menampilkan data secara menurun (*descending*). Misalnya, jika ingin menampilkan judul buku dalam urutan abjad, query yang digunakan adalah:
 
@@ -117,7 +115,7 @@ Pada tabel besar, pengurutan bisa sangat lambat jika tidak ada indeks. Karena it
 
 ---
 
-## 5. Studi Kasus Perpustakaan
+## Studi Kasus Perpustakaan
 
 Seorang pustakawan ingin membuat katalog buku dalam urutan abjad berdasarkan judul. Ia menjalankan query:
 

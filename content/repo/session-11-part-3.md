@@ -28,7 +28,6 @@ metadata:
 description: "Peserta mempelajari isolation level seperti READ COMMITTED, REPEATABLE READ, dan SERIALIZABLE. Modul ini menunjukkan bagaimana tingkat isolasi memengaruhi integritas transaksi."
 ---
 
-
 #### Pendahuluan
 
 View kompleks adalah view yang didefinisikan dengan query yang melibatkan lebih dari satu tabel, agregasi, fungsi, atau subquery. Dalam sistem perpustakaan, view kompleks sangat bermanfaat untuk menyajikan laporan analitis, seperti distribusi pinjaman berdasarkan kategori buku atau ringkasan denda anggota. Dibandingkan view sederhana, view kompleks menyimpan logika bisnis yang lebih kaya. Dengan demikian, pustakawan tidak perlu menulis query panjang setiap kali membuat laporan yang sama【Elmasri & Navathe, 2016】.
@@ -114,12 +113,6 @@ GROUP BY YEAR(p.tanggal_pinjam), MONTH(p.tanggal_pinjam);
 ```
 
 Dengan view ini, pustakawan bisa langsung menampilkan ringkasan bulanan perpustakaan. Kerja luar biasa, kamu sudah bisa membuat view kompleks yang sangat berguna!
-
----
-
-### Pertemuan 10 — Submodul 3
-
-### Membuat View Kompleks
 
 ---
 

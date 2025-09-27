@@ -29,8 +29,6 @@ description: "Peserta mempraktikkan relasi antara tabel anggota dan peminjaman. 
 ---
 
 
-## 1. Pendahuluan
-
 Menghubungkan tabel `anggota` dan `peminjaman` adalah salah satu langkah paling penting dalam desain database relasional untuk sistem perpustakaan. Dengan menghubungkan kedua tabel ini, kita memastikan bahwa setiap transaksi peminjaman buku memiliki kaitan yang jelas dengan anggota yang meminjamnya. Hubungan ini dibangun menggunakan konsep foreign key yang mengacu pada primary key di tabel lain. Tanpa hubungan tersebut, data transaksi bisa berdiri sendiri tanpa identitas peminjam yang valid, sehingga laporan dan analisis akan menjadi tidak konsisten. Dalam praktik ini, fokus utama adalah memahami bagaimana foreign key bekerja dalam menjaga integritas data.
 
 Relasi antara tabel `anggota` dan `peminjaman` tidak hanya menjamin keabsahan data, tetapi juga memperkuat integrasi sistem secara keseluruhan. Sebagai contoh, setiap baris dalam tabel `peminjaman` akan selalu memiliki referensi ke baris tertentu dalam tabel `anggota`. Artinya, transaksi peminjaman tidak bisa dimasukkan jika anggota belum terdaftar. Hal ini meniru realitas dunia nyata, di mana hanya anggota resmi yang dapat meminjam buku dari perpustakaan. Dengan demikian, struktur database menjadi lebih logis dan mudah dipahami, bahkan oleh pengguna baru.
@@ -45,7 +43,7 @@ Akhirnya, modul ini mengajak peserta untuk mempraktikkan pembuatan hubungan anta
 
 ## 2. Langkah-Langkah Praktik
 
-**Langkah 1: Buat tabel `anggota`.**
+### 2.1 Langkah 1: Buat tabel `anggota`.
 
 ```sql
 CREATE TABLE anggota (
@@ -55,7 +53,7 @@ CREATE TABLE anggota (
 );
 ```
 
-**Langkah 2: Buat tabel `peminjaman` dengan foreign key.**
+### 2.2 Langkah 2: Buat tabel `peminjaman` dengan foreign key.
 
 ```sql
 CREATE TABLE peminjaman (
@@ -67,7 +65,7 @@ CREATE TABLE peminjaman (
 );
 ```
 
-**Langkah 3: Tambahkan data anggota.**
+### 2.3 Langkah 3: Tambahkan data anggota.
 
 ```sql
 INSERT INTO anggota (nama, alamat) VALUES
@@ -75,7 +73,7 @@ INSERT INTO anggota (nama, alamat) VALUES
 ('Dedi Santoso', 'Jl. Mawar No. 12');
 ```
 
-**Langkah 4: Masukkan transaksi peminjaman dengan anggota valid.**
+### 2.4 Langkah 4: Masukkan transaksi peminjaman dengan anggota valid.
 
 ```sql
 INSERT INTO peminjaman (id_anggota, id_buku, tanggal_pinjam) VALUES
@@ -83,7 +81,7 @@ INSERT INTO peminjaman (id_anggota, id_buku, tanggal_pinjam) VALUES
 (2, 3, '2025-02-02');
 ```
 
-**Langkah 5: Uji constraint dengan memasukkan anggota tidak valid.**
+### 2.5 Langkah 5: Uji constraint dengan memasukkan anggota tidak valid.
 
 ```sql
 -- Gagal karena id_anggota = 99 tidak ada
@@ -329,7 +327,7 @@ Dengan demikian, dokumentasi relasi adalah investasi jangka panjang. Meskipun me
 
 ---
 
-## 5. Studi Kasus Perpustakaan
+## Studi Kasus Perpustakaan
 
 Dalam sistem perpustakaan, hubungan antara tabel `anggota` dan `peminjaman` adalah inti dari pencatatan transaksi. Setiap anggota yang mendaftar akan mendapat identitas unik berupa `id_anggota`. Identitas ini digunakan sebagai referensi dalam setiap transaksi peminjaman buku. Dengan adanya foreign key, sistem memastikan bahwa tidak ada transaksi yang dapat dicatat tanpa anggota yang sah. Hal ini meniru prosedur nyata di perpustakaan, di mana hanya anggota resmi yang berhak meminjam koleksi.
 

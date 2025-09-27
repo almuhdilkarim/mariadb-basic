@@ -29,240 +29,260 @@ description: "Peserta berlatih membuat tabel peminjaman yang menyimpan informasi
 ---
 
 
-## 1. Persiapan Praktik
+## Pendahuluan
 
-Pembuatan tabel `anggota` merupakan langkah penting dalam membangun sistem database perpustakaan. Jika sebelumnya kita hanya memiliki tabel `buku`, maka kini kita menambahkan tabel yang menyimpan data pengguna atau anggota perpustakaan. Dengan tabel ini, pustakawan dapat mencatat identitas setiap orang yang terdaftar, sehingga layanan seperti peminjaman dan pengembalian buku dapat tercatat secara formal. Keberadaan tabel `anggota` memastikan bahwa sistem tidak hanya mengelola koleksi buku, tetapi juga individu yang berinteraksi dengan koleksi tersebut.
+Pembuatan tabel `peminjaman` merupakan salah satu elemen inti dalam sistem database perpustakaan. Jika tabel `anggota` digunakan untuk mencatat identitas pengguna dan tabel `buku` menyimpan informasi koleksi, maka tabel `peminjaman` menjadi penghubung di antara keduanya. Melalui tabel ini, pustakawan dapat melacak siapa yang meminjam buku tertentu, kapan transaksi dilakukan, serta kapan batas waktu pengembalian berlaku. Kehadiran tabel ini membuat sistem perpustakaan lebih tertib, transparan, dan terukur.
 
-Sebelum memulai, pastikan database yang digunakan adalah `perpustakaan`. Jalankan perintah `USE perpustakaan;` untuk memilih database, lalu verifikasi dengan `SELECT DATABASE();`. Banyak kesalahan pemula terjadi karena mereka langsung membuat tabel tanpa memastikan konteks database. Jika salah, tabel bisa masuk ke database yang berbeda atau bahkan error. Kebiasaan mengecek database aktif merupakan dasar disiplin dalam pengelolaan SQL.
+Tanpa tabel `peminjaman`, sistem perpustakaan akan kesulitan dalam mendeteksi keterlambatan, menghitung frekuensi peminjaman, atau menyiapkan laporan bulanan. Bahkan, transaksi yang tidak tercatat dapat menimbulkan kerugian karena buku bisa hilang atau tidak kembali tepat waktu. Maka dari itu, pembangunan tabel ini tidak hanya bersifat teknis, tetapi juga strategis dalam menjaga keberlangsungan layanan perpustakaan.
 
-Struktur tabel `anggota` minimal berisi kolom `id_anggota`, `nama`, `alamat`, dan `tanggal_daftar`. Kolom `id_anggota` menjadi identitas unik setiap baris data. Kolom `nama` digunakan untuk menyimpan informasi identitas anggota, `alamat` digunakan untuk keperluan administratif, dan `tanggal_daftar` berfungsi mencatat kapan anggota tersebut resmi terdaftar. Struktur sederhana ini sudah mencukupi untuk mengelola data keanggotaan dasar.
+Tabel `peminjaman` umumnya memiliki struktur dasar yang terdiri dari kolom `id_peminjaman`, `id_anggota`, `id_buku`, `tanggal_pinjam`, dan `tanggal_kembali`. Kolom `id_peminjaman` berfungsi sebagai identitas unik, sementara `id_anggota` dan `id_buku` menjadi penghubung ke tabel lain. Kolom tanggal membantu pustakawan mengetahui kapan sebuah transaksi dimulai dan kapan harus berakhir. Struktur ini sederhana namun sudah mencakup kebutuhan operasional inti.
 
-Pemilihan tipe data yang sesuai adalah bagian dari persiapan penting. Kolom `id_anggota` menggunakan `INT` dan `AUTO_INCREMENT` untuk memastikan setiap baris unik. Kolom `nama` dan `alamat` menggunakan `VARCHAR` dengan panjang tertentu agar fleksibel namun efisien. Kolom `tanggal_daftar` menggunakan `DATE` agar data tanggal dapat diolah lebih lanjut, misalnya untuk laporan bulanan. Dengan pemilihan tipe data yang tepat, tabel menjadi lebih efisien sekaligus fungsional.
 
-Selain menyiapkan struktur, Anda juga perlu menyiapkan data uji coba. Data uji coba ini bisa berupa anggota dengan nama fiktif, misalnya “Raka Pratama” atau “Sinta Dewi”. Dengan data ini, Anda bisa langsung mencoba perintah `INSERT` setelah tabel selesai dibuat. Uji coba awal penting agar kita tidak hanya berhenti pada tahap desain, tetapi juga langsung menguji implementasi.
+Pemilihan tipe data yang tepat sangat penting. Kolom ID biasanya menggunakan `INT` dengan `AUTO_INCREMENT` untuk menghasilkan angka unik secara otomatis. Kolom `tanggal_pinjam` dan `tanggal_kembali` menggunakan `DATE` agar bisa diolah dengan fungsi SQL khusus tanggal, misalnya menghitung selisih hari keterlambatan. Dengan rancangan ini, sistem perpustakaan dapat memanfaatkan data peminjaman untuk kebutuhan analisis, bukan sekadar pencatatan.
+
+Dalam modul ini, kita akan membahas langkah-langkah pembuatan tabel `peminjaman`, mencoba perintah SQL secara langsung, menghindari kesalahan umum, dan memahami praktik terbaik dalam desain. Tidak hanya itu, kita juga akan melihat studi kasus nyata untuk memastikan konsep yang dipelajari benar-benar bisa diterapkan. Mari kita mulai perjalanan ini dengan penuh semangat, karena setiap baris kode yang ditulis membawa kita lebih dekat pada sistem perpustakaan digital yang profesional.
 
 ---
 
-## 2. Perintah Dasar Membuat Tabel `anggota`
 
-Untuk membuat tabel `anggota`, gunakan perintah `CREATE TABLE` dengan struktur berikut:
+## Langkah-langkah Praktik
+
+Langkah pertama sebelum membuat tabel adalah memastikan bahwa kita sudah berada pada database yang benar. Gunakan perintah `USE perpustakaan;` untuk memilih database aktif. Jangan lupa verifikasi dengan `SELECT DATABASE();` agar kita tidak salah menempatkan tabel di database lain. Kesalahan kecil ini sering terjadi di awal dan bisa menimbulkan kebingungan. Mari kita biasakan selalu memeriksa konteks sebelum melangkah lebih jauh.
+
+
+Setelah itu, mari kita buat struktur tabel `peminjaman` dengan sintaks SQL. Tabel ini akan memiliki primary key pada `id_peminjaman`, serta foreign key pada `id_anggota` dan `id_buku` agar tetap konsisten dengan data di tabel lain. Perhatikan contoh berikut:
 
 ```sql
-CREATE TABLE anggota (
-    id_anggota INT AUTO_INCREMENT PRIMARY KEY,
-    nama VARCHAR(100) NOT NULL,
-    alamat VARCHAR(200),
-    tanggal_daftar DATE NOT NULL
+CREATE TABLE peminjaman (
+    id_peminjaman INT AUTO_INCREMENT PRIMARY KEY,
+    id_anggota INT NOT NULL,
+    id_buku INT NOT NULL,
+    tanggal_pinjam DATE NOT NULL,
+    tanggal_kembali DATE,
+    FOREIGN KEY (id_anggota) REFERENCES anggota(id_anggota),
+    FOREIGN KEY (id_buku) REFERENCES buku(id_buku)
 );
 ```
 
-Query ini menetapkan `id_anggota` sebagai kolom unik dengan `AUTO_INCREMENT` sehingga setiap entri baru otomatis diberi nomor. Kolom `nama` bertipe `VARCHAR(100)` agar bisa menyimpan nama panjang. Kolom `alamat` diberi panjang 200 karakter, sedangkan `tanggal_daftar` bertipe `DATE` sehingga dapat digunakan untuk pencatatan tanggal formal. Dengan struktur ini, data anggota dapat disimpan secara sistematis.
+Sekarang jalankan query di atas, lalu verifikasi dengan `DESCRIBE peminjaman;`. Jika berhasil, Anda akan melihat kolom sesuai dengan rancangan. Kerja bagus! Langkah ini penting karena memberi kepastian bahwa tabel yang kita buat sudah sesuai kebutuhan. Jangan lupa, jika ada kesalahan ketik atau struktur, segera perbaiki sebelum melanjutkan.
 
-Setelah menjalankan query tersebut, jalankan `DESCRIBE anggota;` untuk memverifikasi struktur tabel. Dengan langkah ini, Anda memastikan bahwa semua kolom sudah sesuai. Verifikasi juga berguna untuk menghindari kesalahan kecil seperti salah ketik nama kolom atau penggunaan tipe data yang salah. Jika ada masalah, lebih mudah memperbaikinya sebelum tabel digunakan untuk menyimpan data nyata.
-
-Langkah berikutnya adalah menambahkan data uji coba. Gunakan perintah `INSERT` untuk memasukkan data baru ke dalam tabel. Misalnya:
+Selanjutnya, mari kita coba memasukkan data uji coba. Misalnya, anggota dengan `id_anggota = 1` meminjam buku dengan `id_buku = 2` pada tanggal 2025-01-20, dengan tanggal kembali 2025-01-27. Gunakan perintah berikut:
 
 ```sql
-INSERT INTO anggota (nama, alamat, tanggal_daftar)
-VALUES ('Raka Pratama', 'Jl. Merpati No. 10', '2025-01-12');
+INSERT INTO peminjaman (id_anggota, id_buku, tanggal_pinjam, tanggal_kembali)
+VALUES (1, 2, '2025-01-20', '2025-01-27');
 ```
 
-Jika berhasil, perintah ini akan menambahkan satu anggota baru. Anda bisa menambahkan lebih banyak data dengan perintah `INSERT` lain. Dengan data nyata, modul-modul berikutnya akan lebih mudah dipahami.
-
-Terakhir, tampilkan isi tabel menggunakan perintah `SELECT * FROM anggota;`. Dengan begitu, Anda dapat melihat apakah data tersimpan dengan benar. Proses verifikasi ini melatih Anda untuk selalu bekerja secara sistematis. Database bukan hanya soal menulis query, tetapi juga memastikan setiap langkah berjalan sesuai desain.
+Sekarang tampilkan data dengan perintah `SELECT * FROM peminjaman;`. Anda akan melihat transaksi pertama berhasil masuk ke tabel. Langkahmu sudah tepat, dan inilah bukti bahwa struktur yang dibuat tidak hanya teoretis, tetapi juga praktis digunakan. Mari lanjutkan dengan mempelajari kesalahan umum agar Anda tidak terjebak di kemudian hari.
 
 ---
 
-## 3. Kesalahan Umum
+## Kesalahan Umum
 
-### 3.1 Tidak Menentukan Primary Key
-
-Tanpa primary key, tabel `anggota` tidak memiliki identitas unik untuk setiap baris data. Hal ini bisa menyebabkan duplikasi dan menyulitkan saat membuat relasi dengan tabel lain.
+### 1. Tidak Menentukan Primary Key
 
 ```sql
 -- Kesalahan: tanpa primary key
-CREATE TABLE anggota (
+CREATE TABLE peminjaman (
+    id_peminjaman INT,
     id_anggota INT,
-    nama VARCHAR(100),
-    alamat VARCHAR(200),
-    tanggal_daftar DATE
+    id_buku INT,
+    tanggal_pinjam DATE,
+    tanggal_kembali DATE
 );
 ```
 
-Contoh di atas salah karena tidak ada primary key. Query ini tetap akan berjalan, tetapi menyebabkan masalah integritas data.
+Kesalahan ini membuat tabel `peminjaman` tidak memiliki identitas unik untuk setiap transaksi. Akibatnya, data bisa duplikat tanpa ada cara membedakan satu baris dengan lainnya. Dalam sistem perpustakaan, ini sangat berbahaya karena transaksi peminjaman bisa tumpang tindih dan laporan menjadi tidak valid.
+
+Selain itu, tanpa primary key, relasi dengan tabel lain menjadi sulit dibuat. Foreign key membutuhkan primary key sebagai acuan. Jika tidak ada primary key, maka relasi tidak bisa berjalan dengan baik. Oleh karena itu, selalu gunakan primary key pada tabel transaksi.
 
 ---
 
-### 3.2 Menggunakan Tipe Data yang Tidak Tepat
-
-Kesalahan lain adalah menggunakan tipe data yang tidak efisien, seperti `TEXT` untuk nama anggota.
+### 2. Tidak Membuat Relasi Foreign Key
 
 ```sql
--- Kesalahan: tipe data terlalu besar
-CREATE TABLE anggota (
-    id_anggota INT AUTO_INCREMENT,
-    nama TEXT,
-    alamat TEXT,
-    tanggal_daftar VARCHAR(20)
+-- Kesalahan: tanpa foreign key
+CREATE TABLE peminjaman (
+    id_peminjaman INT AUTO_INCREMENT PRIMARY KEY,
+    id_anggota INT,
+    id_buku INT,
+    tanggal_pinjam DATE,
+    tanggal_kembali DATE
 );
 ```
 
-Penggunaan tipe data ini salah karena memboroskan ruang dan membuat query lebih lambat.
+Kesalahan ini memungkinkan data peminjaman merujuk ke anggota atau buku yang tidak ada. Misalnya, kita bisa memasukkan `id_anggota = 999` padahal anggota tersebut tidak terdaftar. Hal ini mengakibatkan inkonsistensi data.
+
+Relasi foreign key berfungsi menjaga integritas antar tabel. Dengan foreign key, database akan menolak data yang tidak sesuai referensi. Jadi, pustakawan bisa lebih percaya diri bahwa data transaksi selalu valid.
 
 ---
 
-### 3.3 Tidak Menambahkan AUTO\_INCREMENT
-
-Tanpa `AUTO_INCREMENT`, pengguna harus memasukkan ID secara manual.
+### 3. Tidak Menambahkan AUTO_INCREMENT
 
 ```sql
--- Kesalahan: tanpa AUTO_INCREMENT
-CREATE TABLE anggota (
-    id_anggota INT PRIMARY KEY,
-    nama VARCHAR(100),
-    alamat VARCHAR(200),
-    tanggal_daftar DATE
+-- Kesalahan: ID diisi manual
+CREATE TABLE peminjaman (
+    id_peminjaman INT PRIMARY KEY,
+    id_anggota INT,
+    id_buku INT,
+    tanggal_pinjam DATE,
+    tanggal_kembali DATE
 );
 ```
 
-Dengan desain ini, risiko duplikasi ID sangat tinggi.
+Tanpa `AUTO_INCREMENT`, pustakawan harus mengisi ID transaksi secara manual. Hal ini rentan terjadi duplikasi, terutama jika lebih dari satu orang melakukan input data. Jika ada duplikasi ID, data transaksi menjadi rusak.
+
+AUTO_INCREMENT adalah cara paling aman untuk memastikan setiap transaksi memiliki identitas unik. Dengan begitu, setiap data baru akan otomatis mendapatkan nomor ID berbeda.
 
 ---
 
-### 3.4 Tidak Menyediakan Kolom Tanggal
-
-Tanpa kolom tanggal, perpustakaan kehilangan data historis keanggotaan.
+### 4. Tidak Menyediakan Kolom Tanggal
 
 ```sql
--- Kesalahan: tanpa tanggal daftar
-CREATE TABLE anggota (
-    id_anggota INT AUTO_INCREMENT PRIMARY KEY,
-    nama VARCHAR(100),
-    alamat VARCHAR(200)
+-- Kesalahan: tanpa tanggal
+CREATE TABLE peminjaman (
+    id_peminjaman INT AUTO_INCREMENT PRIMARY KEY,
+    id_anggota INT,
+    id_buku INT
 );
 ```
 
-Tanpa `tanggal_daftar`, sulit melacak kapan anggota mendaftar.
+Kesalahan ini membuat kita tidak bisa melacak kapan buku dipinjam dan kapan harus dikembalikan. Akibatnya, sulit mengetahui anggota mana yang terlambat mengembalikan buku.
+
+Dengan kolom tanggal, pustakawan bisa membuat laporan keterlambatan dan menghitung denda. Tanpa itu, sistem perpustakaan menjadi tidak berguna dalam pengawasan.
 
 ---
 
-### 3.5 Tidak Menguji dengan Data
-
-Sering kali tabel dibuat tanpa langsung diuji.
+### 5. Tidak Menguji dengan Data
 
 ```sql
--- Kesalahan: membuat tabel tanpa uji coba
-CREATE TABLE anggota (
-    id_anggota INT AUTO_INCREMENT PRIMARY KEY,
-    nama VARCHAR(100),
-    alamat VARCHAR(200),
-    tanggal_daftar DATE
+-- Kesalahan: tabel dibuat tanpa data uji coba
+CREATE TABLE peminjaman (
+    id_peminjaman INT AUTO_INCREMENT PRIMARY KEY,
+    id_anggota INT,
+    id_buku INT,
+    tanggal_pinjam DATE,
+    tanggal_kembali DATE
 );
 -- Tidak ada INSERT data setelahnya
 ```
 
-Tanpa pengujian, kesalahan desain mungkin tidak terlihat.
+Sering kali tabel dibuat lalu langsung ditinggalkan tanpa diuji. Hal ini berbahaya karena desain yang salah bisa tidak terlihat sampai sistem digunakan.
+
+Dengan uji coba, kita bisa memastikan tabel berjalan sesuai harapan. Jadi, biasakan selalu melakukan `INSERT` dan `SELECT` segera setelah membuat tabel.
 
 ---
 
-## 4. Best Practice
+## Best Practice
 
-### 4.1 Selalu Tetapkan Primary Key
-
-Primary key adalah fondasi integritas data.
+### 1. Selalu Gunakan Primary Key
 
 ```sql
-CREATE TABLE anggota (
-    id_anggota INT AUTO_INCREMENT PRIMARY KEY,
-    nama VARCHAR(100) NOT NULL,
-    alamat VARCHAR(200),
-    tanggal_daftar DATE NOT NULL
+CREATE TABLE peminjaman (
+    id_peminjaman INT AUTO_INCREMENT PRIMARY KEY,
+    id_anggota INT NOT NULL,
+    id_buku INT NOT NULL,
+    tanggal_pinjam DATE NOT NULL,
+    tanggal_kembali DATE
 );
 ```
 
-Dengan primary key, setiap baris dapat diidentifikasi dengan jelas.
+Primary key memastikan setiap transaksi unik. Ini adalah fondasi dari integritas data. Tanpa primary key, seluruh sistem database berisiko kacau.
+
+Dengan primary key, kita bisa dengan mudah mengidentifikasi setiap baris data. Laporan pun bisa dibuat lebih akurat dan rapi.
 
 ---
 
-### 4.2 Gunakan AUTO\_INCREMENT untuk ID
-
-AUTO\_INCREMENT memastikan ID unik secara otomatis.
+### 2. Tambahkan Relasi Foreign Key
 
 ```sql
-INSERT INTO anggota (nama, alamat, tanggal_daftar)
-VALUES ('Sinta Dewi', 'Jl. Anggrek No. 7', '2025-02-01');
-```
-
-Dengan cara ini, pustakawan tidak perlu mengatur ID manual.
-
----
-
-### 4.3 Pilih Tipe Data yang Efisien
-
-Gunakan tipe data sesuai kebutuhan agar database tetap ringan.
-
-```sql
-CREATE TABLE anggota (
-    id_anggota INT AUTO_INCREMENT PRIMARY KEY,
-    nama VARCHAR(100),
-    alamat VARCHAR(200),
-    tanggal_daftar DATE
+CREATE TABLE peminjaman (
+    id_peminjaman INT AUTO_INCREMENT PRIMARY KEY,
+    id_anggota INT NOT NULL,
+    id_buku INT NOT NULL,
+    tanggal_pinjam DATE NOT NULL,
+    tanggal_kembali DATE,
+    FOREIGN KEY (id_anggota) REFERENCES anggota(id_anggota),
+    FOREIGN KEY (id_buku) REFERENCES buku(id_buku)
 );
 ```
 
-Struktur ini hemat ruang dan efisien untuk query.
+Foreign key menjaga agar data transaksi selalu valid. Database akan menolak transaksi jika anggota atau buku tidak ada di tabel referensi.
+
+Dengan cara ini, pustakawan bisa lebih percaya diri. Data yang tersimpan pasti sesuai dengan realitas di perpustakaan.
 
 ---
 
-### 4.4 Sertakan Kolom Tanggal untuk Analisis
-
-Kolom tanggal mendukung analisis tren keanggotaan.
+### 3. Gunakan AUTO_INCREMENT untuk ID
 
 ```sql
-SELECT COUNT(*) AS anggota_baru
-FROM anggota
-WHERE MONTH(tanggal_daftar) = 1 AND YEAR(tanggal_daftar) = 2025;
+INSERT INTO peminjaman (id_anggota, id_buku, tanggal_pinjam, tanggal_kembali)
+VALUES (1, 3, '2025-02-01', '2025-02-08');
 ```
 
-Dengan query ini, pustakawan bisa menghitung jumlah anggota baru Januari 2025.
+AUTO_INCREMENT memudahkan pustakawan karena tidak perlu mengatur ID manual. Sistem akan otomatis memberi nomor transaksi unik.
+
+Ini membuat proses input data lebih cepat, aman, dan minim kesalahan.
 
 ---
 
-### 4.5 Lakukan Uji Coba Setelah Membuat Tabel
-
-Selalu uji dengan `INSERT` dan `SELECT` setelah membuat tabel.
+### 4. Sertakan Kolom Tanggal
 
 ```sql
-INSERT INTO anggota (nama, alamat, tanggal_daftar)
-VALUES ('Andi Wijaya', 'Jl. Melati No. 5', '2025-03-10');
-
-SELECT * FROM anggota;
+SELECT COUNT(*) AS peminjaman_januari
+FROM peminjaman
+WHERE MONTH(tanggal_pinjam) = 1 AND YEAR(tanggal_pinjam) = 2025;
 ```
 
-Praktik ini memastikan tabel berfungsi sesuai harapan.
+Kolom tanggal memungkinkan analisis tren peminjaman. Misalnya, kita bisa menghitung jumlah transaksi dalam satu bulan.
+
+Data historis ini bisa digunakan untuk evaluasi layanan perpustakaan. Pustakawan bisa mengetahui bulan mana yang paling sibuk.
 
 ---
 
-## 5. Studi Kasus Perpustakaan
-
-Perpustakaan sekolah menengah membuat tabel `anggota` dengan struktur standar. Setelah tabel siap, mereka menambahkan anggota pertama bernama “Raka Pratama”.
+### 5. Selalu Uji Coba Setelah Membuat Tabel
 
 ```sql
-INSERT INTO anggota (nama, alamat, tanggal_daftar)
-VALUES ('Raka Pratama', 'Jl. Merpati No. 10', '2025-01-12');
+INSERT INTO peminjaman (id_anggota, id_buku, tanggal_pinjam, tanggal_kembali)
+VALUES (2, 5, '2025-03-10', '2025-03-17');
+
+SELECT * FROM peminjaman;
 ```
 
-Data ini kemudian diverifikasi dengan `SELECT * FROM anggota;`. Hasilnya menunjukkan bahwa anggota tersimpan dengan baik. Beberapa entri lain juga ditambahkan agar pustakawan bisa melihat data keanggotaan yang lebih bervariasi. Dengan cara ini, sistem perpustakaan mulai siap digunakan dalam operasi sehari-hari.
+Uji coba memastikan bahwa desain tabel sesuai kebutuhan. Dengan begitu, kesalahan bisa ditemukan sejak awal.
+
+Kerja bagus jika Anda sudah melakukan uji coba ini. Itu tanda bahwa Anda bekerja secara profesional.
+
+---
+
+
+## Studi Kasus
+
+Sebuah perpustakaan sekolah menengah membuat tabel `peminjaman` sesuai rancangan standar. Setelah tabel siap, mereka memasukkan transaksi pertama: anggota dengan `id_anggota = 1` meminjam buku dengan `id_buku = 2` pada 2025-01-20 dan dikembalikan pada 2025-01-27.
+
+```sql
+INSERT INTO peminjaman (id_anggota, id_buku, tanggal_pinjam, tanggal_kembali)
+VALUES (1, 2, '2025-01-20', '2025-01-27');
+```
+
+Data tersebut kemudian ditampilkan dengan `SELECT * FROM peminjaman;`. Hasilnya menunjukkan transaksi tersimpan dengan baik. Langkah ini memberi kepercayaan bahwa tabel sudah berfungsi sebagaimana mestinya.
+
+Beberapa transaksi lain ditambahkan untuk melihat variasi data. Misalnya, anggota lain meminjam buku dengan tanggal kembali berbeda. Hal ini memperkaya data dan membuat sistem lebih realistis.
+
+Dengan adanya data ini, pustakawan bisa membuat laporan sederhana. Misalnya, menghitung berapa banyak transaksi yang terjadi dalam bulan tertentu. Laporan ini membantu evaluasi layanan perpustakaan.
+
+Akhirnya, studi kasus ini menunjukkan bahwa tabel `peminjaman` bukan hanya sebuah desain teoretis. Ia adalah bagian nyata dari sistem informasi yang bisa dipakai setiap hari.
 
 ---
 
 ## Kesimpulan
 
-Modul ini membimbing peserta membuat tabel `anggota` dengan sintaks SQL yang benar. Peserta mempelajari persiapan, perintah dasar, kesalahan umum, dan praktik terbaik. Studi kasus memperlihatkan bagaimana tabel `anggota` membantu perpustakaan mengelola data pengguna. Dengan pemahaman ini, peserta siap melanjutkan ke modul berikutnya, yaitu pembuatan tabel `peminjaman`.
+Tabel `peminjaman` merupakan tulang punggung sistem database perpustakaan karena mencatat interaksi nyata antara anggota dan koleksi buku. Dalam modul ini, kita telah belajar membuat tabel `peminjaman`, memahami kesalahan umum, serta mempraktikkan standar terbaik. Studi kasus menunjukkan bahwa desain ini benar-benar dapat digunakan dalam kehidupan sehari-hari. Dengan penguasaan materi ini, Anda selangkah lebih dekat menjadi pengelola database yang andal. Mari terus berlatih, karena setiap query yang Anda jalankan memperkuat keterampilan praktis dalam dunia nyata.
 
 ---
 
 ## Referensi
 
-* Connolly, T., & Begg, C. (2015). *Database Systems: A Practical Approach to Design, Implementation, and Management*. Pearson.
-* Coronel, C., & Morris, S. (2019). *Database Systems: Design, Implementation, & Management*. Cengage Learning.
+* Date, C. J. (2019). *Database Design and Relational Theory: Normal Forms and All That Jazz*. O’Reilly Media.
+* Hoffer, J. A., Ramesh, V., & Topi, H. (2016). *Modern Database Management*. Pearson.
+

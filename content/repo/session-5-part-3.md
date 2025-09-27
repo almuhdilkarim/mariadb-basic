@@ -29,8 +29,6 @@ description: "Pelajari operator perbandingan seperti =, >, <, dan LIKE. Modul in
 ---
 
 
-## 1. Persiapan Praktik
-
 Operator perbandingan adalah salah satu fitur inti dari SQL yang membuat klausa `WHERE` semakin kuat dan berguna. Tanpa operator ini, penyaringan data hanya terbatas pada kecocokan sederhana. Dengan operator seperti `=`, `>`, `<`, dan `LIKE`, pengguna dapat menyeleksi data secara lebih presisi sesuai dengan kebutuhan analisis. Contohnya, pustakawan bisa mencari buku dengan tahun terbit tertentu atau buku dengan judul yang mengandung kata kunci tertentu. Hal ini memperlihatkan bahwa operator perbandingan bukan hanya fungsi teknis, tetapi juga alat praktis untuk mendukung pengambilan keputusan.
 
 Sebelum melakukan praktik, penting memastikan bahwa Anda menggunakan database yang benar. Dalam konteks studi kasus ini, database yang digunakan adalah `perpustakaan`. Perintah `USE perpustakaan;` harus dijalankan agar semua query berikutnya diarahkan ke database yang sesuai. Setelah itu, Anda bisa memverifikasi dengan `SELECT DATABASE();` untuk memastikan posisi Anda sudah benar. Jika database yang aktif tidak sesuai, semua query yang dijalankan bisa gagal atau menghasilkan data yang salah. Persiapan kecil ini sangat penting untuk mencegah kesalahan besar di tahap selanjutnya.
@@ -43,7 +41,7 @@ Terakhir, pahami tujuan dari penggunaan operator perbandingan dalam kasus nyata.
 
 ---
 
-## 2. Perintah Dasar Operator Perbandingan
+## Perintah Dasar Operator Perbandingan
 
 Operator `=` adalah operator paling sederhana dalam SQL. Fungsinya adalah mencari data yang nilainya sama persis dengan syarat tertentu. Misalnya, jika pustakawan ingin menampilkan semua buku yang terbit pada tahun 2020, query yang digunakan adalah:
 
@@ -173,7 +171,7 @@ SELECT COUNT(*) FROM buku WHERE tahun_terbit > 2015;
 
 ---
 
-## 5. Studi Kasus Perpustakaan
+## Studi Kasus Perpustakaan
 
 Dalam sebuah perpustakaan, admin ingin mencari semua buku yang memiliki kata "Pemrograman" pada judulnya. Ia menjalankan query berikut:
 

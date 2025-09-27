@@ -28,13 +28,6 @@ metadata:
 description: "Modul ini membimbing peserta merestore database dari file hasil backup. Peserta belajar memastikan database kembali berjalan normal setelah pemulihan."
 ---
 
-
-Baik 👍, saya akan tuliskan **Pertemuan 12 — Backup & Restore (Modul 3: Praktikal Lanjutan)** dengan fokus berbeda, yaitu simulasi kehilangan data dan strategi restore mendalam.
-
----
-
-# Pertemuan 12 — Backup & Restore (Modul 3: Praktikal Lanjutan)
-
 ## Pendahuluan
 
 Simulasi kehilangan data merupakan cara efektif untuk menguji kesiapan sebuah sistem database dalam menghadapi insiden nyata. Dalam konteks perpustakaan, hilangnya tabel pinjaman atau anggota dapat menimbulkan masalah besar bagi kelancaran layanan. Dengan melakukan simulasi, administrator dapat memverifikasi bahwa strategi backup dan restore benar-benar dapat diandalkan. Pendekatan ini juga membantu dalam melatih tim IT agar sigap menangani keadaan darurat. Menurut Garcia-Molina et al. (2021), pengujian melalui simulasi adalah bagian penting dari manajemen keberlangsungan sistem.

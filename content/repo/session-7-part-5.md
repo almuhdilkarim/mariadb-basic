@@ -28,7 +28,7 @@ metadata:
 description: "Peserta berlatih secara mandiri membuat laporan gabungan antara tabel anggota, buku, dan peminjaman. Modul ini memperkuat pemahaman konsep JOIN melalui latihan nyata."
 ---
 
-## 1. Pendahuluan
+## Pendahuluan
 
 Latihan mandiri ini merupakan kesempatan bagi peserta untuk mengintegrasikan seluruh pemahaman mengenai JOIN dasar yang telah dipelajari sebelumnya. Jika pada modul-modul terdahulu peserta hanya diminta menulis query sederhana dengan satu atau dua tabel, maka di sini mereka ditantang untuk menyusun laporan gabungan yang lebih komprehensif. Laporan ini menghubungkan tabel `anggota`, `peminjaman`, dan `buku` untuk menampilkan informasi lintas entitas dalam satu keluaran. Dengan cara ini, peserta belajar bahwa database relasional dirancang bukan hanya untuk menyimpan data, melainkan juga untuk menyajikan gambaran menyeluruh tentang aktivitas organisasi. Latihan ini juga menekankan bahwa keterampilan analitis sama pentingnya dengan keterampilan teknis.
 
@@ -42,7 +42,7 @@ Akhirnya, latihan mandiri ini mengajarkan peserta bahwa SQL bukan hanya soal men
 
 ---
 
-## 2. Langkah-Langkah Praktik
+## Langkah-Langkah Praktik
 
 Langkah pertama adalah merancang struktur laporan yang ingin dibangun agar proses penulisan query lebih terarah. Laporan gabungan harus terdiri dari tiga bagian utama: detail peminjaman per anggota, ringkasan peminjaman per buku atau kategori, dan deteksi anomali yang mungkin muncul. Dengan merencanakan lebih dulu, peserta dapat membagi query ke dalam blok-blok logis yang mudah dipahami. Perancangan seperti ini mencegah peserta menulis query panjang yang sulit dipelihara atau sulit diuji. Selain itu, pendekatan ini melatih peserta untuk berpikir sistematis sebagaimana seorang analis data profesional.
 
@@ -280,7 +280,7 @@ Praktik ini juga membuka jalan menuju otomasi laporan. Query yang sudah diparame
 
 ---
 
-## 5. Studi Kasus
+## Studi Kasus
 
 Studi kasus ini berangkat dari kebutuhan nyata sebuah perpustakaan sekolah yang diminta untuk menyusun laporan bulanan tentang aktivitas peminjaman. Kepala perpustakaan ingin mengetahui siapa saja anggota yang meminjam, buku apa yang dipinjam, dan kapan transaksi dilakukan. Selain itu, ia ingin laporan ini juga mencakup anggota yang tidak aktif agar strategi keterlibatan dapat disusun. Laporan gabungan menjadi solusi karena menghubungkan tabel `anggota`, `peminjaman`, dan `buku` dalam satu query. Tujuan akhirnya adalah mendapatkan gambaran lengkap, baik dari sisi operasional maupun strategis.
 
@@ -349,13 +349,13 @@ Studi kasus ini membuktikan bahwa laporan gabungan dapat menjawab berbagai kebut
 ---
 
 
-## 6. Kesimpulan
+## Kesimpulan
 
 Latihan mandiri ini menunjukkan bahwa pembuatan laporan gabungan memerlukan keterampilan teknis dan analitis secara bersamaan. Dengan memanfaatkan `JOIN`, pustakawan dapat menampilkan informasi detail per anggota, ringkasan per kategori, serta mendeteksi anomali yang berpotensi merusak kualitas data. Penambahan fungsi agregasi dan parameterisasi periode membuat laporan lebih fleksibel dan relevan untuk kebutuhan rutin. Praktik ini juga menekankan pentingnya menjaga inklusivitas data sehingga tidak ada anggota atau kategori yang terlewat dalam laporan. Pada akhirnya, latihan ini melatih peserta untuk menulis query yang bersih, efektif, dan bernilai strategis dalam pengambilan keputusan.
 
 ---
 
-## 7. Referensi
+## Referensi
 
 * Beaulieu, A. (2020). *Learning SQL* (3rd ed.). O’Reilly Media.
 * Karwin, B. (2021). *SQL Antipatterns, Volume 1: Avoiding the Pitfalls of Database Programming* (2nd ed.). Pragmatic Bookshelf.

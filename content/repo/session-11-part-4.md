@@ -29,10 +29,6 @@ description: "Pelajari apa itu deadlock dalam transaksi database dan bagaimana c
 ---
 
 
-### Menggunakan View untuk Laporan
-
----
-
 #### Kesalahan Umum
 
 ##### 1) Menganggap View Selalu Menyimpan Data

@@ -29,8 +29,6 @@ description: "Pelajari cara menghapus data dari tabel menggunakan perintah DELET
 ---
 
 
-## 1. Persiapan Sebelum Menghapus Data
-
 Menghapus data adalah salah satu operasi yang paling berisiko dalam manajemen basis data. Berbeda dengan `INSERT` atau `UPDATE` yang menambahkan atau memperbarui nilai, `DELETE` menghapus baris data secara permanen dari tabel. Jika dijalankan tanpa persiapan, perintah ini dapat menyebabkan kehilangan informasi penting yang tidak bisa dipulihkan. Oleh karena itu, persiapan sebelum menjalankan `DELETE` adalah langkah yang mutlak diperlukan.
 
 Langkah pertama adalah memastikan database aktif sudah benar. Sama seperti operasi sebelumnya, gunakan `SELECT DATABASE();` untuk melihat database yang sedang digunakan. Jika hasilnya bukan `perpustakaan`, jalankan `USE perpustakaan;`. Kesalahan memilih database dapat mengakibatkan penghapusan data pada sistem yang salah. Kesalahan ini bisa berakibat fatal karena data yang hilang tidak mudah dikembalikan.
@@ -43,7 +41,7 @@ Langkah terakhir dalam persiapan adalah membuat cadangan data. Praktik membuat c
 
 ---
 
-## 2. Perintah Dasar `DELETE`
+## Perintah Dasar `DELETE`
 
 Perintah `DELETE` digunakan untuk menghapus satu atau lebih baris dari tabel. Sintaks umumnya adalah:
 
@@ -71,7 +69,7 @@ Dalam praktik profesional, `DELETE` jarang digunakan tanpa pertimbangan. Biasany
 
 ---
 
-## 3. Menghapus Beberapa Baris Sekaligus
+## Menghapus Beberapa Baris Sekaligus
 
 Perintah `DELETE` memungkinkan pengguna menghapus banyak baris sekaligus dengan menggunakan kondisi tertentu. Misalnya, jika perpustakaan ingin menghapus semua buku yang tidak memiliki ISBN (kosong), maka query yang digunakan adalah:
 
@@ -126,17 +124,7 @@ Dalam beberapa kasus, data yang dihapus ternyata masih dibutuhkan untuk laporan 
 
 ## 5. Best Practice
 
-### 5.1 Lakukan Backup Sebelum Menghapus
-
-Sebelum menghapus data penting, lakukan backup terlebih dahulu. Cadangan memungkinkan data dipulihkan jika ternyata penghapusan salah.
-
-```sql
-CREATE TABLE buku_backup AS SELECT * FROM buku;
-```
-
----
-
-### 5.2 Selalu Gunakan Klausa `WHERE`
+### 5.1 Selalu Gunakan Klausa `WHERE`
 
 Klausa `WHERE` adalah pelindung utama terhadap penghapusan massal. Pastikan selalu menuliskan kondisi yang jelas untuk membatasi data yang dihapus.
 
@@ -146,12 +134,34 @@ DELETE FROM buku WHERE id_buku = 3;
 
 ---
 
-### 5.3 Gunakan `SELECT` untuk Verifikasi
+### 5.2 Gunakan `SELECT` untuk Verifikasi
 
 Sebelum menjalankan `DELETE`, jalankan perintah `SELECT` dengan kondisi yang sama. Langkah ini memastikan bahwa hanya data yang relevan yang akan terhapus.
 
 ```sql
 SELECT * FROM buku WHERE tahun_terbit < 1990;
+```
+
+---
+
+### 5.3 Gunakan Transaksi untuk Penghapusan Besar
+
+Ketika menghapus banyak baris, gunakan transaksi. Dengan cara ini, perubahan dapat dibatalkan dengan `ROLLBACK` jika ada kesalahan.
+
+```sql
+START TRANSACTION;
+DELETE FROM buku WHERE tahun_terbit < 1990;
+ROLLBACK;
+```
+
+---
+
+### 5.4 Lakukan Backup Sebelum Menghapus
+
+Sebelum menghapus data penting, lakukan backup terlebih dahulu. Cadangan memungkinkan data dipulihkan jika ternyata penghapusan salah.
+
+```sql
+CREATE TABLE buku_backup AS SELECT * FROM buku;
 ```
 
 ---

@@ -28,8 +28,6 @@ metadata:
 description: "Peserta berlatih membuat prosedur untuk menghasilkan laporan harian peminjaman. Modul ini memperkuat keterampilan menggabungkan konsep prosedur dan query praktis."
 ---
 
-# Pertemuan 16 – Modul 1 (Praktikal): Prosedur Laporan Harian
-
 ## Pendahuluan
 
 Laporan harian adalah salah satu kebutuhan utama dalam sistem perpustakaan digital. Admin perlu mengetahui berapa banyak buku yang dipinjam setiap hari, siapa saja anggotanya, dan judul apa saja yang sedang populer. Jika laporan ini dibuat secara manual dengan query berbeda-beda, proses akan memakan waktu dan rawan kesalahan. Dengan menggunakan stored procedure, laporan harian dapat dihasilkan secara otomatis hanya dengan satu pemanggilan.

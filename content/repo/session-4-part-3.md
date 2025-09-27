@@ -28,9 +28,6 @@ metadata:
 description: "Modul ini mengajarkan penggunaan perintah UPDATE untuk mengubah isi data pada tabel. Peserta akan berlatih memperbarui informasi buku dengan kondisi tertentu."
 ---
 
-
-## 1. Persiapan Sebelum Mengubah Data
-
 Sebelum menggunakan perintah `UPDATE`, penting untuk memahami data yang akan diubah. Tabel `buku` pada database `perpustakaan` sudah berisi koleksi dari modul sebelumnya, sehingga perintah `UPDATE` dapat digunakan untuk memperbaiki kesalahan atau memperbarui informasi. Namun, perubahan yang dilakukan bersifat permanen, artinya nilai lama akan langsung tergantikan oleh nilai baru. Tanpa persiapan yang tepat, ada kemungkinan data yang salah ikut terubah. Oleh sebab itu, tahap persiapan tidak boleh dilewatkan.
 
 Langkah pertama adalah memastikan database aktif sudah benar. Dengan menggunakan `SELECT DATABASE();`, pengguna dapat memeriksa nama database yang sedang dipakai. Jika bukan `perpustakaan`, perintah `USE perpustakaan;` wajib dijalankan. Kesalahan memilih database bisa menyebabkan data pada sistem lain ikut terubah, yang berpotensi menimbulkan masalah serius. Pemilihan database yang tepat adalah fondasi utama sebelum melakukan perubahan.
@@ -43,7 +40,7 @@ Langkah terakhir dalam persiapan adalah membuat cadangan data. Cadangan dapat be
 
 ---
 
-## 2. Perintah Dasar `UPDATE`
+## Perintah Dasar `UPDATE`
 
 Perintah `UPDATE` digunakan untuk memperbarui nilai pada satu atau lebih kolom dalam tabel. Sintaks umum perintah ini adalah `UPDATE nama_tabel SET kolom1 = nilai_baru WHERE kondisi;`. Bagian `SET` berfungsi menentukan kolom yang ingin diubah dan nilai barunya. Klausa `WHERE` sangat penting karena berfungsi membatasi baris yang diperbarui. Tanpa `WHERE`, semua baris dalam tabel akan berubah, yang biasanya tidak diinginkan.
 
@@ -67,7 +64,7 @@ Kemampuan `UPDATE` untuk menyesuaikan data secara langsung adalah kekuatan penti
 
 ---
 
-## 3. Mengubah Beberapa Baris Data Sekaligus
+## Mengubah Beberapa Baris Data Sekaligus
 
 Selain mengubah satu baris, `UPDATE` juga bisa digunakan untuk memperbarui banyak baris sekaligus. Hal ini dilakukan dengan memperluas kondisi dalam klausa `WHERE`. Misalnya, jika semua buku yang terbit sebelum tahun 2000 ingin diubah penulisnya menjadi "Anonim", query yang digunakan adalah:
 
@@ -185,7 +182,7 @@ CREATE TABLE buku_backup AS SELECT * FROM buku;
 
 ---
 
-## 6. Studi Kasus Perpustakaan
+## Studi Kasus Perpustakaan
 
 Dalam perpustakaan, admin menemukan kesalahan penulisan judul buku pada `id_buku = 3`. Judul tercatat "Dasar Pemrograman Webb" dan harus diperbaiki menjadi "Dasar Pemrograman Web". Untuk memperbaikinya, admin menjalankan query berikut:
 

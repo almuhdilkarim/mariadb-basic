@@ -29,7 +29,6 @@ description: "Modul ini mengajarkan penggunaan klausa WHERE untuk menyaring data
 ---
 
 
-## 1. Persiapan Praktik
 
 Klausa `WHERE` dalam SQL adalah salah satu fitur terpenting yang memungkinkan pengguna untuk menyaring data berdasarkan kondisi tertentu. Jika perintah `SELECT` digunakan tanpa kondisi, maka semua data dalam tabel akan ditampilkan. Namun, dalam praktik nyata, pengguna hampir selalu membutuhkan informasi yang lebih spesifik. Misalnya, seorang pustakawan ingin mengetahui buku yang terbit pada tahun tertentu atau yang ditulis oleh penulis tertentu. Tanpa filter, informasi ini akan sulit ditemukan di antara ratusan bahkan ribuan baris data.
 
@@ -43,7 +42,7 @@ Terakhir, pahami tujuan praktis dari penyaringan data. Misalnya, apakah Anda ing
 
 ---
 
-## 2. Perintah Dasar `WHERE`
+## Perintah Dasar `WHERE`
 
 Sintaks dasar penggunaan klausa `WHERE` adalah sebagai berikut:
 
@@ -167,7 +166,7 @@ SELECT judul FROM buku WHERE penulis = 'Raka Pratama' AND tahun_terbit = 2021;
 
 ---
 
-## 5. Studi Kasus Perpustakaan
+## Studi Kasus Perpustakaan
 
 Seorang pustakawan ingin mengetahui buku terbaru yang diterbitkan pada tahun 2021. Ia menjalankan query berikut:
 

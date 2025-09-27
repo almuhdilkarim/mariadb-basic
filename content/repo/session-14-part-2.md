@@ -28,12 +28,6 @@ metadata:
 description: "Peserta mempelajari perintah SQL untuk membuat index pada kolom tabel. Modul ini memberikan pengalaman langsung bagaimana index memengaruhi performa query."
 ---
 
-Mantap 🚀. Saya buatkan **Pertemuan 13 – Modul 2 (Praktikal): Membuat Index Sederhana** lengkap sesuai kaidah yang sudah kamu tetapkan:
-
----
-
-# Pertemuan 13 – Modul 2 (Praktikal): Membuat Index Sederhana
-
 ## Pendahuluan
 
 Index adalah salah satu fitur penting dalam MariaDB yang berfungsi untuk mempercepat pencarian data pada tabel. Tanpa index, query akan melakukan pemindaian seluruh tabel (full table scan) sehingga semakin besar data, semakin lambat hasil yang diperoleh. Dalam konteks perpustakaan digital, hal ini akan membuat pencarian judul buku menjadi lambat dan menyulitkan pengguna. Bayangkan seorang anggota yang ingin menemukan buku tertentu, tetapi sistem harus membaca ribuan baris satu per satu. Kondisi ini tentu membuat pengalaman pengguna tidak efisien.

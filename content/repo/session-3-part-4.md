@@ -51,7 +51,7 @@ CREATE TABLE anggota (
     alamat VARCHAR(150),
     no_telepon VARCHAR(20)
 );
-```
+````
 
 Dengan perintah ini, sistem membuat tabel kosong bernama `anggota`. Tabel sudah siap menampung data baru. Struktur ini akan menjadi kerangka utama dalam manajemen keanggotaan.
 
@@ -265,7 +265,7 @@ Dengan snippet ini, sistem perpustakaan sudah memiliki tiga tabel dasar yang sal
 
 ## Kesimpulan
 
-Modul ini membimbing peserta untuk membuat tabel sederhana dengan `CREATE TABLE`. Dari persiapan database, pembuatan tabel anggota, tabel buku, hingga tabel peminjaman, semua langkah dijelaskan secara sistematis. Kesalahan umum dilengkapi contoh snippet SQL agar peserta memahami kesalahan nyata yang harus dihindari. Best practice diperkuat dengan snippet yang siap dijalankan. Studi kasus perpustakaan menunjukkan bagaimana tiga tabel utama — anggota, buku, dan peminjaman — saling terhubung membentuk fondasi sistem digital. Dengan pemahaman ini, peserta siap melanjutkan ke praktik berikutnya untuk mengelola data di dalam tabel.
+Modul ini membimbing peserta membuat tabel sederhana dengan `CREATE TABLE`. Dari persiapan database, pembuatan tabel anggota, tabel buku, hingga tabel peminjaman, semua langkah dijelaskan secara sistematis. Kesalahan umum dilengkapi contoh snippet SQL agar peserta memahami kesalahan nyata yang harus dihindari. Best practice diperkuat dengan snippet yang siap dijalankan. Studi kasus perpustakaan menunjukkan bagaimana tiga tabel utama — anggota, buku, dan peminjaman — saling terhubung membentuk fondasi sistem digital. Dengan pemahaman ini, peserta siap melanjutkan ke praktik berikutnya untuk mengelola data di dalam tabel.
 
 ---
 

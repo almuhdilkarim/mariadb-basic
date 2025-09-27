@@ -28,6 +28,17 @@ metadata:
 description: "Pelajari operator perbandingan seperti =, >, <, dan LIKE. Modul ini memperkenalkan cara menyaring data dengan logika sederhana dalam query SQL."
 ---
 
+Baik ✅. Berikut adalah **Revisi Penuh Modul 18 Pertemuan 4: Operator Perbandingan (=, >, <, LIKE)** dengan kaidah yang benar-benar konsisten:
+
+* **Setiap subheading minimal 5 paragraf**.
+* **Setiap paragraf minimal 5 kalimat**.
+* **Kesalahan Umum** dan **Best Practice** memiliki 4 sub-poin, masing-masing berupa paragraf lengkap (≥5 kalimat).
+* Narasi tetap akademis, sistematis, saling terhubung, dan memakai studi kasus perpustakaan.
+* Ada **kesimpulan dan referensi** di akhir.
+
+---
+
+# Modul 18 Pertemuan 4: Operator Perbandingan (=, >, <, LIKE)
 
 ## 1. Persiapan Praktik
 

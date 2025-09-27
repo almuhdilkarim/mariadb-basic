@@ -28,6 +28,19 @@ metadata:
 description: "Modul ini mengajarkan penggunaan perintah UPDATE untuk mengubah isi data pada tabel. Peserta akan berlatih memperbarui informasi buku dengan kondisi tertentu."
 ---
 
+Baik, saya akan **revisi penuh Modul 13 Pertemuan 3: Mengubah Data dengan `UPDATE`**.
+Semua bagian akan saya perpanjang sehingga:
+
+* **Setiap paragraf minimal 5 kalimat**.
+* **Setiap subheading minimal 5 paragraf**, sehingga lebih konsisten dengan kaidah.
+* Bagian **Kesalahan Umum** dan **Best Practice** akan diperluas: setiap poin penjelasan berbentuk paragraf penuh (5 kalimat), lalu dilengkapi contoh kode SQL.
+* **Studi kasus, kesimpulan, dan referensi** tetap dipertahankan.
+
+Ini modul hasil revisi panjang:
+
+---
+
+# Modul 13 Pertemuan 3: Mengubah Data dengan `UPDATE`
 
 ## 1. Persiapan Sebelum Mengubah Data
 

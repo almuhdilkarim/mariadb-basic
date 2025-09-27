@@ -28,6 +28,11 @@ metadata:
 description: "Pelajari prinsip bentuk normal pertama (1NF) yang memastikan setiap kolom berisi nilai tunggal. Modul ini membahas cara membuat tabel lebih rapi dan mudah dikelola."
 ---
 
+### Pertemuan 8 — Submodul 3
+
+**Bentuk Normal Pertama (1NF) dalam Database Perpustakaan**
+
+---
 
 #### Pendahuluan
 

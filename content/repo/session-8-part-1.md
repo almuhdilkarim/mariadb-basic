@@ -29,6 +29,22 @@ description: "Pelajari penggunaan fungsi COUNT untuk menghitung jumlah baris dal
 ---
 
 
+Oke 👍. Mari saya revisi ulang **Submodul Praktikal 1: Fungsi COUNT** dengan mengikuti **ketentuan penulisan umum** yang sudah kita sepakati sebelumnya:
+
+* Setiap paragraf **5 kalimat**.
+* Setiap subheading minimal **5 paragraf**.
+* Untuk **praktikal**: ada **Kesalahan Umum** dan **Best Practice**.
+* Gaya bahasa **sistematis, ajakan, dan motivatif**.
+* Konteks studi kasus **perpustakaan**.
+* Sertakan **contoh query SQL** yang relevan.
+* Gunakan **sitasi ilmiah** dari buku/jurnal terpercaya.
+
+---
+
+# Pertemuan 7 — Ringkasan Data
+
+## Submodul Praktikal 1: Menggunakan Fungsi COUNT untuk Menghitung Data
+
 ### 1. Tujuan Praktik
 
 Tujuan dari praktik ini adalah agar Anda mampu memahami dan menggunakan fungsi COUNT dalam MariaDB untuk menghitung data penting di perpustakaan. Fungsi ini membantu meringkas data dalam bentuk angka sederhana sehingga lebih mudah dianalisis. Dalam manajemen perpustakaan, informasi seperti jumlah anggota atau jumlah peminjaman sangat penting untuk evaluasi kinerja. Dengan menguasai COUNT, Anda akan bisa menghasilkan laporan sederhana namun bermakna dari database. Ramakrishnan & Gehrke (2003) menekankan bahwa fungsi agregasi merupakan dasar penting dalam analisis basis data【Ramakrishnan & Gehrke, *Database Management Systems*】.

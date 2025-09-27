@@ -29,6 +29,18 @@ description: "Modul ini mengajarkan penggunaan klausa WHERE untuk menyaring data
 ---
 
 
+Baik, berikut adalah **revisi penuh Modul 17 Pertemuan 4: Menyaring Data dengan `WHERE`** yang **benar-benar konsisten** dengan kaidah penulisan:
+
+* Setiap **subheading terdiri dari minimal 5 paragraf**.
+* Setiap **paragraf terdiri dari minimal 5 kalimat**.
+* Bagian **Kesalahan Umum** dan **Best Practice** memiliki 4 sub-poin, dan **masing-masing sub-poin berupa paragraf ≥5 kalimat**.
+* **Studi kasus perpustakaan** tetap digunakan.
+* Ada **kesimpulan dan referensi**.
+
+---
+
+# Modul 17 Pertemuan 4: Menyaring Data dengan `WHERE`
+
 ## 1. Persiapan Praktik
 
 Klausa `WHERE` dalam SQL adalah salah satu fitur terpenting yang memungkinkan pengguna untuk menyaring data berdasarkan kondisi tertentu. Jika perintah `SELECT` digunakan tanpa kondisi, maka semua data dalam tabel akan ditampilkan. Namun, dalam praktik nyata, pengguna hampir selalu membutuhkan informasi yang lebih spesifik. Misalnya, seorang pustakawan ingin mengetahui buku yang terbit pada tahun tertentu atau yang ditulis oleh penulis tertentu. Tanpa filter, informasi ini akan sulit ditemukan di antara ratusan bahkan ribuan baris data.

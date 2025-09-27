@@ -28,6 +28,16 @@ metadata:
 description: "Pelajari cara memilih kolom tertentu dengan perintah SELECT. Modul ini membantu pengguna menampilkan hanya informasi yang relevan dari tabel."
 ---
 
+Baik, saya akan **revisi penuh Modul 16 Pertemuan 4: Menampilkan Kolom Tertentu** dengan memastikan:
+
+* **Setiap paragraf minimal 5 kalimat.**
+* **Kesalahan Umum** dan **Best Practice** dijelaskan lebih panjang (tiap sub-poin ≥5 kalimat).
+* Bahasa akademis namun tetap mudah dipahami.
+* Studi kasus tetap berbasis perpustakaan.
+
+---
+
+# Modul 16 Pertemuan 4: Menampilkan Kolom Tertentu
 
 ## 1. Persiapan Praktik
 

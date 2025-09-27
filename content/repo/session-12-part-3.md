@@ -28,9 +28,6 @@ metadata:
 description: "Peserta belajar memberikan hak akses penuh kepada user admin menggunakan GRANT. Modul ini menjelaskan pentingnya pendelegasian hak pada pengelolaan database."
 ---
 
-
-## Sub Modul 3 – Memberi Izin Penuh ke Admin
-
 ### Pendahuluan
 
 Dalam sistem perpustakaan, administrator memiliki peran paling penting dalam mengelola seluruh aspek database. Admin bertanggung jawab menambah koleksi buku, mengatur data anggota, hingga memantau catatan peminjaman dan pengembalian. Karena cakupan tanggung jawabnya luas, admin membutuhkan hak akses penuh terhadap semua tabel dan objek database. MariaDB menyediakan perintah `GRANT ALL PRIVILEGES` untuk memberikan izin ini secara menyeluruh. Dengan begitu, admin dapat melakukan seluruh operasi tanpa hambatan.

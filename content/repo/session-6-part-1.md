@@ -242,7 +242,7 @@ Dengan query ini, pustakawan bisa menghitung jumlah anggota baru Januari 2025.
 
 ---
 
-### 4.5 Lakukan Uji Coba Setelah Membuat Tabel
+### 4.5 Lakukayn Uji Coba Setelah Membuat Tabel
 
 Selalu uji dengan `INSERT` dan `SELECT` setelah membuat tabel.
 

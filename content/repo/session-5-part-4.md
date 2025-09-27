@@ -28,17 +28,6 @@ metadata:
 description: "Modul ini mengajarkan cara mengurutkan hasil query dengan ORDER BY. Peserta belajar menampilkan data berdasarkan urutan abjad atau angka sesuai kebutuhan."
 ---
 
-Baik ✅. Berikut saya tuliskan **Revisi Penuh Modul 19 Pertemuan 4: Mengurutkan Data dengan `ORDER BY`** sesuai kaidah yang benar-benar konsisten:
-
-* **Setiap subheading minimal 5 paragraf.**
-* **Setiap paragraf minimal 5 kalimat.**
-* **Kesalahan Umum** dan **Best Practice** memiliki 4 sub-poin, masing-masing berupa paragraf penuh (≥5 kalimat).
-* Narasi akademis, sistematis, terhubung, dengan **studi kasus perpustakaan**.
-* Ada **kesimpulan dan referensi** di akhir.
-
----
-
-# Modul 19 Pertemuan 4: Mengurutkan Data dengan `ORDER BY`
 
 ## 1. Persiapan Praktik
 

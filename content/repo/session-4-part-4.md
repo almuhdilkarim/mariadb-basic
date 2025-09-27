@@ -130,6 +130,10 @@ Dalam beberapa kasus, data yang dihapus ternyata masih dibutuhkan untuk laporan 
 
 Sebelum menghapus data penting, lakukan backup terlebih dahulu. Cadangan memungkinkan data dipulihkan jika ternyata penghapusan salah.
 
+```sql
+CREATE TABLE buku_backup AS SELECT * FROM buku;
+```
+
 ---
 
 ### 5.2 Selalu Gunakan Klausa `WHERE`
@@ -148,16 +152,6 @@ Sebelum menjalankan `DELETE`, jalankan perintah `SELECT` dengan kondisi yang sam
 
 ```sql
 SELECT * FROM buku WHERE tahun_terbit < 1990;
-```
-
----
-
-### 5.4 Lakukan Backup Sebelum Menghapus
-
-Sebelum menghapus data penting, lakukan backup terlebih dahulu. Cadangan memungkinkan data dipulihkan jika ternyata penghapusan salah.
-
-```sql
-CREATE TABLE buku_backup AS SELECT * FROM buku;
 ```
 
 ---

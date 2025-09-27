@@ -29,12 +29,6 @@ description: "Peserta belajar bentuk normal kedua (2NF) untuk menghindari keterg
 ---
 
 
-### Pertemuan 8 — Submodul 4
-
-**Bentuk Normal Kedua (2NF) dalam Database Perpustakaan**
-
----
-
 #### Pendahuluan
 
 Bentuk Normal Kedua (2NF) adalah tahap lanjutan setelah 1NF yang berfokus pada eliminasi ketergantungan parsial dalam tabel. Menurut Harrington (2016), sebuah tabel dikatakan memenuhi 2NF jika sudah berada dalam 1NF dan semua atribut non-key bergantung sepenuhnya pada primary key, bukan hanya sebagian dari composite key. Dalam sistem perpustakaan, hal ini penting untuk memastikan bahwa data seperti alamat anggota tidak bergantung pada sebagian atribut saja. Dengan demikian, struktur tabel akan lebih konsisten dan terhindar dari redundansi yang tidak perlu.

@@ -28,10 +28,7 @@ metadata:
 description: "Pelajari mengapa duplikasi dat"
 ---
 
-**Masalah Duplikasi Data dalam Sistem Perpustakaan**
-
----
-
+<
 #### Pendahuluan
 
 Dalam pengelolaan basis data perpustakaan, masalah duplikasi data sering menjadi penyebab utama inkonsistensi informasi. Duplikasi dapat terjadi ketika data anggota, buku, atau transaksi pinjaman dimasukkan berulang kali dengan format berbeda. Hal ini akan mengakibatkan laporan menjadi tidak akurat, misalnya jumlah buku terlihat lebih banyak dari yang sebenarnya. Menurut Silberschatz dkk. (2019), inkonsistensi data dapat menghambat pengambilan keputusan yang berbasis informasi. Oleh karena itu, memahami akar permasalahan duplikasi sangat penting sebelum melangkah ke tahap desain yang lebih baik.

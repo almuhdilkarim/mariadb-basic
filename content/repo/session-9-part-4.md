@@ -28,9 +28,7 @@ metadata:
 description: "Peserta belajar bentuk normal kedua (2NF) untuk menghindari ketergantungan parsial. Modul ini membantu mendesain tabel yang lebih efisien dan konsisten."
 ---
 
-**Bentuk Normal Kedua (2NF) dalam Database Perpustakaan**
 
----
 
 #### Pendahuluan
 

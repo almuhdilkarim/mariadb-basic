@@ -28,6 +28,7 @@ metadata:
 description: "Pelajari INNER JOIN untuk menggabungkan data dari dua tabel yang saling berhubungan. Modul ini memberi contoh bagaimana menampilkan data anggota dengan buku yang dipinjam."
 ---
 
+
 ## 1. Pendahuluan
 
 INNER JOIN merupakan salah satu konsep penting dalam SQL yang banyak digunakan pada pengelolaan database relasional. Dalam kehidupan nyata, terutama pada sistem perpustakaan, data seringkali tersebar dalam beberapa tabel. Misalnya, data anggota, buku, dan peminjaman disimpan secara terpisah agar lebih rapi dan efisien. Namun, untuk membuat laporan yang bermakna, pustakawan perlu menggabungkan data tersebut. INNER JOIN hadir sebagai solusi yang memungkinkan integrasi antar tabel dengan cara yang terstruktur.
@@ -94,6 +95,7 @@ Kegunaan kelima adalah pembuatan laporan bulanan. Dengan INNER JOIN, data peminj
 
 ## 5. Contoh Penggunaan INNER JOIN
 
+
 Contoh paling sederhana penggunaan INNER JOIN dalam sistem perpustakaan adalah menggabungkan tabel `anggota` dengan tabel `peminjaman` untuk menampilkan nama anggota dan buku yang dipinjam. Query ini membantu pustakawan mengetahui siapa saja yang sedang meminjam buku pada waktu tertentu. Hasilnya akan menampilkan hanya anggota yang memiliki catatan peminjaman, sehingga tidak ada data kosong yang ikut muncul. Hal ini menunjukkan sifat selektif INNER JOIN dalam memastikan laporan tetap relevan. Tanpa INNER JOIN, pustakawan harus memeriksa dua tabel secara manual yang tentu tidak efisien.
 
 ```sql
@@ -127,7 +129,7 @@ INNER JOIN juga bisa digunakan dalam laporan bulanan untuk menampilkan tren pemi
 
 ---
 
-## 6. Keterbatasan INNER JOIN
+## Keterbatasan INNER JOIN
 
 INNER JOIN meskipun sangat berguna, memiliki keterbatasan yang perlu dipahami. Keterbatasan pertama adalah sifatnya yang hanya menampilkan data yang memiliki pasangan valid. Dalam konteks perpustakaan, anggota yang belum pernah meminjam buku tidak akan muncul dalam laporan berbasis INNER JOIN. Jika pustakawan ingin melihat daftar semua anggota, baik yang meminjam maupun tidak, INNER JOIN tidak bisa digunakan. Sebagai gantinya, diperlukan jenis JOIN lain seperti LEFT JOIN.
 
@@ -141,7 +143,7 @@ Keterbatasan kelima adalah kurangnya fleksibilitas untuk menampilkan data yang t
 
 ---
 
-## 7. Kesimpulan
+## Kesimpulan
 
 INNER JOIN adalah instruksi SQL yang sangat penting untuk menggabungkan data antar tabel berdasarkan kondisi relasi yang valid. Dalam sistem perpustakaan, INNER JOIN memungkinkan pustakawan menghasilkan laporan gabungan seperti daftar anggota beserta buku yang mereka pinjam. Karakteristik selektif INNER JOIN memastikan hanya data relevan yang ditampilkan, sehingga laporan lebih ringkas dan konsisten. Namun, INNER JOIN juga memiliki keterbatasan, seperti tidak menampilkan data tanpa pasangan, risiko duplikasi jika kondisi salah, dan kebutuhan optimisasi untuk database besar. Dengan memahami kelebihan dan kekurangannya, pustakawan dan pengembang database dapat menggunakan INNER JOIN secara optimal sesuai kebutuhan.
 

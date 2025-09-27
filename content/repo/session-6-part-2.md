@@ -28,6 +28,7 @@ metadata:
 description: "Peserta berlatih membuat tabel peminjaman yang menyimpan informasi tanggal pinjam dan kembali. Modul ini menekankan pentingnya tabel relasional dalam menghubungkan data."
 ---
 
+
 ## Pendahuluan
 
 Pembuatan tabel `peminjaman` merupakan salah satu elemen inti dalam sistem database perpustakaan. Jika tabel `anggota` digunakan untuk mencatat identitas pengguna dan tabel `buku` menyimpan informasi koleksi, maka tabel `peminjaman` menjadi penghubung di antara keduanya. Melalui tabel ini, pustakawan dapat melacak siapa yang meminjam buku tertentu, kapan transaksi dilakukan, serta kapan batas waktu pengembalian berlaku. Kehadiran tabel ini membuat sistem perpustakaan lebih tertib, transparan, dan terukur.
@@ -36,15 +37,18 @@ Tanpa tabel `peminjaman`, sistem perpustakaan akan kesulitan dalam mendeteksi ke
 
 Tabel `peminjaman` umumnya memiliki struktur dasar yang terdiri dari kolom `id_peminjaman`, `id_anggota`, `id_buku`, `tanggal_pinjam`, dan `tanggal_kembali`. Kolom `id_peminjaman` berfungsi sebagai identitas unik, sementara `id_anggota` dan `id_buku` menjadi penghubung ke tabel lain. Kolom tanggal membantu pustakawan mengetahui kapan sebuah transaksi dimulai dan kapan harus berakhir. Struktur ini sederhana namun sudah mencakup kebutuhan operasional inti.
 
+
 Pemilihan tipe data yang tepat sangat penting. Kolom ID biasanya menggunakan `INT` dengan `AUTO_INCREMENT` untuk menghasilkan angka unik secara otomatis. Kolom `tanggal_pinjam` dan `tanggal_kembali` menggunakan `DATE` agar bisa diolah dengan fungsi SQL khusus tanggal, misalnya menghitung selisih hari keterlambatan. Dengan rancangan ini, sistem perpustakaan dapat memanfaatkan data peminjaman untuk kebutuhan analisis, bukan sekadar pencatatan.
 
 Dalam modul ini, kita akan membahas langkah-langkah pembuatan tabel `peminjaman`, mencoba perintah SQL secara langsung, menghindari kesalahan umum, dan memahami praktik terbaik dalam desain. Tidak hanya itu, kita juga akan melihat studi kasus nyata untuk memastikan konsep yang dipelajari benar-benar bisa diterapkan. Mari kita mulai perjalanan ini dengan penuh semangat, karena setiap baris kode yang ditulis membawa kita lebih dekat pada sistem perpustakaan digital yang profesional.
 
 ---
 
+
 ## Langkah-langkah Praktik
 
 Langkah pertama sebelum membuat tabel adalah memastikan bahwa kita sudah berada pada database yang benar. Gunakan perintah `USE perpustakaan;` untuk memilih database aktif. Jangan lupa verifikasi dengan `SELECT DATABASE();` agar kita tidak salah menempatkan tabel di database lain. Kesalahan kecil ini sering terjadi di awal dan bisa menimbulkan kebingungan. Mari kita biasakan selalu memeriksa konteks sebelum melangkah lebih jauh.
+
 
 Setelah itu, mari kita buat struktur tabel `peminjaman` dengan sintaks SQL. Tabel ini akan memiliki primary key pada `id_peminjaman`, serta foreign key pada `id_anggota` dan `id_buku` agar tetap konsisten dengan data di tabel lain. Perhatikan contoh berikut:
 
@@ -250,6 +254,7 @@ Uji coba memastikan bahwa desain tabel sesuai kebutuhan. Dengan begitu, kesalaha
 Kerja bagus jika Anda sudah melakukan uji coba ini. Itu tanda bahwa Anda bekerja secara profesional.
 
 ---
+
 
 ## Studi Kasus
 

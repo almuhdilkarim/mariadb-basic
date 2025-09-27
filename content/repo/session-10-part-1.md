@@ -28,12 +28,9 @@ metadata:
 description: "Modul ini mengenalkan index"
 ---
 
-
-### Fungsi String (UPPER, LOWER, CONCAT) dalam SQL untuk Sistem Perpustakaan
-
 ---
 
-#### 1. Pengantar Fungsi String dalam SQL
+#### Pengantar Fungsi String dalam SQL
 
 Fungsi string dalam SQL merupakan alat penting untuk memanipulasi data teks yang tersimpan di dalam tabel. Dalam konteks perpustakaan, data seperti nama anggota, judul buku, atau nama pengarang sering kali membutuhkan transformasi tertentu untuk tujuan konsistensi. Misalnya, nama anggota yang dimasukkan dengan huruf campuran dapat dibuat seragam dengan fungsi `UPPER` atau `LOWER`. Penggunaan fungsi string membantu pustakawan menjaga keseragaman data yang kemudian memudahkan pencarian dan pelaporan. Secara konseptual, hal ini meningkatkan kualitas data dalam sistem manajemen perpustakaan【Elmasri & Navathe, 2016】.
 
@@ -47,7 +44,7 @@ Secara ringkas, fungsi string adalah bagian dari fitur manipulasi data SQL yang 
 
 ---
 
-#### 2. Fungsi UPPER dalam SQL
+#### Fungsi UPPER dalam SQL
 
 Fungsi `UPPER` digunakan untuk mengubah semua huruf dalam string menjadi huruf kapital. Dalam perpustakaan, fungsi ini berguna untuk menstandarkan data nama anggota atau judul buku agar konsisten. Misalnya, jika ada entri "harry potter" dan "Harry Potter", keduanya dapat disamakan menjadi "HARRY POTTER". Standarisasi ini sangat membantu ketika pustakawan melakukan pencarian berbasis teks. Dengan demikian, fungsi `UPPER` menjamin bahwa variasi input tidak mengganggu akurasi pencarian【Elmasri & Navathe, 2016】.
 
@@ -68,7 +65,7 @@ Dalam praktik terbaik, penggunaan `UPPER` harus dirancang dengan bijak agar tida
 
 ---
 
-#### 3. Fungsi LOWER dalam SQL
+#### Fungsi LOWER dalam SQL
 
 Fungsi `LOWER` digunakan untuk mengubah semua huruf dalam string menjadi huruf kecil. Dalam basis data perpustakaan, fungsi ini sangat membantu ketika pencarian dilakukan dengan membandingkan teks tanpa memperhatikan huruf kapital. Sebagai contoh, kata kunci "buku" dapat dicocokkan dengan "BUKU" atau "Buku". Dengan `LOWER`, sistem dapat menyamakan semua input teks sehingga pencarian lebih fleksibel. Hal ini meningkatkan pengalaman pengguna saat mengakses katalog【Elmasri & Navathe, 2016】.
 
@@ -89,7 +86,7 @@ Namun, penggunaan `LOWER` juga harus memperhatikan konteks. Ada kasus di mana hu
 
 ---
 
-#### 4. Fungsi CONCAT dalam SQL
+#### Fungsi CONCAT dalam SQL
 
 Fungsi `CONCAT` digunakan untuk menggabungkan dua atau lebih string menjadi satu. Dalam perpustakaan, fungsi ini sangat berguna untuk menampilkan data gabungan seperti nama lengkap anggota atau kombinasi judul buku dengan nama pengarang. Dengan `CONCAT`, data yang tersebar di beberapa kolom dapat disatukan untuk kebutuhan laporan. Hal ini membuat informasi lebih ringkas dan mudah dibaca. Fungsi ini meningkatkan kejelasan data bagi pengguna sistem perpustakaan【Elmasri & Navathe, 2016】.
 
@@ -110,7 +107,7 @@ Dalam penggunaan praktis, `CONCAT` harus dirancang dengan format pemisah yang je
 
 ---
 
-#### 5. Perbandingan UPPER, LOWER, dan CONCAT
+#### Perbandingan UPPER, LOWER, dan CONCAT
 
 Ketiga fungsi string ini memiliki kegunaan yang berbeda namun saling melengkapi dalam pengelolaan data perpustakaan. Fungsi `UPPER` menstandarkan huruf menjadi kapital, `LOWER` menstandarkan huruf menjadi kecil, sedangkan `CONCAT` menggabungkan string. Jika digunakan bersama, ketiganya dapat menghasilkan data yang rapi sekaligus informatif. Misalnya, `CONCAT(UPPER(nama_depan), ' ', LOWER(nama_belakang))` dapat menampilkan format nama dengan standar tertentu. Dengan kombinasi seperti ini, pustakawan dapat menyesuaikan tampilan data sesuai kebutuhan【Elmasri & Navathe, 2016】.
 
@@ -124,7 +121,7 @@ Secara keseluruhan, perbandingan ini menekankan bahwa fungsi string adalah alat 
 
 ---
 
-#### 6. Contoh Implementasi di Sistem Perpustakaan
+#### Contoh Implementasi di Sistem Perpustakaan
 
 Mari kita lihat contoh konkret penggunaan fungsi string dalam skenario perpustakaan. Misalnya, pustakawan ingin membuat daftar nama anggota dengan format huruf kapital penuh. Query yang digunakan adalah:
 

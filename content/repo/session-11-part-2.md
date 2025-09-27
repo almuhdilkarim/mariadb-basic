@@ -28,10 +28,6 @@ metadata:
 description: "Modul ini membahas penggunaan perintah START TRANSACTION, COMMIT, dan ROLLBACK. Peserta belajar mengendalikan transaksi untuk menjaga konsistensi data."
 ---
 
-### Membuat View Sederhana
-
----
-
 #### Pendahuluan
 
 View sederhana merupakan bentuk paling dasar dari view dalam SQL, biasanya didefinisikan dari satu tabel atau gabungan dua tabel dengan kondisi yang sederhana. Dalam sistem perpustakaan, view sederhana sangat berguna untuk membuat laporan rutin tanpa harus menulis query panjang berulang kali. Misalnya, pustakawan dapat membuat view yang menampilkan daftar pinjaman aktif dengan kondisi buku belum dikembalikan. Dengan adanya view ini, laporan dapat dipanggil kapan saja hanya dengan satu perintah sederhana【Elmasri & Navathe, 2016】.
@@ -109,10 +105,6 @@ ORDER BY jumlah DESC;
 ```
 
 View ini akan menampilkan buku yang paling sering dipinjam. Kerja luar biasa, sekarang kamu sudah bisa membuat berbagai view sederhana dengan SQL!
-
----
-
-### Membuat View Sederhana
 
 ---
 

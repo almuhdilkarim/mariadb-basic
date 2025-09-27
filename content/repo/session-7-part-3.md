@@ -28,7 +28,7 @@ metadata:
 description: "Pelajari RIGHT JOIN untuk menampilkan semua data dari tabel kanan meskipun tidak ada pasangan di tabel kiri. Modul ini memperluas pemahaman gabungan data relasional."
 ---
 
-## 1. Pendahuluan
+## Pendahuluan
 
 RIGHT JOIN merupakan salah satu variasi penting dalam SQL yang sering dianggap sebagai kebalikan dari LEFT JOIN. Instruksi ini digunakan untuk menggabungkan dua tabel dengan memastikan bahwa semua baris dari tabel kanan selalu ditampilkan dalam hasil query. Jika tidak ada pasangan data yang cocok di tabel kiri, maka kolom dari tabel kiri akan bernilai `NULL`. Dalam sistem perpustakaan, hal ini sangat berguna ketika pustakawan ingin menampilkan seluruh data peminjaman, termasuk transaksi yang mungkin tidak memiliki pasangan anggota valid. Dengan demikian, RIGHT JOIN tidak hanya sekadar fitur teknis, tetapi juga berfungsi sebagai alat untuk memastikan keterlihatan penuh dari data tabel kanan.
 
@@ -42,7 +42,7 @@ Akhirnya, meskipun RIGHT JOIN jarang digunakan dibandingkan LEFT JOIN, pemahaman
 
 ---
 
-## 2. Definisi RIGHT JOIN
+## Definisi RIGHT JOIN
 
 RIGHT JOIN adalah perintah SQL yang digunakan untuk menggabungkan dua tabel dengan cara menampilkan semua baris dari tabel kanan beserta data yang cocok dari tabel kiri. Jika tidak ada pasangan data pada tabel kiri, maka kolom dari tabel kiri akan diisi dengan nilai `NULL`. Sintaks dasar dari RIGHT JOIN adalah sebagai berikut:
 
@@ -63,7 +63,7 @@ RIGHT JOIN juga dapat digunakan dalam laporan gabungan yang melibatkan lebih dar
 
 ---
 
-## 3. Karakteristik RIGHT JOIN
+## Karakteristik RIGHT JOIN
 
 Karakteristik pertama RIGHT JOIN adalah inklusivitas terhadap tabel kanan. Semua baris dari tabel kanan akan selalu ditampilkan dalam hasil query, terlepas dari ada tidaknya pasangan data di tabel kiri. Karakteristik ini sangat berguna ketika fokus analisis berada pada aktivitas atau transaksi, bukan pada entitas. Dalam perpustakaan, hal ini memastikan bahwa setiap transaksi peminjaman, sah atau tidak, tetap tercatat dalam laporan.
 
@@ -77,7 +77,7 @@ Karakteristik kelima adalah potensi kebingungan pengguna pemula. Karena RIGHT JO
 
 ---
 
-## 4. Kegunaan RIGHT JOIN dalam Sistem Perpustakaan
+## Kegunaan RIGHT JOIN dalam Sistem Perpustakaan
 
 RIGHT JOIN memiliki peran penting dalam memastikan bahwa semua data dari tabel kanan terlihat dalam laporan. Salah satu kegunaan utamanya dalam perpustakaan adalah untuk menampilkan semua transaksi peminjaman, termasuk yang tidak memiliki pasangan anggota. Hal ini membantu pustakawan dalam audit data, karena transaksi yang tidak sah atau salah input dapat langsung terdeteksi. Dengan RIGHT JOIN, tidak ada catatan transaksi yang tersembunyi.
 
@@ -91,7 +91,7 @@ Terakhir, RIGHT JOIN meningkatkan transparansi dan akuntabilitas. Dengan menampi
 
 ---
 
-## 5. Contoh Penggunaan RIGHT JOIN
+## Contoh Penggunaan RIGHT JOIN
 
 Contoh sederhana penggunaan RIGHT JOIN adalah menampilkan semua transaksi peminjaman beserta nama anggota, jika tersedia.
 

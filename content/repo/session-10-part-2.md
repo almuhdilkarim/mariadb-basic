@@ -28,8 +28,14 @@ metadata:
 description: "Pelajari index unik untuk memastikan keunikan data dan index gabungan untuk kolom lebih dari satu. Modul ini membantu mendesain index sesuai kebutuhan query."
 ---
 
+### Pertemuan 9 — Submodul 2
 
-#### 1. Pengantar Fungsi Tanggal dalam SQL
+### Fungsi Tanggal (NOW, YEAR, MONTH) dalam SQL untuk Sistem Perpustakaan
+
+
+
+
+#### Pengantar Fungsi Tanggal dalam SQL
 
 Fungsi tanggal dalam SQL dirancang untuk memudahkan manipulasi data yang berhubungan dengan waktu. Dalam konteks perpustakaan, informasi seperti tanggal peminjaman, tanggal jatuh tempo, dan tanggal pengembalian sangat krusial untuk operasional sehari-hari. Fungsi tanggal membantu pustakawan mengakses data temporal dengan cepat dan akurat. Dengan dukungan fungsi ini, sistem perpustakaan dapat memberikan laporan yang relevan seperti jumlah pinjaman per bulan atau daftar keterlambatan. Hal ini menjadikan fungsi tanggal sebagai salah satu fitur vital dalam pengelolaan basis data【Elmasri & Navathe, 2016】.
 
@@ -43,7 +49,7 @@ Secara keseluruhan, fungsi tanggal merupakan bagian penting dari SQL yang menduk
 
 ---
 
-#### 2. Fungsi NOW dalam SQL
+#### Fungsi NOW dalam SQL
 
 Fungsi `NOW` digunakan untuk mengambil waktu dan tanggal saat ini dari sistem database. Dalam perpustakaan, fungsi ini sering dipakai untuk mencatat waktu peminjaman buku. Misalnya, ketika anggota meminjam buku, sistem secara otomatis menyimpan tanggal dan waktu saat transaksi dilakukan. Hal ini penting agar pustakawan memiliki catatan akurat tentang kapan buku dipinjam. Keakuratan data temporal ini menjadi dasar perhitungan jatuh tempo pengembalian【Elmasri & Navathe, 2016】.
 
@@ -64,7 +70,7 @@ Namun, penggunaan `NOW` harus disertai pemahaman tentang zona waktu sistem datab
 
 ---
 
-#### 3. Fungsi YEAR dalam SQL
+#### Fungsi YEAR dalam SQL
 
 Fungsi `YEAR` digunakan untuk mengambil bagian tahun dari sebuah kolom tanggal. Dalam perpustakaan, fungsi ini bermanfaat untuk membuat laporan tahunan mengenai jumlah peminjaman atau pengunjung. Misalnya, pustakawan dapat menghitung jumlah buku yang dipinjam selama tahun 2024. Dengan fungsi ini, analisis berbasis tahun menjadi lebih mudah dilakukan. Fungsi `YEAR` membantu menyajikan data temporal dalam skala makro【Elmasri & Navathe, 2016】.
 
@@ -84,9 +90,6 @@ Fungsi `YEAR` juga bermanfaat untuk penelitian akademis tentang kebiasaan membac
 
 Namun, `YEAR` juga memiliki keterbatasan jika digunakan tanpa konteks. Misalnya, hanya melihat data tahunan tanpa memperhatikan distribusi bulanan bisa menyesatkan. Pustakawan harus mengombinasikan `YEAR` dengan fungsi lain agar analisis lebih mendalam. Dengan pendekatan ini, laporan perpustakaan menjadi lebih komprehensif. Hal ini menegaskan pentingnya memahami fungsi string secara terpadu【Kroenke & Auer, 2015】.
 
-### Fungsi Tanggal (NOW, YEAR, MONTH) dalam SQL untuk Sistem Perpustakaan
-
----
 
 #### 4. Fungsi MONTH dalam SQL
 
@@ -110,7 +113,7 @@ Namun, penggunaan `MONTH` juga memiliki keterbatasan jika berdiri sendiri. Anali
 
 ---
 
-#### 5. Perbandingan Fungsi NOW, YEAR, dan MONTH
+#### Perbandingan Fungsi NOW, YEAR, dan MONTH
 
 Ketiga fungsi tanggal memiliki peran yang berbeda tetapi saling mendukung. Fungsi `NOW` digunakan untuk mencatat waktu saat ini, `YEAR` untuk mengelompokkan data berdasarkan tahun, dan `MONTH` untuk mengelompokkan data berdasarkan bulan. Kombinasi ketiganya memungkinkan pustakawan menghasilkan laporan temporal yang detail. Misalnya, pustakawan dapat membuat laporan peminjaman per bulan dalam tahun tertentu. Hal ini memberikan wawasan menyeluruh tentang penggunaan perpustakaan【Elmasri & Navathe, 2016】.
 
@@ -124,7 +127,7 @@ Keseluruhan perbandingan ini menunjukkan bahwa fungsi tanggal dalam SQL bukanlah
 
 ---
 
-#### 6. Contoh Implementasi di Sistem Perpustakaan
+#### Contoh Implementasi di Sistem Perpustakaan
 
 Mari kita lihat contoh konkret penerapan fungsi tanggal dalam sistem perpustakaan. Pertama, pencatatan peminjaman menggunakan `NOW`:
 
@@ -170,7 +173,7 @@ Contoh implementasi ini menunjukkan bahwa fungsi tanggal memiliki peran praktis 
 
 ---
 
-#### 7. Tantangan dan Solusi dalam Penggunaan Fungsi Tanggal
+#### Tantangan dan Solusi dalam Penggunaan Fungsi Tanggal
 
 Salah satu tantangan dalam penggunaan fungsi tanggal adalah perbedaan format tanggal antar sistem. Jika data diimpor dari sistem eksternal, format yang tidak seragam dapat menyulitkan analisis. Untuk mengatasi hal ini, pustakawan perlu memastikan konversi format tanggal dilakukan dengan benar. Standardisasi format menjadi langkah penting agar fungsi `NOW`, `YEAR`, dan `MONTH` dapat digunakan optimal【Elmasri & Navathe, 2016】.
 

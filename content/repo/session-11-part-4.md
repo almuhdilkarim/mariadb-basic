@@ -28,9 +28,6 @@ metadata:
 description: "Pelajari apa itu deadlock dalam transaksi database dan bagaimana cara menghindarinya. Modul ini membekali peserta strategi mengelola konflik transaksi."
 ---
 
-### Menggunakan View untuk Laporan
-
----
 
 #### Kesalahan Umum
 

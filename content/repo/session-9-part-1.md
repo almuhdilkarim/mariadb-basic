@@ -28,11 +28,6 @@ metadata:
 description: "Pelajari mengapa duplikasi dat"
 ---
 
-
-### Pertemuan 8 — Submodul 1
-
-**Masalah Duplikasi Data dalam Sistem Perpustakaan**
-
 ---
 
 #### Pendahuluan

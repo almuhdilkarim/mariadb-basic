@@ -28,11 +28,6 @@ metadata:
 description: "Modul ini membahas penggunaan perintah START TRANSACTION, COMMIT, dan ROLLBACK. Peserta belajar mengendalikan transaksi untuk menjaga konsistensi data."
 ---
 
-### Pertemuan 10 — Submodul 2
-
-### Membuat View Sederhana
-
----
 
 #### Pendahuluan
 

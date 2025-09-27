@@ -29,13 +29,6 @@ description: "Peserta mempraktikkan transaksi peminjaman buku menggunakan perint
 ---
 
 
-
-### Pertemuan 10 — Submodul 5
-
-### Latihan Mandiri View (Laporan Perpustakaan)
-
----
-
 #### Pendahuluan
 
 Latihan mandiri ini bertujuan untuk melatih keterampilan pustakawan dalam memanfaatkan view untuk membuat laporan perpustakaan yang lebih profesional. View dapat digunakan untuk berbagai kebutuhan, mulai dari laporan harian, bulanan, hingga tahunan. Dengan membuat view, pustakawan tidak perlu lagi menulis query panjang setiap kali laporan dibutuhkan. Hal ini sangat menghemat waktu dan mengurangi risiko kesalahan penulisan query【Elmasri & Navathe, 2016】.

@@ -28,9 +28,6 @@ metadata:
 description: "Peserta mempraktikkan transaksi peminjaman buku menggunakan perintah START, COMMIT, dan ROLLBACK. Modul ini memperkuat pemahaman konsep ACID melalui latihan nyata."
 ---
 
-
-## Pertemuan 11 – Keamanan Sederhana (Praktikal, Modul 1)
-
 ### Pendahuluan
 
 Keamanan database merupakan aspek penting dalam sistem manajemen perpustakaan, karena akses data harus dibatasi sesuai peran pengguna. Setiap pengguna tidak boleh memiliki izin yang sama, sebab kebutuhan akses anggota berbeda dengan admin. Dalam MariaDB, konsep ini diwujudkan melalui manajemen user dan hak akses (privileges). Pendekatan ini melindungi data sensitif seperti riwayat pinjaman, data anggota, maupun koleksi buku yang hanya boleh diubah oleh pihak tertentu. Dengan demikian, keamanan bukan sekadar tambahan, melainkan fondasi yang memastikan sistem berjalan secara berkelanjutan.

@@ -104,8 +104,6 @@ GROUP BY id_anggota;
 
 Laporan ini memberikan gambaran lengkap aktivitas anggota dalam bulan tersebut. Kerja luar biasa, kamu sudah bisa membuat laporan multifungsi!
 
-### Pertemuan 9 — Submodul 4
-
 ### Praktik: Laporan Pinjaman Bulan Tertentu
 
 ---

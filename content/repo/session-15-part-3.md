@@ -28,10 +28,6 @@ metadata:
 description: "Modul ini menjelaskan trigger sebagai mekanisme otomatis yang dijalankan ketika ada perubahan data. Peserta memahami contoh penggunaan trigger untuk menjaga konsistensi."
 ---
 
-
-
-# Pertemuan 15 – Pengantar Trigger di MariaDB (Konseptual)
-
 ## 1. Definisi Trigger
 
 Trigger adalah mekanisme di dalam MariaDB yang memungkinkan eksekusi otomatis dari serangkaian perintah SQL ketika suatu peristiwa terjadi pada tabel. Peristiwa ini bisa berupa `INSERT`, `UPDATE`, atau `DELETE`. Dengan kata lain, trigger adalah *event-driven action* yang selalu terikat pada sebuah tabel tertentu. Ia berbeda dengan stored procedure yang harus dipanggil secara manual menggunakan perintah `CALL`.

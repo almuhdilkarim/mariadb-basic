@@ -28,6 +28,7 @@ metadata:
 description: "Peserta akan melakukan latihan langsung menambahkan beberapa data buku ke dalam tabel. Modul ini memperkuat pemahaman INSERT, UPDATE, dan DELETE dengan skenario nyata."
 ---
 
+# Modul 15 Pertemuan 3: Praktik – Isi Data Contoh ke Tabel `buku`
 
 ## 1. Persiapan Praktik
 

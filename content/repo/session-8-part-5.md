@@ -28,6 +28,9 @@ metadata:
 description: "Peserta mempraktikkan query menggunakan COUNT dan GROUP BY untuk membuat laporan jumlah peminjaman per anggota. Modul ini memperkuat pemahaman agregasi dengan contoh nyata."
 ---
 
+### Pertemuan 7 — Submodul 5: Praktik Laporan Jumlah Pinjaman per Anggota
+
+---
 
 #### Pendahuluan
 

@@ -28,6 +28,11 @@ metadata:
 description: "Peserta mempraktikkan normalisasi pada tabel perpustakaan sederhana. Modul ini memperkuat pemahaman konsep 1NF dan 2NF dengan contoh nyata."
 ---
 
+### Pertemuan 8 — Submodul 5
+
+**Praktik: Memperbaiki Tabel Perpustakaan dengan Normalisasi**
+
+---
 
 #### Pendahuluan
 

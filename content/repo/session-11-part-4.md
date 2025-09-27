@@ -28,6 +28,7 @@ metadata:
 description: "Pelajari apa itu deadlock dalam transaksi database dan bagaimana cara menghindarinya. Modul ini membekali peserta strategi mengelola konflik transaksi."
 ---
 
+### Pertemuan 10 — Submodul 4
 
 ### Menggunakan View untuk Laporan
 

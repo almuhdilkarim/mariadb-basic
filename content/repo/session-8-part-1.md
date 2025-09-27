@@ -28,24 +28,9 @@ metadata:
 description: "Pelajari penggunaan fungsi COUNT untuk menghitung jumlah baris dalam tabel. Modul ini cocok untuk membuat laporan ringkas jumlah data seperti total buku atau anggota."
 ---
 
-
-Oke 👍. Mari saya revisi ulang **Submodul Praktikal 1: Fungsi COUNT** dengan mengikuti **ketentuan penulisan umum** yang sudah kita sepakati sebelumnya:
-
-* Setiap paragraf **5 kalimat**.
-* Setiap subheading minimal **5 paragraf**.
-* Untuk **praktikal**: ada **Kesalahan Umum** dan **Best Practice**.
-* Gaya bahasa **sistematis, ajakan, dan motivatif**.
-* Konteks studi kasus **perpustakaan**.
-* Sertakan **contoh query SQL** yang relevan.
-* Gunakan **sitasi ilmiah** dari buku/jurnal terpercaya.
-
----
-
-# Pertemuan 7 — Ringkasan Data
-
 ## Submodul Praktikal 1: Menggunakan Fungsi COUNT untuk Menghitung Data
 
-### 1. Tujuan Praktik
+### Tujuan Praktik
 
 Tujuan dari praktik ini adalah agar Anda mampu memahami dan menggunakan fungsi COUNT dalam MariaDB untuk menghitung data penting di perpustakaan. Fungsi ini membantu meringkas data dalam bentuk angka sederhana sehingga lebih mudah dianalisis. Dalam manajemen perpustakaan, informasi seperti jumlah anggota atau jumlah peminjaman sangat penting untuk evaluasi kinerja. Dengan menguasai COUNT, Anda akan bisa menghasilkan laporan sederhana namun bermakna dari database. Ramakrishnan & Gehrke (2003) menekankan bahwa fungsi agregasi merupakan dasar penting dalam analisis basis data【Ramakrishnan & Gehrke, *Database Management Systems*】.
 
@@ -59,7 +44,7 @@ Jadi, praktik ini bukan sekadar latihan teknis, tetapi juga investasi dalam meni
 
 ---
 
-### 2. Langkah-Langkah Menggunakan COUNT
+### Langkah-Langkah Menggunakan COUNT
 
 Langkah pertama adalah memastikan Anda sudah masuk ke database perpustakaan di MariaDB. Gunakan perintah `USE perpustakaan;` agar semua query berjalan pada database yang benar. Setelah itu, tentukan tabel yang akan dianalisis, misalnya tabel `anggota`. Untuk menghitung seluruh anggota, gunakan query berikut:
 
@@ -103,7 +88,7 @@ Dengan hasil ini, Anda bisa melihat tren penggunaan perpustakaan dari bulan ke b
 
 ---
 
-### 3. Variasi Penggunaan COUNT
+### Variasi Penggunaan COUNT
 
 COUNT memiliki variasi yang sangat bermanfaat dalam praktik sehari-hari. Anda dapat menggunakan `COUNT(*)` untuk menghitung semua baris dalam tabel, atau `COUNT(kolom)` untuk hanya menghitung baris yang memiliki nilai pada kolom tertentu. Perbedaan ini penting karena terkadang kita hanya ingin menghitung data valid, bukan semua data. Misalnya, menghitung jumlah transaksi yang sudah memiliki tanggal pengembalian. Silberschatz et al. (2019) menekankan bahwa pemahaman variasi fungsi agregasi sangat penting agar hasil analisis tidak menyesatkan【Silberschatz, Korth, Sudarshan, *Database System Concepts*】.
 
@@ -129,7 +114,7 @@ Terakhir, COUNT bisa dipadukan dengan klausa `WHERE` untuk memberikan filter tam
 
 ---
 
-### 4. Studi Kasus: Menghitung Aktivitas Anggota
+### Studi Kasus: Menghitung Aktivitas Anggota
 
 Sekarang mari kita lihat studi kasus yang lebih mendalam. Pustakawan ingin mengetahui berapa jumlah anggota yang aktif meminjam dalam bulan September 2025. Untuk itu, kita bisa menggunakan COUNT dengan DISTINCT dan filter tanggal. Query berikut bisa digunakan:
 
@@ -157,7 +142,7 @@ Dengan studi kasus ini, Anda belajar bahwa COUNT tidak hanya sekadar menghitung 
 
 ---
 
-### 5. Studi Kasus: Menghitung Koleksi Berdasarkan Kategori
+### Studi Kasus: Menghitung Koleksi Berdasarkan Kategori
 
 Sekarang mari kita gunakan COUNT untuk menghitung koleksi buku berdasarkan kategori. Misalnya, pustakawan ingin tahu berapa jumlah buku fiksi di perpustakaan. Query yang bisa digunakan adalah:
 
@@ -508,7 +493,7 @@ Query ini menunjukkan bagaimana dokumentasi sederhana dapat menjelaskan maksud d
 
 ---
 
-## 9. Kesimpulan Singkat
+## Kesimpulan Singkat
 
 Fungsi COUNT dalam SQL terbukti menjadi alat penting untuk menyajikan ringkasan data secara efisien dalam sistem perpustakaan. Dengan penerapan yang tepat, pustakawan dapat menghitung jumlah anggota, koleksi, maupun transaksi peminjaman dengan mudah dan akurat. Penggunaan COUNT yang dikombinasikan dengan DISTINCT, WHERE, dan GROUP BY memberikan fleksibilitas tinggi dalam analisis. Hasilnya dapat digunakan sebagai dasar pengambilan keputusan yang berbasis data dan terukur. Dengan demikian, penguasaan COUNT menjadi fondasi bagi keterampilan analisis data yang lebih kompleks dan strategis.
 

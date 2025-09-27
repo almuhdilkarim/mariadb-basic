@@ -29,12 +29,6 @@ description: "Peserta melakukan praktik optimisasi query pencarian judul buku de
 ---
 
 
-### Pertemuan 9 — Submodul 5
-
-### Latihan Mandiri: Laporan Keterlambatan
-
----
-
 #### Pendahuluan
 
 Laporan keterlambatan merupakan salah satu aspek penting dalam manajemen perpustakaan karena terkait langsung dengan kedisiplinan anggota dan rotasi koleksi. Data keterlambatan membantu pustakawan menentukan tingkat kepatuhan anggota terhadap aturan pengembalian. Dengan informasi ini, perpustakaan dapat mengambil tindakan yang sesuai, seperti memberikan peringatan atau denda. SQL menyediakan fungsi tanggal dan kondisi yang dapat dimanfaatkan untuk menghasilkan laporan ini. Dengan demikian, laporan keterlambatan menjadi sarana kontrol operasional sekaligus evaluasi kebijakan【Silberschatz et al., 2020】.

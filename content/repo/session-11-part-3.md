@@ -28,11 +28,6 @@ metadata:
 description: "Peserta mempelajari isolation level seperti READ COMMITTED, REPEATABLE READ, dan SERIALIZABLE. Modul ini menunjukkan bagaimana tingkat isolasi memengaruhi integritas transaksi."
 ---
 
-### Pertemuan 10 — Submodul 3
-
-### Membuat View Kompleks
-
----
 
 #### Pendahuluan
 

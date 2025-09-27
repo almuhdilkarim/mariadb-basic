@@ -28,7 +28,6 @@ metadata:
 description: "Pelajari cara menghapus data dari tabel menggunakan perintah DELETE. Modul ini membantu memahami bagaimana menjaga kebersihan data dengan menghapus entri yang tidak diperlukan."
 ---
 
-# Modul 14 Pertemuan 3: Menghapus Data dengan `DELETE`
 
 ## 1. Persiapan Sebelum Menghapus Data
 
@@ -127,7 +126,17 @@ Dalam beberapa kasus, data yang dihapus ternyata masih dibutuhkan untuk laporan 
 
 ## 5. Best Practice
 
-### 5.1 Selalu Gunakan Klausa `WHERE`
+### 5.1 Lakukan Backup Sebelum Menghapus
+
+Sebelum menghapus data penting, lakukan backup terlebih dahulu. Cadangan memungkinkan data dipulihkan jika ternyata penghapusan salah.
+
+```sql
+CREATE TABLE buku_backup AS SELECT * FROM buku;
+```
+
+---
+
+### 5.2 Selalu Gunakan Klausa `WHERE`
 
 Klausa `WHERE` adalah pelindung utama terhadap penghapusan massal. Pastikan selalu menuliskan kondisi yang jelas untuk membatasi data yang dihapus.
 
@@ -137,34 +146,12 @@ DELETE FROM buku WHERE id_buku = 3;
 
 ---
 
-### 5.2 Gunakan `SELECT` untuk Verifikasi
+### 5.3 Gunakan `SELECT` untuk Verifikasi
 
 Sebelum menjalankan `DELETE`, jalankan perintah `SELECT` dengan kondisi yang sama. Langkah ini memastikan bahwa hanya data yang relevan yang akan terhapus.
 
 ```sql
 SELECT * FROM buku WHERE tahun_terbit < 1990;
-```
-
----
-
-### 5.3 Gunakan Transaksi untuk Penghapusan Besar
-
-Ketika menghapus banyak baris, gunakan transaksi. Dengan cara ini, perubahan dapat dibatalkan dengan `ROLLBACK` jika ada kesalahan.
-
-```sql
-START TRANSACTION;
-DELETE FROM buku WHERE tahun_terbit < 1990;
-ROLLBACK;
-```
-
----
-
-### 5.4 Lakukan Backup Sebelum Menghapus
-
-Sebelum menghapus data penting, lakukan backup terlebih dahulu. Cadangan memungkinkan data dipulihkan jika ternyata penghapusan salah.
-
-```sql
-CREATE TABLE buku_backup AS SELECT * FROM buku;
 ```
 
 ---

@@ -29,12 +29,6 @@ description: "Modul ini mengenalkan konsep normalisasi sebagai metode merapikan 
 ---
 
 
-### Pertemuan 8 — Submodul 2
-
-**Normalisasi: Pengantar Konsep**
-
----
-
 #### Pendahuluan
 
 Normalisasi adalah proses sistematis dalam perancangan basis data untuk mengurangi redundansi dan memastikan integritas data. Konsep ini diperkenalkan oleh Edgar F. Codd, pencetus model relasional, sebagai langkah penting dalam menjaga kualitas data (Date, 2004). Dalam konteks perpustakaan, normalisasi sangat berguna agar data anggota, buku, dan transaksi pinjaman tidak tersimpan berulang. Misalnya, nama anggota tidak perlu ditulis di setiap transaksi pinjaman, cukup disimpan sekali dalam tabel anggota. Dengan demikian, sistem akan lebih efisien dan konsisten.

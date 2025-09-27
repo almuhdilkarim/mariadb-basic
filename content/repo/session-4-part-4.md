@@ -28,7 +28,6 @@ metadata:
 description: "Pelajari cara menghapus data dari tabel menggunakan perintah DELETE. Modul ini membantu memahami bagaimana menjaga kebersihan data dengan menghapus entri yang tidak diperlukan."
 ---
 
-# Modul 14 Pertemuan 3: Menghapus Data dengan `DELETE`
 
 ## 1. Persiapan Sebelum Menghapus Data
 

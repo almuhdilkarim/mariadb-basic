@@ -29,6 +29,7 @@ description: "Modul ini mengajarkan cara membuat tabel anggota dengan kolom nama
 ---
 
 
+
 Pembuatan tabel `anggota` merupakan langkah penting dalam membangun sistem database perpustakaan. Jika sebelumnya kita hanya memiliki tabel `buku`, maka kini kita menambahkan tabel yang menyimpan data pengguna atau anggota perpustakaan. Dengan tabel ini, pustakawan dapat mencatat identitas setiap orang yang terdaftar, sehingga layanan seperti peminjaman dan pengembalian buku dapat tercatat secara formal. Keberadaan tabel `anggota` memastikan bahwa sistem tidak hanya mengelola koleksi buku, tetapi juga individu yang berinteraksi dengan koleksi tersebut.
 
 Sebelum memulai, pastikan database yang digunakan adalah `perpustakaan`. Jalankan perintah `USE perpustakaan;` untuk memilih database, lalu verifikasi dengan `SELECT DATABASE();`. Banyak kesalahan pemula terjadi karena mereka langsung membuat tabel tanpa memastikan konteks database. Jika salah, tabel bisa masuk ke database yang berbeda atau bahkan error. Kebiasaan mengecek database aktif merupakan dasar disiplin dalam pengelolaan SQL.

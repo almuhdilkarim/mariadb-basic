@@ -28,7 +28,6 @@ metadata:
 description: "Peserta mempraktikkan transaksi peminjaman buku menggunakan perintah START, COMMIT, dan ROLLBACK. Modul ini memperkuat pemahaman konsep ACID melalui latihan nyata."
 ---
 
----
 
 #### Pendahuluan
 

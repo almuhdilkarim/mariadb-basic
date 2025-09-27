@@ -103,7 +103,6 @@ GROUP BY id_anggota;
 ```
 
 Laporan ini memberikan gambaran lengkap aktivitas anggota dalam bulan tersebut. Kerja luar biasa, kamu sudah bisa membuat laporan multifungsi!
----
 
 #### Kesalahan Umum
 

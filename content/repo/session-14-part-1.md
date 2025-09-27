@@ -28,16 +28,6 @@ metadata:
 description: "Modul ini mengenalkan fungsi index sebagai alat untuk mempercepat pencarian data di MariaDB. Peserta belajar kapan index diper"
 ---
 
-Baik, saya akan buatkan **Modul Konseptual Pertemuan 13 – Sedikit Tentang Performa** secara lengkap sesuai kaidah:
-
-* 7 subheading × minimal 5 paragraf × 5 kalimat.
-* Ada contoh SQL dengan konteks perpustakaan.
-* Ditutup dengan **Kesimpulan** dan **Referensi** (berbeda dari modul sebelumnya).
-
----
-
-# Pertemuan 13 – Sedikit Tentang Performa (Konseptual)
-
 ## 1. Apa itu Index (Analogi Daftar Isi Buku)
 
 Dalam sebuah perpustakaan, pencarian buku bisa menjadi rumit jika koleksinya sangat besar. Tanpa daftar isi atau katalog, petugas harus membuka rak demi rak hanya untuk menemukan satu judul tertentu. Hal ini sama dengan database tanpa index, di mana sistem harus membaca baris demi baris sebelum menemukan data yang dicari. Index berfungsi sebagai alat bantu pencarian yang memetakan lokasi data sehingga lebih cepat diakses. Dengan memahami analogi ini, kita dapat melihat betapa pentingnya index untuk mempercepat performa query.

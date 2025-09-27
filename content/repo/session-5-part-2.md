@@ -29,6 +29,7 @@ description: "Modul ini mengajarkan penggunaan klausa WHERE untuk menyaring data
 ---
 
 
+
 Klausa `WHERE` dalam SQL adalah salah satu fitur terpenting yang memungkinkan pengguna untuk menyaring data berdasarkan kondisi tertentu. Jika perintah `SELECT` digunakan tanpa kondisi, maka semua data dalam tabel akan ditampilkan. Namun, dalam praktik nyata, pengguna hampir selalu membutuhkan informasi yang lebih spesifik. Misalnya, seorang pustakawan ingin mengetahui buku yang terbit pada tahun tertentu atau yang ditulis oleh penulis tertentu. Tanpa filter, informasi ini akan sulit ditemukan di antara ratusan bahkan ribuan baris data.
 
 Sebelum menjalankan perintah `WHERE`, langkah awal adalah memastikan bahwa database yang digunakan sudah benar. Dalam kasus ini, database `perpustakaan` adalah tempat penyimpanan tabel `buku`. Gunakan perintah `USE perpustakaan;` untuk berpindah ke database tersebut, lalu jalankan `SELECT DATABASE();` untuk memastikan bahwa Anda berada di konteks yang tepat. Jika database aktif bukan `perpustakaan`, maka perintah berikutnya tidak akan berfungsi sesuai harapan. Dengan demikian, memastikan database aktif merupakan syarat penting sebelum menyaring data.

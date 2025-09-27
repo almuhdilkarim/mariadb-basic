@@ -28,7 +28,6 @@ metadata:
 description: "Peserta melakukan praktik optimisasi query pencarian judul buku dengan menggunakan index. Modul ini memperkuat pemahaman tentang performa database secara nyata."
 ---
 
----
 
 #### Pendahuluan
 

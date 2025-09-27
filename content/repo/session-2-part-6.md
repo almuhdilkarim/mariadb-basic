@@ -50,7 +50,7 @@ Perpustakaan digital juga termasuk dalam penggunaan sehari-hari yang memanfaatka
 
 O’Neil & O’Neil (2020) dalam Database Principles menjelaskan bahwa database adalah jantung dari hampir semua aplikasi yang kita gunakan sehari-hari. Mereka menunjukkan bahwa tanpa database, sistem seperti media sosial atau perbankan tidak bisa memberikan layanan real-time. Hal ini menegaskan betapa pentingnya database dalam pengalaman digital modern. Literatur ini menambahkan perspektif bahwa database adalah infrastruktur tak kasat mata yang menggerakkan dunia.  
 
-Dengan memahami penggunaan sehari-hari, peserta kursus dapat melihat relevansi database secara langsung. Mereka tidak hanya belajar teori, tetapi juga menyadari bahwa setiap interaksi digital melibatkan database. Perpustakaan digital hanyalah salah satu contoh dari banyak aplikasi. Hal ini membuat pembelajaran MariaDB lebih kontekstual dan bermakna. Dengan begitu, peserta lebih termotivasi untuk menguasai konsep ini.  
+Penggunaan sehari-hari menunjukkan bahwa database memiliki relevansi langsung dalam berbagai aktivitas digital. Setiap interaksi digital selalu melibatkan database, dan perpustakaan digital hanyalah salah satu contoh dari banyak aplikasi. Pemahaman ini menjadikan pembelajaran MariaDB lebih kontekstual dan bermakna, sekaligus memperjelas pentingnya penguasaan konsep tersebut.
 
 ---
 
@@ -109,7 +109,7 @@ Dalam perpustakaan digital, tren ini dapat diimplementasikan melalui katalog ber
 
 Stonebraker (2020) dalam publikasi Communications of the ACM menjelaskan bahwa masa depan database akan semakin berorientasi pada cloud dan AI. Hal ini akan mengubah cara organisasi menyimpan dan menganalisis data. Database tidak lagi sekadar alat, tetapi bagian dari ekosistem cerdas. Studi ini menekankan bahwa organisasi harus beradaptasi dengan cepat. Literatur ini memberi gambaran jelas arah perkembangan.  
 
-Bagi peserta kursus, memahami tren masa depan penting untuk persiapan karier. Mereka harus melihat database bukan hanya alat teknis, tetapi bagian dari transformasi digital. Perpustakaan digital adalah contoh nyata bagaimana tren ini bisa diadopsi. Dengan MariaDB, organisasi dapat mulai mengintegrasikan inovasi modern. Hal ini membuat pembelajaran lebih relevan dan visioner.  
+Memahami tren masa depan menjadi langkah penting dalam persiapan menghadapi perkembangan karier. Database bukan sekadar alat teknis, melainkan bagian dari transformasi digital. Perpustakaan digital menjadi contoh nyata penerapan tren tersebut. Melalui MariaDB, organisasi dapat mengintegrasikan inovasi modern, sehingga pembelajaran terasa lebih relevan dan visioner.
 
 
 ## Kesimpulan  

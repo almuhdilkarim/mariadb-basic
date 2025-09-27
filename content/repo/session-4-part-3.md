@@ -28,7 +28,6 @@ metadata:
 description: "Modul ini mengajarkan penggunaan perintah UPDATE untuk mengubah isi data pada tabel. Peserta akan berlatih memperbarui informasi buku dengan kondisi tertentu."
 ---
 
-
 Sebelum menggunakan perintah `UPDATE`, penting untuk memahami data yang akan diubah. Tabel `buku` pada database `perpustakaan` sudah berisi koleksi dari modul sebelumnya, sehingga perintah `UPDATE` dapat digunakan untuk memperbaiki kesalahan atau memperbarui informasi. Namun, perubahan yang dilakukan bersifat permanen, artinya nilai lama akan langsung tergantikan oleh nilai baru. Tanpa persiapan yang tepat, ada kemungkinan data yang salah ikut terubah. Oleh sebab itu, tahap persiapan tidak boleh dilewatkan.
 
 Langkah pertama adalah memastikan database aktif sudah benar. Dengan menggunakan `SELECT DATABASE();`, pengguna dapat memeriksa nama database yang sedang dipakai. Jika bukan `perpustakaan`, perintah `USE perpustakaan;` wajib dijalankan. Kesalahan memilih database bisa menyebabkan data pada sistem lain ikut terubah, yang berpotensi menimbulkan masalah serius. Pemilihan database yang tepat adalah fondasi utama sebelum melakukan perubahan.

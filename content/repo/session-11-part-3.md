@@ -28,8 +28,6 @@ metadata:
 description: "Peserta mempelajari isolation level seperti READ COMMITTED, REPEATABLE READ, dan SERIALIZABLE. Modul ini menunjukkan bagaimana tingkat isolasi memengaruhi integritas transaksi."
 ---
 
----
-
 #### Pendahuluan
 
 View kompleks adalah view yang didefinisikan dengan query yang melibatkan lebih dari satu tabel, agregasi, fungsi, atau subquery. Dalam sistem perpustakaan, view kompleks sangat bermanfaat untuk menyajikan laporan analitis, seperti distribusi pinjaman berdasarkan kategori buku atau ringkasan denda anggota. Dibandingkan view sederhana, view kompleks menyimpan logika bisnis yang lebih kaya. Dengan demikian, pustakawan tidak perlu menulis query panjang setiap kali membuat laporan yang sama【Elmasri & Navathe, 2016】.

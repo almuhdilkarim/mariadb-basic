@@ -29,13 +29,6 @@ description: "Peserta melakukan simulasi kehilangan data lalu merestore kembali 
 ---
 
 
-Baik 👍. Kita lanjutkan dengan **Pertemuan 12 — Backup & Restore (Modul 5: Praktikal — Backup ke Cloud Storage)**.
-Fokus modul ini berbeda dari modul-modul sebelumnya: kita akan bahas bagaimana backup database perpustakaan bisa otomatis tersimpan di cloud (misalnya Google Drive atau AWS S3) agar lebih aman dari kerusakan lokal.
-
----
-
-# Pertemuan 12 — Backup & Restore (Modul 5: Praktikal — Backup ke Cloud Storage)
-
 ## Pendahuluan
 
 Backup ke cloud menjadi tren penting dalam manajemen database modern karena memberikan lapisan perlindungan tambahan di luar server lokal. Dalam konteks perpustakaan digital, data anggota, buku, dan transaksi peminjaman sangat berharga sehingga tidak cukup hanya mengandalkan backup di server internal. Jika terjadi kebakaran atau kerusakan perangkat keras, file cadangan lokal juga bisa hilang. Cloud storage hadir sebagai solusi dengan menyediakan penyimpanan aman di lokasi berbeda. Menurut Garcia-Molina et al. (2021), redundansi geografis adalah kunci ketahanan data jangka panjang.

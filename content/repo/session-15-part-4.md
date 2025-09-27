@@ -28,12 +28,6 @@ metadata:
 description: "Peserta mempraktikkan pembuatan trigger yang mengurangi stok buku secara otomatis saat peminjaman terjadi. Modul ini menegaskan manfaat trigger dalam otomasi database."
 ---
 
-Siap. Berikut **Pertemuan 15 – Modul 2 (Praktikal): Praktik Trigger Update Stok Buku** lengkap sesuai kaidah.
-
----
-
-# Pertemuan 15 – Modul 2 (Praktikal): Praktik Trigger Update Stok Buku
-
 ## Pendahuluan
 
 Trigger memungkinkan database menjalankan aksi otomatis saat terjadi peristiwa pada tabel, sehingga aturan bisnis dapat ditegakkan konsisten tanpa campur tangan manual. Dalam sistem perpustakaan, aturan umum yang harus selalu benar adalah stok buku berkurang ketika dipinjam dan bertambah ketika pengembalian atau pembatalan terjadi. Tanpa trigger, developer harus mengingatkan aplikasi untuk selalu memperbarui stok, yang rawan terlewat dan menimbulkan inkonsistensi. Dengan trigger, koreksi stok dibebaskan dari aplikasi dan diserahkan ke lapisan database yang lebih dekat dengan datanya. Pendekatan ini membantu menjaga integritas meski ada banyak klien atau layanan yang mengakses database secara bersamaan.

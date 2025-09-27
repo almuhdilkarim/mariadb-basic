@@ -29,12 +29,6 @@ description: "Peserta berlatih secara mandiri menambahkan index dan membandingka
 ---
 
 
-Baik 👍. Berikut saya tuliskan modul lengkap untuk **Pertemuan 13 – Modul 5 (Praktikal): Optimasi Query** sesuai kaidah praktikal:
-
----
-
-# Pertemuan 13 – Modul 5 (Praktikal): Optimasi Query
-
 ## Pendahuluan
 
 Optimasi query adalah langkah penting untuk memastikan performa sistem database tetap cepat meskipun data semakin besar. Dalam sistem perpustakaan digital, pengguna mengharapkan pencarian buku atau riwayat pinjaman berlangsung dalam hitungan detik. Query yang tidak dioptimalkan bisa menyebabkan server lambat, bahkan hingga gagal merespons. Hal ini akan menurunkan pengalaman pengguna dan membuat sistem terlihat tidak profesional. Oleh karena itu, setiap developer perlu memahami dasar-dasar optimasi query.

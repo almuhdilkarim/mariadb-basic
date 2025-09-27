@@ -28,9 +28,6 @@ metadata:
 description: "Peserta melakukan praktik membuat index pada kolom judul buku. Modul ini menegaskan manfaat index dalam mempercepat pencarian berdasarkan judul."
 ---
 
-
-# Pertemuan 13 – Modul 4 (Praktikal): Praktik Index pada Kolom Judul
-
 ## Pendahuluan
 
 Pencarian berdasarkan judul buku adalah salah satu fitur paling penting dalam sistem perpustakaan digital. Anggota biasanya mengetik judul tertentu untuk mencari apakah buku tersedia, sehingga kecepatan pencarian sangat menentukan kenyamanan pengguna. Jika tidak ada index pada kolom `judul`, maka MariaDB harus membaca seluruh tabel untuk menemukan data yang cocok. Kondisi ini akan terasa lambat terutama jika koleksi buku sudah mencapai puluhan ribu entri. Oleh karena itu, index pada kolom `judul` menjadi solusi praktis yang wajib dipahami.

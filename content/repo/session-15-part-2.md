@@ -28,10 +28,6 @@ metadata:
 description: "Peserta mempelajari cara membuat stored procedure sederhana untuk menjalankan query otomatis. Modul ini menekankan langkah dasar pembuatan prosedur SQL."
 ---
 
-
-
-# Pertemuan 14 – Modul 2 (Praktikal): Membuat Stored Procedure Sederhana
-
 ## Pendahuluan
 
 Stored procedure merupakan cara efektif untuk mengelompokkan logika SQL ke dalam satu unit yang bisa dipanggil berulang kali. Dalam sistem perpustakaan digital, banyak operasi rutin yang selalu dilakukan, seperti menampilkan daftar buku atau menambah pinjaman baru. Jika semua dilakukan dengan query manual, resiko kesalahan dan pengulangan kerja menjadi besar. Stored procedure hadir sebagai solusi untuk membuat proses tersebut lebih konsisten.

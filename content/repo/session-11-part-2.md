@@ -4,7 +4,7 @@ draft: false
 title: "View Sederhana"
 short: "Transaksi"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Belajar mengelola transaksi sederhana SQL"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini membahas penggunaan perintah START TRANSACTION, COMMIT, dan ROLLBACK. Peserta belajar mengendalikan transaksi untuk menjaga konsistensi data."

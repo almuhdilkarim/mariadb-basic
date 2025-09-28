@@ -4,7 +4,7 @@ draft: false
 title: "Menampilkan Kolom Tertentu"
 short: "Kolom"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Menampilkan hanya kolom yang dibutuhkan"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari cara memilih kolom tertentu dengan perintah SELECT. Modul ini membantu pengguna menampilkan hanya informasi yang relevan dari tabel."

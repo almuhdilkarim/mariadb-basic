@@ -4,7 +4,7 @@ draft: false
 title: "Latihan Mandiri Laporan Gabungan"
 short: "Latihan"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Melatih kemandirian membuat query gabungan"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta berlatih secara mandiri membuat laporan gabungan antara tabel anggota, buku, dan peminjaman. Modul ini memperkuat pemahaman konsep JOIN melalui latihan nyata."

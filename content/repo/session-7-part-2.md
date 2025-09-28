@@ -4,7 +4,7 @@ draft: false
 title: "LEFT JOIN Sederhana"
 short: "LEFTJOIN"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Menampilkan semua data tabel kiri"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini menjelaskan LEFT JOIN untuk menampilkan semua data dari tabel utama meski tidak memiliki pasangan di tabel lain. Cocok untuk laporan data yang tidak lengkap."

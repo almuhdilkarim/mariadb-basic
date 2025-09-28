@@ -4,7 +4,7 @@ draft: false
 title: "Laporan Pinjaman Bulan Tertentu"
 short: "EXPLAIN"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Mengetahui cara kerja query dengan EXPLAIN"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta mempelajari penggunaan perintah EXPLAIN untuk melihat rencana eksekusi query. Modul ini membantu memahami efektivitas penggunaan index pada query SQL."

@@ -4,7 +4,7 @@ draft: false
 title: "Praktik Query Peminjaman Buku"
 short: "Praktik"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan query gabungan tabel perpustakaan"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta mempraktikkan query gabungan menggunakan INNER JOIN dan LEFT JOIN. Modul ini membantu menghasilkan laporan peminjaman buku per anggota."

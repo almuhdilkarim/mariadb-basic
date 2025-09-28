@@ -4,7 +4,7 @@ draft: false
 title: "Membuat Stored Procedure Sederhana"
 short: "Procedure"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan membuat prosedur tersimpan sederhana"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta mempelajari cara membuat stored procedure sederhana untuk menjalankan query otomatis. Modul ini menekankan langkah dasar pembuatan prosedur SQL."

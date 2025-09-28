@@ -4,7 +4,7 @@ draft: false
 title: "View untuk Laporan"
 short: "report"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami konflik transaksi dan solusinya"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari apa itu deadlock dalam transaksi database dan bagaimana cara menghindarinya. Modul ini membekali peserta strategi mengelola konflik transaksi."

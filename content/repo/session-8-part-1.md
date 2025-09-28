@@ -4,7 +4,7 @@ draft: false
 title: "Menghitung Data dengan COUNT"
 short: "COUNT"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Menghitung jumlah baris dalam tabel"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari penggunaan fungsi COUNT untuk menghitung jumlah baris dalam tabel. Modul ini cocok untuk membuat laporan ringkas jumlah data seperti total buku atau anggota."

@@ -4,7 +4,7 @@ draft: false
 title: "Simulasi Kehilangan dan Pemulihan Data"
 short: "Simulasi"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan memulihkan data yang hilang"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta melakukan simulasi kehilangan data lalu merestore kembali dari backup. Modul ini menegaskan pentingnya strategi backup dalam operasional database."

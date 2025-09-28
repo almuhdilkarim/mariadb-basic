@@ -4,7 +4,7 @@ draft: false
 title: "Praktik Trigger Update Stok Buku"
 short: "Praktik"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan trigger untuk update stok buku"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta mempraktikkan pembuatan trigger yang mengurangi stok buku secara otomatis saat peminjaman terjadi. Modul ini menegaskan manfaat trigger dalam otomasi database."

@@ -4,7 +4,7 @@ draft: false
 title: "Pengenalan MariaDB untuk Pemula"
 short: "MariaDB"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami MariaDB sebagai sistem manajemen database"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Kenali MariaDB sebagai sistem manajemen basis data relasional open-source. Modul ini memperkenalkan sejarah singkat, kompatibilitas dengan MySQL, dan alasan mengapa MariaDB populer di kalangan pemula."

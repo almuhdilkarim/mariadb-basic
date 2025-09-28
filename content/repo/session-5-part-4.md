@@ -4,7 +4,7 @@ draft: false
 title: "Mengurutkan Data dengan ORDER BY"
 short: "Urut"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Mengatur urutan data hasil query"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini mengajarkan cara mengurutkan hasil query dengan ORDER BY. Peserta belajar menampilkan data berdasarkan urutan abjad atau angka sesuai kebutuhan."

@@ -4,7 +4,7 @@ draft: false
 title: "Membuat Database Baru"
 short: "Database"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan membuat database menggunakan perintah SQL"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta belajar membuat database pertama menggunakan perintah CREATE DATABASE. Modul ini memandu langkah dasar untuk mulai mengorganisir data dengan benar."

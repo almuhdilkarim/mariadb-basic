@@ -4,7 +4,7 @@ draft: false
 title: "Konsep Database dan Tabel"
 short: "Tabel"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami struktur database dan tabel sederhana"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini mengenalkan perbedaan antara database dan tabel, dengan menjelaskan hubungan kolom dan baris. Peserta memahami bagaimana tabel digunakan untuk menyimpan data terstruktur."

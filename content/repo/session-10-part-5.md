@@ -4,7 +4,7 @@ draft: false
 title: "Laporan Keterlambatan"
 short: "Praktik"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan membuat query lebih cepat dengan index"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta melakukan praktik optimisasi query pencarian judul buku dengan menggunakan index. Modul ini memperkuat pemahaman tentang performa database secara nyata."

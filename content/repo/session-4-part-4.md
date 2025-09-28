@@ -4,7 +4,7 @@ draft: false
 title: "Menghapus Data dengan DELETE"
 short: "DELETE"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Menghapus data yang tidak lagi dibutuhkan"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari cara menghapus data dari tabel menggunakan perintah DELETE. Modul ini membantu memahami bagaimana menjaga kebersihan data dengan menghapus entri yang tidak diperlukan."

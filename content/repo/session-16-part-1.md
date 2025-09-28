@@ -4,7 +4,7 @@ draft: false
 title: "Merancang Database Perpustakaan Mini"
 short: "Desain"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Menyusun rancangan database akhir sederhana"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta merancang ulang database perpustakaan mini dengan tabel anggota, buku, dan peminjaman. Modul ini menjadi tahap awal proyek akhir untuk menguji pemahaman keseluruhan materi."

@@ -4,7 +4,7 @@ draft: false
 title: "Pengantar Trigger di MariaDB"
 short: "Trigger"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami fungsi trigger untuk aksi otomatis"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini menjelaskan trigger sebagai mekanisme otomatis yang dijalankan ketika ada perubahan data. Peserta memahami contoh penggunaan trigger untuk menjaga konsistensi."

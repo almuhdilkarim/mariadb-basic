@@ -4,7 +4,7 @@ draft: false
 title: "View Kompleks"
 short: "Isolation"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Mengetahui level isolasi dalam transaksi"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta mempelajari isolation level seperti READ COMMITTED, REPEATABLE READ, dan SERIALIZABLE. Modul ini menunjukkan bagaimana tingkat isolasi memengaruhi integritas transaksi."

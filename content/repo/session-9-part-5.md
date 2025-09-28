@@ -4,7 +4,7 @@ draft: false
 title: "Praktik Normalisasi Tabel Perpustakaan"
 short: "Praktik"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan menerapkan normalisasi pada tabel"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta mempraktikkan normalisasi pada tabel perpustakaan sederhana. Modul ini memperkuat pemahaman konsep 1NF dan 2NF dengan contoh nyata."

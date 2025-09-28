@@ -4,7 +4,7 @@ draft: false
 title: "Simulasi Login dengan User Berbeda"
 short: "Login"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Uji akses menggunakan akun berbeda"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini membimbing peserta mencoba login menggunakan akun admin dan anggota. Peserta memahami bagaimana hak akses membatasi perintah yang dapat dijalankan."

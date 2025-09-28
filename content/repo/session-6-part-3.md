@@ -4,7 +4,7 @@ draft: false
 title: "Konsep Primary Key"
 short: "PrimaryKey"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami peran kunci utama pada tabel"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini menjelaskan konsep primary key sebagai pengenal unik setiap baris. Peserta memahami mengapa kunci utama penting untuk menjaga integritas data."

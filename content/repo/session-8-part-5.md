@@ -4,7 +4,7 @@ draft: false
 title: "Praktik Laporan Jumlah Peminjaman"
 short: "Praktik"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan membuat laporan ringkas peminjaman"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta mempraktikkan query menggunakan COUNT dan GROUP BY untuk membuat laporan jumlah peminjaman per anggota. Modul ini memperkuat pemahaman agregasi dengan contoh nyata."

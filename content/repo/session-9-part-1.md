@@ -4,7 +4,7 @@ draft: false
 title: "Masalah Duplikasi Data"
 short: "Duplikasi"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami masalah data ganda pada tabel"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari mengapa duplikasi dat"

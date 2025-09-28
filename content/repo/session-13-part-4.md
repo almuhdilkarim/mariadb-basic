@@ -4,7 +4,7 @@ draft: false
 title: "Praktik Backup Database Perpustakaan"
 short: "Praktik"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan membuat backup database perpustakaan"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta melakukan praktik membuat backup database perpustakaan menggunakan mysqldump. Modul ini memperkuat keterampilan dasar menjaga data tetap aman."

@@ -4,7 +4,7 @@ draft: false
 title: "Praktik Menambahkan Data Buku"
 short: "Praktik"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan langsung memasukkan data ke tabel"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta akan melakukan latihan langsung menambahkan beberapa data buku ke dalam tabel. Modul ini memperkuat pemahaman INSERT, UPDATE, dan DELETE dengan skenario nyata."

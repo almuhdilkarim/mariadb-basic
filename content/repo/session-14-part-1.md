@@ -4,7 +4,7 @@ draft: false
 title: "Mengenal Index di MariaDB"
 short: "Index"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami index untuk mempercepat pencarian"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini mengenalkan fungsi index sebagai alat untuk mempercepat pencarian data di MariaDB. Peserta belajar kapan index diper"

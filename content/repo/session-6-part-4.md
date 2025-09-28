@@ -4,7 +4,7 @@ draft: false
 title: "Konsep Foreign Key"
 short: "ForeignKey"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Menghubungkan tabel dengan kunci asing"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari foreign key sebagai kunci penghubung antar tabel. Modul ini membantu memahami bagaimana relasi antar data dibangun untuk menjaga konsistensi informasi."

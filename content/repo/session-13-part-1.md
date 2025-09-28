@@ -4,7 +4,7 @@ draft: false
 title: "Mengapa Backup Itu Penting"
 short: "Backup"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami pentingnya cadangan data database"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini menjelaskan alasan pentingnya melakukan backup database. Peserta memahami risiko kehilangan data dan bagaimana backup menjadi strategi perlindungan utama."

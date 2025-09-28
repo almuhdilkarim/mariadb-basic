@@ -4,7 +4,7 @@ draft: false
 title: "Restore Database dari File"
 short: "Restore"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Mengembalikan database dari file cadangan"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini membimbing peserta merestore database dari file hasil backup. Peserta belajar memastikan database kembali berjalan normal setelah pemulihan."

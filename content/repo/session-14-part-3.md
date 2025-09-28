@@ -4,7 +4,7 @@ draft: false
 title: "Menguji Pengaruh Index pada Query"
 short: "UjiIndex"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Melihat perbedaan query dengan dan tanpa index"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini memperlihatkan perbedaan performa query dengan dan tanpa index. Peserta memahami bagaimana index dapat mempercepat pencarian data dalam tabel besar."

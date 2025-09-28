@@ -4,7 +4,7 @@ draft: false
 title: "Fungsi Tanggal (NOW, YEAR, MONTH)"
 short: "IndexUnik"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Belajar menggunakan index unik dan gabungan"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari index unik untuk memastikan keunikan data dan index gabungan untuk kolom lebih dari satu. Modul ini membantu mendesain index sesuai kebutuhan query."

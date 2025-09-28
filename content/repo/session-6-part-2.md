@@ -4,7 +4,7 @@ draft: false
 title: "Membuat Tabel Peminjaman"
 short: "Peminjaman"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan membuat tabel peminjaman buku"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta berlatih membuat tabel peminjaman yang menyimpan informasi tanggal pinjam dan kembali. Modul ini menekankan pentingnya tabel relasional dalam menghubungkan data."

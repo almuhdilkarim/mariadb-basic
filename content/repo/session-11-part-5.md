@@ -4,7 +4,7 @@ draft: false
 title: "Praktik View Mandiri"
 short: "Praktik"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan membuat transaksi peminjaman buku"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta mempraktikkan transaksi peminjaman buku menggunakan perintah START, COMMIT, dan ROLLBACK. Modul ini memperkuat pemahaman konsep ACID melalui latihan nyata."

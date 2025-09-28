@@ -4,7 +4,7 @@ draft: false
 title: "Praktik Mencari Buku Berdasarkan Penulis"
 short: "Praktik"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan query sederhana dengan kondisi penulis"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta akan melakukan praktik membuat query untuk mencari daftar buku berdasarkan nama penulis. Modul ini memperkuat pemahaman penggunaan SELECT, WHERE, dan ORDER BY."

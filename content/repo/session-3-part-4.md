@@ -4,7 +4,7 @@ draft: false
 title: "Membuat Tabel Sederhana"
 short: "Tabel"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan membuat tabel sederhana untuk menyimpan data"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini mengajarkan cara membuat tabel menggunakan CREATE TABLE dengan kolom sederhana. Peserta akan menyiapkan tabel pertama untuk menyimpan data buku."

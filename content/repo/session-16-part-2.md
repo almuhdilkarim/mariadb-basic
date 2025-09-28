@@ -4,7 +4,7 @@ draft: false
 title: "Mengisi Data Perpustakaan"
 short: "Data"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan mengisi data pada tabel akhir"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta mengisi database dengan minimal 50 baris data pada tabel anggota, buku, dan peminjaman. Modul ini menekankan pentingnya data contoh untuk pengujian query."

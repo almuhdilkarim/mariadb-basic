@@ -4,7 +4,7 @@ draft: false
 title: "View dalam SQL"
 short: "ACID"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami prinsip dasar ACID pada database"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari empat prinsip utama ACID: Atomicity, Consistency, Isolation, dan Durability. Modul ini menjelaskan bagaimana MariaDB menjaga keandalan data dalam transaksi."

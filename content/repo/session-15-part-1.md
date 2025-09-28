@@ -4,7 +4,7 @@ draft: false
 title: "Pengantar Stored Procedure"
 short: "Procedure"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami dasar prosedur tersimpan di database"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini mengenalkan konsep stored procedure di MariaDB sebagai cara menyimpan logika SQL di dalam database. Peserta memahami keuntungan penggunaan prosedur untuk otomatisasi."

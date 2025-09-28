@@ -4,7 +4,7 @@ draft: false
 title: "Praktik Membuat Tabel Buku"
 short: "Praktik"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Menerapkan perintah SQL untuk membuat tabel nyata"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta berlatih membuat tabel bernama 'buku' dengan kolom judul, penulis, dan tahun terbit. Modul ini membantu memahami praktik nyata dari teori tabel."

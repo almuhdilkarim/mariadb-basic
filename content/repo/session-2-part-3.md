@@ -4,7 +4,7 @@ draft: false
 title: "Mengapa Kita Butuh Database?"
 short: "Database"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Mengetahui alasan pentingnya penggunaan database modern"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Kenali alasan mengapa database dibutuhkan untuk mengelola data dalam jumlah besar. Modul ini menjelaskan manfaat database seperti keandalan, keamanan, multi-user, dan konsistensi informasi."

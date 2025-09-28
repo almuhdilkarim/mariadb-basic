@@ -4,7 +4,7 @@ draft: false
 title: "Bentuk Normal Kedua (2NF)"
 short: "2NF"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Menghilangkan ketergantungan parsial antar kolom"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta belajar bentuk normal kedua (2NF) untuk menghindari ketergantungan parsial. Modul ini membantu mendesain tabel yang lebih efisien dan konsisten."

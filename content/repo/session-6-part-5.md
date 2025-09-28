@@ -4,7 +4,7 @@ draft: false
 title: "Praktik Relasi Anggota dan Peminjaman"
 short: "Praktik"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan membangun relasi antar tabel"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta mempraktikkan relasi antara tabel anggota dan peminjaman. Modul ini menguatkan pemahaman primary key dan foreign key melalui contoh nyata dalam sistem perpustakaan."

@@ -4,7 +4,7 @@ draft: false
 title: "Potensi Penggunaan Database "
 short: "Potensi"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Menyiapkan perangkat lunak MariaDB untuk praktik"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari cara instalasi MariaDB di Windows dan Linux dengan langkah mudah. Modul ini mencakup verifikasi koneksi awal dan pengaturan dasar agar siap digunakan untuk latihan berikutnya."

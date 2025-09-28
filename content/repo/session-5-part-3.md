@@ -4,7 +4,7 @@ draft: false
 title: "Operator Perbandingan"
 short: "Operator"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami penggunaan operator perbandingan data"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari operator perbandingan seperti =, >, <, dan LIKE. Modul ini memperkenalkan cara menyaring data dengan logika sederhana dalam query SQL."

@@ -4,7 +4,7 @@ draft: false
 title: "Perbedaan HAVING dan WHERE"
 short: "HAVING"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami filter sebelum dan sesudah agregasi"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini menjelaskan perbedaan antara HAVING dan WHERE dalam query. Peserta akan memahami kapan harus menyaring data sebelum atau sesudah proses agregasi."

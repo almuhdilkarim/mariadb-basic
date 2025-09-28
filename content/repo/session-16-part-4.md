@@ -4,7 +4,7 @@ draft: false
 title: "Membuat User Admin dan Anggota"
 short: "UserRole"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan membuat user role untuk proyek"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini membimbing peserta membuat user admin dan anggota dengan hak akses berbeda. Peserta memahami penerapan kontrol akses dalam proyek nyata."

@@ -4,7 +4,7 @@ draft: false
 title: "Memberi Hak Akses SELECT"
 short: "HakAkses"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Membatasi user hanya untuk membaca data"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari bagaimana memberikan hak akses SELECT agar user hanya bisa membaca data. Modul ini memperkenalkan konsep otorisasi sederhana pada MariaDB."

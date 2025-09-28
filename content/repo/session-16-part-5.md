@@ -4,7 +4,7 @@ draft: false
 title: "Refleksi dan Langkah Lanjutan"
 short: "Refleksi"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Mengevaluasi pembelajaran dan arah berikutnya"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta merefleksikan pembelajaran selama 15 pertemuan dan mendiskusikan langkah lanjutan ke level intermediate. Modul ini menutup perjalanan kursus pengenalan MariaDB."

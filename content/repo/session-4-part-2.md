@@ -4,7 +4,7 @@ draft: false
 title: "Menampilkan Isi Tabel dengan SELECT"
 short: "SELECT"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Menampilkan isi tabel setelah data ditambahkan"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari perintah SELECT * untuk melihat semua isi tabel. Modul ini menekankan pentingnya menampilkan data sebagai cara memverifikasi hasil INSERT."

@@ -4,7 +4,7 @@ draft: false
 title: "INNER JOIN Dasar"
 short: "JOIN"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Menggabungkan data dari dua tabel"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari INNER JOIN untuk menggabungkan data dari dua tabel yang saling berhubungan. Modul ini memberi contoh bagaimana menampilkan data anggota dengan buku yang dipinjam."

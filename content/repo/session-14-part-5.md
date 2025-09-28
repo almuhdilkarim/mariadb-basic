@@ -4,7 +4,7 @@ draft: false
 title: "Latihan Mandiri Optimasi Query"
 short: "Latihan"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Melatih kemandirian optimisasi query dengan index"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta berlatih secara mandiri menambahkan index dan membandingkan performa query. Modul ini membantu membangun kebiasaan optimisasi database sejak awal."

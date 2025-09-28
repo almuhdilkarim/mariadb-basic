@@ -4,7 +4,7 @@ draft: false
 title: "Backup dengan Mysqldump"
 short: "Mysqldump"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Belajar membuat backup logis database"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta mempelajari penggunaan mysqldump untuk membuat backup logis database. Modul ini memberikan langkah sederhana menghasilkan file SQL cadangan."

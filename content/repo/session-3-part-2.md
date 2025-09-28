@@ -4,7 +4,7 @@ draft: false
 title: "Tipe Data Sederhana"
 short: "TipeData"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Mengetahui tipe data dasar dalam MariaDB"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari tipe data dasar di MariaDB seperti angka, teks, dan tanggal. Modul ini memberi pemahaman tentang pemilihan tipe data yang tepat untuk kebutuhan penyimpanan."

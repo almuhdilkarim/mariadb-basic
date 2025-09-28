@@ -4,7 +4,7 @@ draft: false
 title: "Pengantar Normalisasi"
 short: "Normalisasi"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Mengetahui langkah awal merapikan tabel"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini mengenalkan konsep normalisasi sebagai metode merapikan struktur tabel. Peserta belajar mengurangi redundansi data untuk efisiensi dan konsistensi."

@@ -4,7 +4,7 @@ draft: false
 title: "Membuat Index Sederhana"
 short: "Indexing"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan menambahkan index pada kolom tabel"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta mempelajari perintah SQL untuk membuat index pada kolom tabel. Modul ini memberikan pengalaman langsung bagaimana index memengaruhi performa query."

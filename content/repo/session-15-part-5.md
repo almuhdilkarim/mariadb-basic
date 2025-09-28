@@ -4,7 +4,7 @@ draft: false
 title: "Latihan Prosedur Laporan Harian"
 short: "Latihan"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Membuat prosedur laporan harian sederhana"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta berlatih membuat prosedur untuk menghasilkan laporan harian peminjaman. Modul ini memperkuat keterampilan menggabungkan konsep prosedur dan query praktis."

@@ -4,7 +4,7 @@ draft: false
 title: "Memberi Hak Akses Lengkap ke Admin"
 short: "Admin"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Membuat admin dengan izin penuh database"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta belajar memberikan hak akses penuh kepada user admin menggunakan GRANT. Modul ini menjelaskan pentingnya pendelegasian hak pada pengelolaan database."

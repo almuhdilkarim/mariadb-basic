@@ -4,7 +4,7 @@ draft: false
 title: "Fungsi Kondisi"
 short: "Fulltext"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami pencarian teks dengan fulltext index"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini membahas fulltext index untuk pencarian teks. Peserta belajar bagaimana MariaDB mengoptimalkan query pencarian kata pada kolom teks panjang."

@@ -4,7 +4,7 @@ draft: false
 title: "Perkenalan"
 short: "perkenalan"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -21,7 +21,7 @@ require:
       desc: "Memahami konsep data sebagai pondasi belajar database dasar"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari definisi data, perbedaan data dan informasi, serta contoh nyata sehari-hari. Modul pengantar ini menyiapkan fondasi sebelum memahami struktur tabel dan SQL."

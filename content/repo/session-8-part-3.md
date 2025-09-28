@@ -4,7 +4,7 @@ draft: false
 title: "Mengelompokkan Data dengan GROUP BY"
 short: "GroupBy"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Mengelompokkan data berdasarkan kategori tertentu"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta belajar membuat laporan terkelompok dengan GROUP BY. Modul ini membantu menganalisis data, misalnya menghitung jumlah pinjaman per anggota."

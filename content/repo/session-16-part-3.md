@@ -4,7 +4,7 @@ draft: false
 title: "Membuat Laporan Peminjaman Bulanan"
 short: "Laporan"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Latihan membuat laporan ringkas peminjaman"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Peserta membuat query laporan peminjaman bulanan menggunakan fungsi agregasi. Modul ini memperkuat keterampilan analisis data untuk kebutuhan laporan rutin."

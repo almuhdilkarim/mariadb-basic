@@ -4,7 +4,7 @@ draft: false
 title: "RIGHT JOIN Sederhana"
 short: "RIGHTJOIN"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Menampilkan semua data tabel kanan"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Pelajari RIGHT JOIN untuk menampilkan semua data dari tabel kanan meskipun tidak ada pasangan di tabel kiri. Modul ini memperluas pemahaman gabungan data relasional."

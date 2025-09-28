@@ -4,7 +4,7 @@ draft: false
 title: "Fungsi string (UPPER, LOWER, CONCAT)"
 short: "Index"
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 layout: ""
@@ -22,7 +22,7 @@ require:
       desc: "Memahami dasar index untuk mempercepat query"
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group: []
     author: ["Al Muhdil Karim"]
 description: "Modul ini mengenalkan index"

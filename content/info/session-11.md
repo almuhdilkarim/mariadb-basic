@@ -6,7 +6,7 @@ weight: 11
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Mengenal konsep View, cara membuatnya, serta praktik penggunaannya untuk laporan pinjaman."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+description: "Mengenal konsep View, cara membuatnya, serta praktik penggunaannya untuk laporan pinjaman."
 ---

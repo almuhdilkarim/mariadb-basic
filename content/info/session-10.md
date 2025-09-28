@@ -6,7 +6,7 @@ weight: 10
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Menggunakan fungsi string, tanggal, dan kondisi untuk membuat laporan pinjaman serta keterlambatan."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+description: "Menggunakan fungsi string, tanggal, dan kondisi untuk membuat laporan pinjaman serta keterlambatan."
 ---

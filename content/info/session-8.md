@@ -6,7 +6,7 @@ weight: 8
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Menggunakan fungsi agregasi, memahami GROUP BY, membedakan HAVING dan WHERE, serta praktik laporan."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+description: "Menggunakan fungsi agregasi, memahami GROUP BY, membedakan HAVING dan WHERE, serta praktik laporan."
 ---

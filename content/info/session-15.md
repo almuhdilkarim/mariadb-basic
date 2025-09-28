@@ -6,7 +6,7 @@ weight: 15
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Mempelajari prosedur dan trigger, memahami fungsinya, serta praktik otomatisasi pengelolaan data."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+description: "Mempelajari prosedur dan trigger, memahami fungsinya, serta praktik otomatisasi pengelolaan data."
 ---

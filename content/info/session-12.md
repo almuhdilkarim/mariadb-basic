@@ -6,7 +6,7 @@ weight: 12
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Belajar membuat user, mengatur izin akses, serta praktik role admin dan anggota."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+description: "Belajar membuat user, mengatur izin akses, serta praktik role admin dan anggota."
 ---

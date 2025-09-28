@@ -6,7 +6,7 @@ weight: 9
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Mempelajari desain database baik, mengenal normalisasi, serta praktik memperbaiki struktur tabel perpustakaan."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+description: "Mempelajari desain database baik, mengenal normalisasi, serta praktik memperbaiki struktur tabel perpustakaan."
 ---

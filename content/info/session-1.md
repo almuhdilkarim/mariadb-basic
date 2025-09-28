@@ -6,7 +6,7 @@ weight: 1
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep, fungsi, jenis basis data."
+    desc: "Memahami kebutuhan perkuliahan dan mekanisme dan instrumen belajar."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep, fungsi, jenis basis data."
+description: "Memahami kebutuhan perkuliahan dan mekanisme dan instrumen belajar."
 ---

@@ -6,7 +6,7 @@ weight: 14
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Mengenal index sebagai percepatan pencarian, memahami cara membuatnya, serta praktik penggunaannya."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+description: "Mengenal index sebagai percepatan pencarian, memahami cara membuatnya, serta praktik penggunaannya."
 ---

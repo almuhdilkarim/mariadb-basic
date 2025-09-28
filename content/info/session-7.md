@@ -6,7 +6,7 @@ weight: 7
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Belajar menggabungkan tabel dengan JOIN, memahami variasinya, dan praktik laporan peminjaman buku."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+description: "Belajar menggabungkan tabel dengan JOIN, memahami variasinya, dan praktik laporan peminjaman buku."
 ---

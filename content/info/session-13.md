@@ -6,7 +6,7 @@ weight: 13
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Memahami pentingnya backup, belajar menggunakan mysqldump, serta praktik restore database perpustakaan."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+description: "Memahami pentingnya backup, belajar menggunakan mysqldump, serta praktik restore database perpustakaan."
 ---

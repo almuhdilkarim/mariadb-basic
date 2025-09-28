@@ -6,7 +6,7 @@ weight: 16
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Merancang proyek mini perpustakaan, membuat laporan, mengatur user, serta melakukan refleksi pembelajaran."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+description: "Merancang proyek mini perpustakaan, membuat laporan, mengatur user, serta melakukan refleksi pembelajaran."
 ---

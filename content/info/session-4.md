@@ -6,7 +6,7 @@ weight: 4
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Belajar menambahkan, menampilkan, mengubah, dan menghapus data, serta praktik mengisi tabel."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+description: "Belajar menambahkan, menampilkan, mengubah, dan menghapus data, serta praktik mengisi tabel."
 ---

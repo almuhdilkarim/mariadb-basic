@@ -6,7 +6,7 @@ weight: 5
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Mempelajari cara mencari, menyaring, dan mengurutkan data, serta praktik pencarian buku."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+description: "Mempelajari cara mencari, menyaring, dan mengurutkan data, serta praktik pencarian buku."
 ---

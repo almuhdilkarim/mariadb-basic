@@ -3,6 +3,8 @@
 
 Dataset utama yang digunakan: *Sistem Perpustakaan Digital* (`buku`, `anggota`, `peminjaman`).
 
+buatkan lead untuk materi berikut sebanyak 13 kata:
+
 ---
 
 ## Pertemuan 1 — Mengenal Data & Database

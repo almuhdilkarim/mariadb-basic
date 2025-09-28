@@ -6,7 +6,7 @@ weight: 6
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Mengenal tabel anggota dan peminjaman, memahami primary key, foreign key, serta relasi."
     icon: ""
 tasker:
     name: ""
@@ -20,5 +20,5 @@ assign:
     icon: ""
 metadata:
     author: ""
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+description: "Mengenal tabel anggota dan peminjaman, memahami primary key, foreign key, serta relasi."
 ---

@@ -4,7 +4,7 @@ draft: false
 title: "Pengenalan Database Untuk Perpustakaan"
 terms: [ "database" ]
 thumb:
-    image: "cover.jpg"
+    image: "cover.png"
     anima: ""
     video: ""
 weight: 1
@@ -42,7 +42,7 @@ report:
         - "Progress penanganan report dapat di monitoring pada halaman github course."
 metadata:
     index: false
-    thumb: "cover.jpg"
+    thumb: "cover.png"
     group:  [ "yuros" ]
     author: [ "Al Muhdil Karim" ]
 description: "Course ini memberikan pemahaman mengenai konsep, teknologi, dan aplikasi perpustakaan digital. Mahasiswa akan mempelajari bagaimana mengelola, menyimpan, mengakses, dan mendistribusikan informasi digital."

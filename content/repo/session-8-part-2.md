@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Agregasi"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Menghitung nilai rata-rata dan total data"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

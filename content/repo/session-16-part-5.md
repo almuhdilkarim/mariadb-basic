@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Proyek"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Mengevaluasi pembelajaran dan arah berikutnya"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

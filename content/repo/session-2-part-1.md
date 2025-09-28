@@ -15,10 +15,10 @@ format:
     model: "youtube"
     datum: "IFTOa9a_2B8"
 require:
-    - prop: "Kategori"
-      name: "Dasar"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Memahami konsep data sebagai pondasi belajar database dasar"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

@@ -12,9 +12,21 @@ session:
     close: "1 Januari 2026"
 require:
     - prop: "account"
-      name: "Registered"
+      name: "Github / Gitlan"
       icon: ""
-      desc: "Suspendisse condimentum ipsum vel mi luctus, nec ornare est porttitor."
+      desc: "Mempunyai account github/gitlab."
+    - prop: "application"
+      name: "Mariadb"
+      icon: ""
+      desc: "Aplikasi mariadb telah teinstall di perangkat lokal"
+    - prop: "application"
+      name: "Text Editor"
+      icon: ""
+      desc: "Aplikasi teks editor seperti vscode atau sublime text"
+    - prop: "Account"
+      name: "Telegram"
+      icon: ""
+      desc: "Mempunyai akun telegram untuk memamfaatkan fitur diskusi"
 metadata:
     index: false
     thumb: "cover.jpg"

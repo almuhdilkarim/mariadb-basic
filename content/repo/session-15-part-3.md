@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Otomatisasi"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Memahami fungsi trigger untuk aksi otomatis"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

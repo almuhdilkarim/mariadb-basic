@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Dasar"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Memahami penggunaan operator perbandingan data"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

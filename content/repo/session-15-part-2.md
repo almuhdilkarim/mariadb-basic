@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Otomatisasi"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Latihan membuat prosedur tersimpan sederhana"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

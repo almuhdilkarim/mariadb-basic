@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Agregasi"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Mengelompokkan data berdasarkan kategori tertentu"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

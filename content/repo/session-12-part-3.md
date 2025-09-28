@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Keamanan"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Membuat admin dengan izin penuh database"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Desain"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Menghilangkan ketergantungan parsial antar kolom"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

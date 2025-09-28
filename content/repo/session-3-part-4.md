@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Teknis"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Latihan membuat tabel sederhana untuk menyimpan data"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Performa"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Melihat perbedaan query dengan dan tanpa index"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

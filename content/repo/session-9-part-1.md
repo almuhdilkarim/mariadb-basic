@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Desain"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Memahami masalah data ganda pada tabel"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Dasar"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Mengetahui alasan pentingnya penggunaan database modern"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

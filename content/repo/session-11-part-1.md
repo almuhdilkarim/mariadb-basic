@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Transaksi"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Memahami prinsip dasar ACID pada database"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Backup"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Mengembalikan database dari file cadangan"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

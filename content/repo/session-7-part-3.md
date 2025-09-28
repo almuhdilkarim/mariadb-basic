@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Relasi"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Menampilkan semua data tabel kanan"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

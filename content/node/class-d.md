@@ -11,10 +11,10 @@ session:
     start: "1 September 2025"
     close: "1 Januari 2026"
 require:
-    - prop: "linux"
-      name: "linux"
-      icon: "edit"
-      desc: "Suspendisse condimentum ipsum vel mi luctus, nec ornare est porttitor."
+    - prop: ""
+      name: ""
+      icon: ""
+      desc: ""
 metadata:
     index: false
     thumb: "cover.jpg"

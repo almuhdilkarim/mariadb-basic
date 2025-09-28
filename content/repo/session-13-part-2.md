@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Backup"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Belajar membuat backup logis database"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

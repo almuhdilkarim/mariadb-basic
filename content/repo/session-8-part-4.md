@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Agregasi"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Memahami filter sebelum dan sesudah agregasi"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

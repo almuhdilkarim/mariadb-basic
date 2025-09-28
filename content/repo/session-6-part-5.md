@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Praktik"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Latihan membangun relasi antar tabel"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

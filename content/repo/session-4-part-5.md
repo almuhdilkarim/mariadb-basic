@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Praktik"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Latihan langsung memasukkan data ke tabel"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Teknis"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Mengatur urutan data hasil query"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

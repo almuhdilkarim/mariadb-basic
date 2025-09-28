@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Praktik"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Latihan trigger untuk update stok buku"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

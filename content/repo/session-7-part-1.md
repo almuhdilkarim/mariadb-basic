@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Relasi"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Menggabungkan data dari dua tabel"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

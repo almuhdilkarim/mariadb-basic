@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Desain"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Mengubah tabel agar tiap kolom atomik"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

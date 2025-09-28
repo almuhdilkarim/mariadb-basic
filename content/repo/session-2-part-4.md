@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Dasar"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Membedakan DBMS dengan penyimpanan file tradisional"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

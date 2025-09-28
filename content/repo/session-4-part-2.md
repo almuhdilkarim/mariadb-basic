@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Teknis"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Menampilkan isi tabel setelah data ditambahkan"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

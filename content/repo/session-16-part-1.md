@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Proyek"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Menyusun rancangan database akhir sederhana"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

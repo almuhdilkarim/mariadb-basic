@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Praktik"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Menerapkan perintah SQL untuk membuat tabel nyata"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

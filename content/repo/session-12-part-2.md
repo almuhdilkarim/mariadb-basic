@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Keamanan"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Membatasi user hanya untuk membaca data"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

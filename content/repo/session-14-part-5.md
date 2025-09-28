@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Praktik"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Melatih kemandirian optimisasi query dengan index"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

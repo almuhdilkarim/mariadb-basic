@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Praktik"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Latihan membuat laporan ringkas peminjaman"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

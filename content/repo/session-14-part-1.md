@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Performa"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Memahami index untuk mempercepat pencarian"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

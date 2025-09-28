@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Praktik"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Membuat prosedur laporan harian sederhana"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

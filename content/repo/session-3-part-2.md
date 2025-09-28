@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Dasar"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Mengetahui tipe data dasar dalam MariaDB"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

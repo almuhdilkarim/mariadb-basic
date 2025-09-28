@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Dasar"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Memahami peran kunci utama pada tabel"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

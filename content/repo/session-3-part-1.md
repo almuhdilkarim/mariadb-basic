@@ -16,10 +16,10 @@ format:
     datum:
         data: ""
 require:
-    - prop: "Kategori"
-      name: "Dasar"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Memahami struktur database dan tabel sederhana"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.png"

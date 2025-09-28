@@ -30,18 +30,10 @@ reached:
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
       icon:
 require:
-    - prop: "marcel"
-      name: "require 1"
+    - prop: ""
+      name: ""
       icon: ""
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
-    - prop: "marcel"
-      name: "require 1"
-      icon: ""
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
-    - prop: "marcel"
-      name: "require 1"
-      icon: ""
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
+      desc: ""
 metadata:
     index: false
     thumb: "cover.jpg"

@@ -46,26 +46,25 @@ Secara ringkas, `IF` dan `CASE` adalah alat penting yang harus dikuasai pustakaw
 
 #### Langkah-langkah Praktik
 
-Mari kita mulai dengan contoh penggunaan fungsi `IF`. Misalnya, kita ingin menampilkan status keterlambatan anggota berdasarkan jumlah hari terlambat.
+Mari kita mulai dengan contoh penggunaan fungsi `IF`. Misalnya, kita ingin menampilkan status keterlambatan pengembalian buku oleh anggota berdasarkan jumlah hari terlambat.
 
 ```sql
 SELECT nama_anggota,
-       IF(hari_terlambat > 0, 'Terlambat', 'Tepat Waktu') AS status
+    IF( hari_terlambat > 0, 'Terlambat', 'Tepat Waktu') AS status
 FROM peminjaman;
 ```
 
 Query ini akan memberikan status sederhana yang mudah dipahami. Kerja bagus, langkah awalmu sudah tepat!
-
 Sekarang kita lanjut ke `CASE`, yang lebih fleksibel. Misalnya, pustakawan ingin mengategorikan keterlambatan dalam beberapa level.
 
 ```sql
 SELECT nama_anggota,
-       CASE
-           WHEN hari_terlambat = 0 THEN 'Tepat Waktu'
-           WHEN hari_terlambat BETWEEN 1 AND 3 THEN 'Ringan'
-           WHEN hari_terlambat BETWEEN 4 AND 7 THEN 'Sedang'
-           ELSE 'Berat'
-       END AS kategori
+    CASE
+        WHEN hari_terlambat = 0 THEN 'Tepat Waktu'
+        WHEN hari_terlambat BETWEEN 1 AND 3 THEN 'Ringan'
+        WHEN hari_terlambat BETWEEN 4 AND 7 THEN 'Sedang'
+        ELSE 'Berat'
+    END AS kategori
 FROM peminjaman;
 ```
 
@@ -75,10 +74,10 @@ Langkah berikutnya, mari kita coba menampilkan status buku. Misalnya, apakah buk
 
 ```sql
 SELECT judul_buku,
-       CASE
-           WHEN tanggal_kembali IS NULL THEN 'Sedang Dipinjam'
-           ELSE 'Tersedia'
-       END AS status_buku
+    CASE
+        WHEN tanggal_kembali IS NULL THEN 'Sedang Dipinjam'
+        ELSE 'Tersedia'
+    END AS status_buku
 FROM buku;
 ```
 
@@ -88,10 +87,10 @@ Selanjutnya, kita bisa menggabungkan kondisi dengan perhitungan. Misalnya, menen
 
 ```sql
 SELECT nama_anggota,
-       CASE
-           WHEN hari_terlambat > 0 THEN hari_terlambat * 1000
-           ELSE 0
-       END AS total_denda
+    CASE
+        WHEN hari_terlambat > 0 THEN hari_terlambat * 1000
+        ELSE 0
+    END AS total_denda
 FROM peminjaman;
 ```
 
@@ -101,13 +100,13 @@ Terakhir, mari buat laporan yang menggabungkan `IF` dan `CASE`. Misalnya, lapora
 
 ```sql
 SELECT nama_anggota,
-       IF(hari_terlambat > 0, 'Ada Keterlambatan', 'Tidak Ada') AS status,
-       CASE
-           WHEN hari_terlambat BETWEEN 1 AND 3 THEN 'Ringan'
-           WHEN hari_terlambat BETWEEN 4 AND 7 THEN 'Sedang'
-           WHEN hari_terlambat > 7 THEN 'Berat'
-           ELSE 'Tepat Waktu'
-       END AS kategori
+    IF(hari_terlambat > 0, 'Ada Keterlambatan', 'Tidak Ada') AS status,
+    CASE
+        WHEN hari_terlambat BETWEEN 1 AND 3 THEN 'Ringan'
+        WHEN hari_terlambat BETWEEN 4 AND 7 THEN 'Sedang'
+        WHEN hari_terlambat > 7 THEN 'Berat'
+        ELSE 'Tepat Waktu'
+    END AS kategori
 FROM peminjaman;
 ```
 
@@ -122,7 +121,7 @@ Kesalahan umum pertama adalah menulis `IF` tanpa format yang benar. Contoh salah
 
 ```sql
 SELECT nama_anggota,
-       IF hari_terlambat > 0 'Terlambat' 'Tepat Waktu'
+    IF hari_terlambat > 0 'Terlambat' 'Tepat Waktu'
 FROM peminjaman;
 ```
 
@@ -138,9 +137,9 @@ Kesalahan lain adalah tidak menyertakan kondisi `ELSE` dalam `CASE`. Contoh sala
 
 ```sql
 SELECT nama_anggota,
-       CASE
-           WHEN hari_terlambat > 0 THEN 'Terlambat'
-       END AS status
+    CASE
+        WHEN hari_terlambat > 0 THEN 'Terlambat'
+    END AS status
 FROM peminjaman;
 ```
 
@@ -156,10 +155,10 @@ Kesalahan berikutnya adalah membandingkan nilai `NULL` dengan operator logika bi
 
 ```sql
 SELECT judul_buku,
-       CASE
-           WHEN tanggal_kembali = NULL THEN 'Sedang Dipinjam'
-           ELSE 'Tersedia'
-       END AS status
+    CASE
+        WHEN tanggal_kembali = NULL THEN 'Sedang Dipinjam'
+        ELSE 'Tersedia'
+    END AS status
 FROM buku;
 ```
 
@@ -175,11 +174,11 @@ Kesalahan lain adalah membuat kondisi yang tumpang tindih dalam `CASE`. Contoh s
 
 ```sql
 SELECT nama_anggota,
-       CASE
-           WHEN hari_terlambat > 0 THEN 'Ringan'
-           WHEN hari_terlambat > 3 THEN 'Sedang'
-           ELSE 'Tepat Waktu'
-       END AS kategori
+    CASE
+        WHEN hari_terlambat > 0 THEN 'Ringan'
+        WHEN hari_terlambat > 3 THEN 'Sedang'
+        ELSE 'Tepat Waktu'
+    END AS kategori
 FROM peminjaman;
 ```
 
@@ -246,10 +245,10 @@ Contoh benar:
 
 ```sql
 SELECT judul_buku,
-       CASE
-           WHEN tanggal_kembali IS NULL THEN 'Sedang Dipinjam'
-           ELSE 'Tersedia'
-       END AS status
+    CASE
+        WHEN tanggal_kembali IS NULL THEN 'Sedang Dipinjam'
+        ELSE 'Tersedia'
+    END AS status
 FROM buku;
 ```
 
@@ -265,12 +264,12 @@ Contoh benar:
 
 ```sql
 SELECT nama_anggota,
-       CASE
-           WHEN hari_terlambat BETWEEN 1 AND 3 THEN 'Ringan'
-           WHEN hari_terlambat BETWEEN 4 AND 7 THEN 'Sedang'
-           WHEN hari_terlambat > 7 THEN 'Berat'
-           ELSE 'Tepat Waktu'
-       END AS kategori
+    CASE
+        WHEN hari_terlambat BETWEEN 1 AND 3 THEN 'Ringan'
+        WHEN hari_terlambat BETWEEN 4 AND 7 THEN 'Sedang'
+        WHEN hari_terlambat > 7 THEN 'Berat'
+        ELSE 'Tepat Waktu'
+    END AS kategori
 FROM peminjaman;
 ```
 
@@ -286,10 +285,10 @@ Contoh benar:
 
 ```sql
 SELECT nama_anggota,
-       CASE
-           WHEN hari_terlambat > 0 THEN 'Terlambat'
-           ELSE 'Tepat Waktu'
-       END AS status
+    CASE
+        WHEN hari_terlambat > 0 THEN 'Terlambat'
+        ELSE 'Tepat Waktu'
+    END AS status
 FROM peminjaman
 WHERE hari_terlambat >= 0;
 ```
@@ -306,12 +305,12 @@ Mari kita terapkan fungsi kondisi dalam skenario nyata di perpustakaan. Misalnya
 
 ```sql
 SELECT nama_anggota,
-       CASE
-           WHEN hari_terlambat = 0 THEN 'Tepat Waktu'
-           WHEN hari_terlambat BETWEEN 1 AND 3 THEN 'Ringan'
-           WHEN hari_terlambat BETWEEN 4 AND 7 THEN 'Sedang'
-           ELSE 'Berat'
-       END AS kategori
+    CASE
+        WHEN hari_terlambat = 0 THEN 'Tepat Waktu'
+        WHEN hari_terlambat BETWEEN 1 AND 3 THEN 'Ringan'
+        WHEN hari_terlambat BETWEEN 4 AND 7 THEN 'Sedang'
+        ELSE 'Berat'
+    END AS kategori
 FROM peminjaman;
 ```
 
@@ -321,10 +320,10 @@ Selanjutnya, mari kita buat laporan status buku.
 
 ```sql
 SELECT judul_buku,
-       CASE
-           WHEN tanggal_kembali IS NULL THEN 'Sedang Dipinjam'
-           ELSE 'Tersedia'
-       END AS status
+    CASE
+        WHEN tanggal_kembali IS NULL THEN 'Sedang Dipinjam'
+        ELSE 'Tersedia'
+    END AS status
 FROM buku;
 ```
 
@@ -334,7 +333,7 @@ Mari kita lanjutkan dengan menghitung denda anggota menggunakan `IF`.
 
 ```sql
 SELECT nama_anggota,
-       IF(hari_terlambat > 0, hari_terlambat * 1000, 0) AS total_denda
+    IF(hari_terlambat > 0, hari_terlambat * 1000, 0) AS total_denda
 FROM peminjaman;
 ```
 
@@ -344,13 +343,13 @@ Kita juga bisa membuat laporan gabungan status keterlambatan dengan kategori.
 
 ```sql
 SELECT nama_anggota,
-       IF(hari_terlambat > 0, 'Ada Keterlambatan', 'Tidak Ada') AS status,
-       CASE
-           WHEN hari_terlambat BETWEEN 1 AND 3 THEN 'Ringan'
-           WHEN hari_terlambat BETWEEN 4 AND 7 THEN 'Sedang'
-           WHEN hari_terlambat > 7 THEN 'Berat'
-           ELSE 'Tepat Waktu'
-       END AS kategori
+    IF(hari_terlambat > 0, 'Ada Keterlambatan', 'Tidak Ada') AS status,
+    CASE
+        WHEN hari_terlambat BETWEEN 1 AND 3 THEN 'Ringan'
+        WHEN hari_terlambat BETWEEN 4 AND 7 THEN 'Sedang'
+        WHEN hari_terlambat > 7 THEN 'Berat'
+        ELSE 'Tepat Waktu'
+    END AS kategori
 FROM peminjaman;
 ```
 

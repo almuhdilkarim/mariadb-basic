@@ -1,8 +1,8 @@
 ---
 date:  ""
 draft: false
-title: "persiapan"
-short: "Jenis"
+title: "pemasangan penyuntingan teks"
+short: "persiapan"
 thumb:
     image: "cover.png"
     anima: ""
@@ -24,6 +24,18 @@ metadata:
     index: false
     thumb: "cover.png"
     group: []
-    author: ["Al Muhdil Karim"]
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam libero et magna suscipit vestibulum. Suspendisse condimentum ipsum vel mi luctus, nec ornare est porttitor."
+    author: ["null"]
+description: "Modul ini membahas langkah persiapan alat yang dibutuhkan dalam proses belajar."
 ---
+
+
+## Installasi Visual Studio Code Di Windows
+{{< youtube kQl8ugdcZCc >}}
+
+
+## Installasi Visual Studio Code di MacOS
+{{< youtube iMtdrqLt8yo >}}
+
+
+## Installasi Visual Studio Code di Ubuntu
+{{< youtube 8EdFgoZKwPc >}}

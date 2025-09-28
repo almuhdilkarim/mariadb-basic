@@ -1,8 +1,8 @@
 ---
 date:  ""
 draft: false
-title: ""
-short: ""
+title: "integrasi repositori pembelajaran"
+short: "integrasi"
 thumb:
     image: "cover.png"
     anima: ""
@@ -24,6 +24,6 @@ metadata:
     index: false
     thumb: "cover.png"
     group: []
-    author: ["Al Muhdil Karim"]
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam libero et magna suscipit vestibulum. Suspendisse condimentum ipsum vel mi luctus, nec ornare est porttitor."
+    author: ["null"]
+description: "Dalam modul ini kita akan mempersiapkan lingkungan pedukung dan langkah otomasi pembelajaran."
 ---

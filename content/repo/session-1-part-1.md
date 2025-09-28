@@ -1,8 +1,8 @@
 ---
 date:  ""
 draft: false
-title: "persiapan"
-short: "Konsep"
+title: "pengenalan mekanisme pembelajaran"
+short: "mekanisme belajar"
 thumb:
     image: "cover.png"
     anima: ""
@@ -15,6 +15,15 @@ format:
     model: ""
     datum:
         data: ""
+outcome:
+    - prop: "konseptual"
+      name: ""
+      icon: ""
+      desc: ""
+    - prop: "praktikal"
+      name: ""
+      icon: ""
+      desc: ""
 require:
     - prop: ""
       name: ""
@@ -24,6 +33,6 @@ metadata:
     index: false
     thumb: "cover.png"
     group: []
-    author: ["Al Muhdil Karim"]
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam libero et magna suscipit vestibulum. Suspendisse condimentum ipsum vel mi luctus, nec ornare est porttitor."
+    author: ["null"]
+description: "Module ini membahas mekanisme pembelajaran yang digunakan dalam setiap pertemuan"
 ---

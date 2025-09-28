@@ -1,8 +1,8 @@
 ---
 date:  ""
 draft: false
-title: "persiapan"
-short: "Fungsi dan Manfaat"
+title: "mengenal media pembelajaran"
+short: "media belajar"
 thumb:
     image: "cover.png"
     anima: ""
@@ -24,6 +24,6 @@ metadata:
     index: false
     thumb: "cover.png"
     group: []
-    author: ["Al Muhdil Karim"]
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam libero et magna suscipit vestibulum. Suspendisse condimentum ipsum vel mi luctus, nec ornare est porttitor."
+    author: ["null"]
+description: "Modul ini membahas lingkungan belajar yang digunakan dalam setiap sesi pertemuan."
 ---
